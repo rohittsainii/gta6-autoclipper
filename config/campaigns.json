@@ -1,5 +1,5 @@
 {
-  "_help": "One entry per Whop campaign. Set enabled=false to pause one. sources: twitch handle or a YouTube channel/streams URL. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = no facecam split, uses the blurred-background layout).",
+  "_help": "One entry per Whop campaign. Set enabled=false to pause one. sources: twitch handle or a YouTube channel/streams URL. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = no facecam split, uses the blurred-background layout). YouTube needs the YT_COOKIES secret.",
   "settings": {
     "chunk_hours": 3,
     "backfill_hours": 3,
