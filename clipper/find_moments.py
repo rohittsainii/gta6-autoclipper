@@ -214,7 +214,7 @@ def main():
             try:
                 vods = list_vods(src, settings["max_vods_per_source"])
                 clips = twitch_viewer_clips(src["handle"], st["clip_cache"]) if src["platform"] == "twitch" else []
-                log(f"  {len(vods)} recent VOD(s), {len(clips)} viewer clips")
+                log(f"  {len(vods)} recent VOD(s), {len(clips)} viewer clips ({sum(1 for c in clips if c.get('ts'))} with time)")
             except Exception as e:
                 log(f"  ERROR listing: {str(e)[:300]}")
                 continue
