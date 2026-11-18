@@ -1,7 +1,7 @@
 {
   "vods": {
     "twitch_v2932194507": {
-      "done_until": 39833.0,
+      "done_until": 41747.0,
       "title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-18 20:27",
       "campaign": "lacy"
     },
@@ -11,7 +11,7 @@
       "campaign": "lacy"
     },
     "twitch_v2932204601": {
-      "done_until": 38606.0,
+      "done_until": 40418.0,
       "title": "🚨 FIRST PERSON TO PLAY GTA 🚨 EARLY ACCESS 🚨 24/7 MARATHON 🚨 PS5 GIVEAWAYS 2026-11-18 20:29",
       "campaign": "clix"
     },
@@ -19,6 +19,11 @@
       "done_until": 0.0,
       "title": "🏆 LOTS TO TALK ABOUT 🏆 GTA MARATHON SOON 🏆 DREAM MY STREAM WINNER ANNOUNCED 🏆 code clix for pc COME !vid",
       "campaign": "clix"
+    },
+    "youtube_XRo2L3077NI": {
+      "done_until": 10875.0,
+      "title": "PLAYING GTA 6 FOR THE FIRST TIME",
+      "campaign": "tomo"
     }
   },
   "clip_cache": {
@@ -507,6 +512,18 @@
       "views": 73,
       "title": "club",
       "url": "https://www.twitch.tv/clix/clip/SpicyPricklySwordGOWSkull-9k6HzkFTv4cSTc64"
+    },
+    "2248029794": {
+      "ts": 1795004115,
+      "views": 937,
+      "title": "i cant 🤣",
+      "url": "https://www.twitch.tv/lacy/clip/VenomousEasyKathyNerfBlueBlaster-xC8I-5tMYpWzdNaS"
+    },
+    "3609102817": {
+      "ts": 1795008933,
+      "views": 80,
+      "title": "club",
+      "url": "https://www.twitch.tv/clix/clip/ExcitedAnimatedFennelCharlietheUnicorn-QA5ruBT2wWdQcrOM"
     }
   }
 }
