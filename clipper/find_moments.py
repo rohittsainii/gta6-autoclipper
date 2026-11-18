@@ -163,9 +163,8 @@ def process_chunk(camp, vod, a, b, clips, settings):
     audio = download_audio(vod["url"], a, b, str(WORK / f"chunk_{tag}"))
     levels = loudness_per_second(audio)
     n = len(levels)
-    if n < 60:
-        log("  audio too short, skipping")
-        return 0
+    if n < 60:  # failed/partial download: don't mark this part as done, retry next run
+        raise RuntimeError(f"audio download too short ({n}s) - will retry")
     score, why = score_chunk(n, a, excitement(levels), clips, vod["start_ts"], vod["heatmap"])
     peaks = pick_peaks(score, settings["moments_per_chunk"])
     log(f"  {len(peaks)} candidate moments")
