@@ -5,7 +5,8 @@
     "backfill_hours": 3,
     "min_new_minutes": 25,
     "moments_per_chunk": 12,
-    "max_vods_per_source": 2
+    "max_vods_per_source": 2,
+    "max_age_hours": 24
   },
   "campaigns": [
     {
@@ -14,7 +15,12 @@
       "enabled": true,
       "streamer": "Lacy",
       "language": "en",
-      "sources": [{"platform": "twitch", "handle": "lacy"}],
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "lacy"
+        }
+      ],
       "caption_must_include": "Lacy #LACY",
       "rules": "Lacy must be the main focus. Caption needs his name and #LACY. Pool split; needs 1,000,000 approved views total to get a share.",
       "on_video_disclosure": "#ad",
@@ -26,7 +32,12 @@
       "enabled": true,
       "streamer": "Clix",
       "language": "en",
-      "sources": [{"platform": "twitch", "handle": "clix"}],
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "clix"
+        }
+      ],
       "caption_must_include": "Clix #Clix",
       "rules": "Clix must be the main focus. Caption needs his name and #Clix. No AI-generated videos. Pool split; needs 400,000 approved views total.",
       "on_video_disclosure": "#ad",
@@ -35,12 +46,17 @@
     {
       "id": "tomo",
       "name": "TOMO GTA VI Clipping",
-      "enabled": false,
+      "enabled": true,
       "streamer": "Tomo",
       "language": "en",
-      "sources": [],
-      "caption_must_include": "",
-      "rules": "Clip Tomo's GTA 6 livestreams and his YouTube videos. $2.00 per 1,000 views, cap $150 per clip. TODO: add his channel link from the campaign brief, then set enabled=true.",
+      "sources": [
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@Tomovids/streams"
+        }
+      ],
+      "caption_must_include": "Tomo",
+      "rules": "Clip Tomo's GTA 6 livestreams and his YouTube videos. $2.00 per 1,000 views, cap $150 per clip. Check the brief for any required tags.",
       "on_video_disclosure": "#ad",
       "facecam": null
     },
@@ -52,7 +68,7 @@
       "language": "en",
       "sources": [],
       "caption_must_include": "",
-      "rules": "Clip Dom's funny GTA 6 moments. TikTok + YouTube Shorts. Needs an account that posts GTA 6 content. TODO: add his channel link from the campaign brief, then set enabled=true.",
+      "rules": "Clip Dom's funny GTA 6 moments. TikTok + YouTube Shorts. Needs an account that posts GTA 6 content. Paused: channel link not found yet.",
       "on_video_disclosure": "#ad",
       "facecam": null
     }

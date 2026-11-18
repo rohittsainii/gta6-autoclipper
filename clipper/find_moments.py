@@ -219,6 +219,10 @@ def main():
                 log(f"  ERROR listing: {str(e)[:300]}")
                 continue
             for vod in vods:
+                ended = (vod["start_ts"] or 0) + vod["duration"]
+                if not vod["live"] and vod["start_ts"] and time.time() - ended > settings.get("max_age_hours", 24) * 3600:
+                    log(f"  skipping old stream: {vod['title'][:60]}")
+                    continue
                 v = st["vods"].setdefault(vod["id"], {
                     "done_until": max(0.0, vod["duration"] - settings["backfill_hours"] * 3600),
                     "title": vod["title"], "campaign": camp["id"]})

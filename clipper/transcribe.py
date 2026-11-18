@@ -52,7 +52,13 @@ def _faster_whisper(path, lang):
         size = os.environ.get("WHISPER_MODEL", "small")
         log(f"loading faster-whisper '{size}' (CPU)")
         _whisper = WhisperModel(size, device="cpu", compute_type="int8")
-    segs, _ = _whisper.transcribe(path, language=None if lang == "hi" else lang,
+    # decode with ffmpeg ourselves (avoids PyAV version clashes inside faster-whisper)
+    import subprocess
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", path, "-f", "f32le", "-ac", "1",
+                          "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    audio = np.frombuffer(raw, dtype=np.float32)
+    segs, _ = _whisper.transcribe(audio, language=None if lang == "hi" else lang,
                                    word_timestamps=True, vad_filter=True)
     out = []
     for seg in segs:
