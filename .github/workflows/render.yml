@@ -1,0 +1,47 @@
+name: Render clips
+on:
+  push:
+    paths: ["picks/*.json"]
+  workflow_dispatch:
+concurrency:
+  group: render
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Tools + caption font
+        run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install -q -r requirements.txt
+          mkdir -p fonts
+          curl -sfL -o fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || true
+          file fonts/Anton-Regular.ttf | grep -qi font || rm -f fonts/Anton-Regular.ttf
+      - name: Render picked clips
+        run: python -m clipper.render
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+      - name: Publish as a GitHub Release (download on your phone)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ls out/*.mp4 >/dev/null 2>&1; then
+            tag="clips-$(date -u +%Y%m%d-%H%M%S)"
+            gh release create "$tag" out/*.mp4 out/POST.md --title "Clips $(date -u '+%d %b %H:%M') UTC" --notes-file out/POST.md
+          fi
+      - name: Mark picks as rendered
+        if: always()
+        run: |
+          git config user.name "clipper-bot"
+          git config user.email "clipper-bot@users.noreply.github.com"
+          git add picks state || true
+          git commit -q -m "rendered $(date -u +%F_%H%M)" || exit 0
+          for i in 1 2 3 4; do git pull -q --rebase && git push -q && break; sleep 7; done

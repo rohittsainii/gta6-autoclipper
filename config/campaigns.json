@@ -1,0 +1,60 @@
+{
+  "_help": "One entry per Whop campaign. Set enabled=false to pause one. sources: twitch handle or a YouTube channel/streams URL. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = no facecam split, uses the blurred-background layout).",
+  "settings": {
+    "chunk_hours": 3,
+    "backfill_hours": 3,
+    "min_new_minutes": 25,
+    "moments_per_chunk": 12,
+    "max_vods_per_source": 2
+  },
+  "campaigns": [
+    {
+      "id": "lacy",
+      "name": "LACY GTA VI Marathon Pool Campaign",
+      "enabled": true,
+      "streamer": "Lacy",
+      "language": "en",
+      "sources": [{"platform": "twitch", "handle": "lacy"}],
+      "caption_must_include": "Lacy #LACY",
+      "rules": "Lacy must be the main focus. Caption needs his name and #LACY. Pool split; needs 1,000,000 approved views total to get a share.",
+      "on_video_disclosure": "#ad",
+      "facecam": null
+    },
+    {
+      "id": "clix",
+      "name": "Clix GTA VI Marathon Pool Campaign",
+      "enabled": true,
+      "streamer": "Clix",
+      "language": "en",
+      "sources": [{"platform": "twitch", "handle": "clix"}],
+      "caption_must_include": "Clix #Clix",
+      "rules": "Clix must be the main focus. Caption needs his name and #Clix. No AI-generated videos. Pool split; needs 400,000 approved views total.",
+      "on_video_disclosure": "#ad",
+      "facecam": null
+    },
+    {
+      "id": "tomo",
+      "name": "TOMO GTA VI Clipping",
+      "enabled": false,
+      "streamer": "Tomo",
+      "language": "en",
+      "sources": [],
+      "caption_must_include": "",
+      "rules": "Clip Tomo's GTA 6 livestreams and his YouTube videos. $2.00 per 1,000 views, cap $150 per clip. TODO: add his channel link from the campaign brief, then set enabled=true.",
+      "on_video_disclosure": "#ad",
+      "facecam": null
+    },
+    {
+      "id": "dom",
+      "name": "Ruckus campaign (Dasgasd3m / Dom)",
+      "enabled": false,
+      "streamer": "Dom",
+      "language": "en",
+      "sources": [],
+      "caption_must_include": "",
+      "rules": "Clip Dom's funny GTA 6 moments. TikTok + YouTube Shorts. Needs an account that posts GTA 6 content. TODO: add his channel link from the campaign brief, then set enabled=true.",
+      "on_video_disclosure": "#ad",
+      "facecam": null
+    }
+  ]
+}
