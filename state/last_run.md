@@ -1,18 +1,11 @@
-# Moment finder
+# Renderer
 
-Run at 2026-11-18 21:50 UTC
+Run at 2026-11-18 22:30 UTC
 
 ```
-[21:50:08] lacy: checking {'platform': 'twitch', 'handle': 'lacy'}
-[21:50:13]   2 recent VOD(s), 20 viewer clips (20 with time)
-[21:50:13]   skipping old stream: 🏍️ BIKER DAY 🏍️ JOINING A BIKER GANG 🏍️ LACY x BRAEDEN 🏍️ LE
-[21:50:13] clix: checking {'platform': 'twitch', 'handle': 'clix'}
-[21:50:17]   2 recent VOD(s), 39 viewer clips (39 with time)
-[21:50:17]   skipping old stream: 🏆 LOTS TO TALK ABOUT 🏆 GTA MARATHON SOON 🏆 DREAM MY STREAM W
-[21:50:17] tomo: checking {'platform': 'youtube', 'url': 'https://www.youtube.com/@Tomovids/streams'}
-[21:50:29]   2 recent VOD(s), 0 viewer clips (0 with time)
-[21:50:29]   chunk 0.02h-3.02h of 'PLAYING GTA 6 FOR THE FIRST TIME'
-[21:50:32]   ERROR on chunk: audio download too short (0s) - will retry
-[21:50:32]   skipping old stream: GTA 6 TRAILER REACTION
-[21:50:32] done: 0 new candidate moments
+[22:28:50] lacy_twitch_v2932194507_39833_1: downloading 40862-40905s
+[22:29:33] lacy_twitch_v2932194507_39833_1: done (3.3 MB)
+[22:29:33] lacy_twitch_v2932194507_39833_2: downloading 41502-41547s
+[22:30:22] lacy_twitch_v2932194507_39833_2: done (23.8 MB)
+[22:30:22] rendered 2 clip(s)
 ```
