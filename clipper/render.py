@@ -236,6 +236,8 @@ def main(pick_files):
         cr = creators.get(cand.get("campaign"), {})
         ch = channels.get(cr.get("channel", "en"), {})
         sample = bool(picks.get("sample"))
+        if cr.get("added_by") == "scout":  # campaigns only: never use auto-found creators
+            cr = dict(cr, permission=False)
         if not sample and not cr.get("permission"):
             log(f"{pf.name}: SKIPPED, no clipping permission recorded for {cr.get('name', cand.get('campaign'))}")
             picks["status"] = "rendered"
