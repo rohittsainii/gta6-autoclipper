@@ -1,0 +1,106 @@
+{
+  "status": "new",
+  "campaign": "lacy",
+  "streamer": "Lacy",
+  "language": "en",
+  "vod_url": "https://www.twitch.tv/videos/2932194507",
+  "vod_title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-19 11:33",
+  "chunk": [
+    89520.0,
+    91319.0
+  ],
+  "created": "2026-11-19 11:33 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "start": 89634.0,
+      "end": 89744.0,
+      "peak": 89704.0,
+      "score": 1.16,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m2",
+      "start": 89819.0,
+      "end": 89929.0,
+      "peak": 89889.0,
+      "score": 1.54,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "start": 90290.0,
+      "end": 90400.0,
+      "peak": 90360.0,
+      "score": 1.1,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m4",
+      "start": 90483.0,
+      "end": 90593.0,
+      "peak": 90553.0,
+      "score": 1.53,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m5",
+      "start": 90779.0,
+      "end": 90889.0,
+      "peak": 90849.0,
+      "score": 1.03,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m6",
+      "start": 90948.0,
+      "end": 91058.0,
+      "peak": 91018.0,
+      "score": 1.52,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m7",
+      "start": 91192.0,
+      "end": 91302.0,
+      "peak": 91262.0,
+      "score": 1.4,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    }
+  ]
+}
