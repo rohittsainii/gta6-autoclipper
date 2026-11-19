@@ -1,0 +1,33 @@
+{
+  "candidate_file": "candidates/youtube_XRo2L3077NI_72.json",
+  "clips": [
+    {
+      "moment_id": "m2",
+      "start": 300.4,
+      "end": 334.5,
+      "hook": "FIRST TIME FLYING IN GTA 6",
+      "caption": "#ad Tomo takes his first flight in GTA 6 and the graphics are unreal Tomo #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m3",
+      "start": 1434.2,
+      "end": 1474.4,
+      "hook": "THE GTA 6 ATM WON'T STOP",
+      "caption": "#ad Tomo vs the GTA 6 ATM: it goes too slow, then way too fast Tomo #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m6",
+      "start": 3239.0,
+      "end": 3262.4,
+      "hook": "HE SCRATCHED THE SUPERCAR INSTANTLY",
+      "caption": "#ad Tomo was told to lock in and scratched the supercar seconds later Tomo #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m8",
+      "start": 4335.3,
+      "end": 4372.5,
+      "hook": "THIS COP CHASE WENT HORRIBLY WRONG",
+      "caption": "#ad Tomo's first GTA 6 police chase did not go to plan Tomo #GTA6 #GTAVI"
+    }
+  ]
+}

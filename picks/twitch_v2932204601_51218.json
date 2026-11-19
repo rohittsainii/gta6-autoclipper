@@ -1,0 +1,19 @@
+{
+  "candidate_file": "candidates/twitch_v2932204601_51218.json",
+  "clips": [
+    {
+      "moment_id": "m3",
+      "start": 52052.1,
+      "end": 52092.0,
+      "hook": "LACY HIT HALF COURT, CLIX LOST IT",
+      "caption": "#ad Clix cheering courtside as Lacy drains a half court shot in front of Travis Scott Clix #Clix #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m6",
+      "start": 53334.6,
+      "end": 53360.0,
+      "hook": "CLIX TOLD ESPN HE NEVER LOSES",
+      "caption": "#ad Clix flexing on a reporter: 'I haven't lost a tournament since 2019' Clix #Clix #GTA6 #GTAVI"
+    }
+  ]
+}
