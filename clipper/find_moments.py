@@ -14,7 +14,6 @@ from pathlib import Path
 
 from .common import (CANDIDATES, CONFIG, STATE, WORK, load_json, log, run, save_json,
                      write_runlog, ytdlp_base, ytdlp_json)
-from .scout import permission_quote, run_scout
 from .transcribe import transcribe
 
 WINDOW_BEFORE, WINDOW_AFTER = 70, 40   # seconds around a peak sent to Claude
@@ -56,7 +55,6 @@ def list_vods(src, max_n):
             "duration": float(info.get("duration") or 0),
             "live": bool(info.get("is_live")) or info.get("live_status") == "is_live",
             "heatmap": info.get("heatmap") or [],
-            "quote": permission_quote(info.get("description") or ""),
         })
     return vods
 
@@ -236,7 +234,6 @@ def process_chunk(camp, vod, a, b, clips, settings):
         save_json(CANDIDATES / f"{tag}.json", {
             "status": "new", "campaign": camp["id"], "streamer": camp.get("name", camp.get("streamer", "")), "language": camp["language"],
             "vod_url": vod["url"], "vod_title": vod["title"], "chunk": [a, b],
-            "permission_quote": vod.get("quote"),
             "created": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "moments": moments})
     return len(moments)
 
@@ -245,11 +242,6 @@ def main():
     cfg = load_json(CONFIG, {})
     st = load_json(STATE, {"vods": {}, "clip_cache": {}})
     st.setdefault("vods", {}), st.setdefault("clip_cache", {})
-    try:
-        if run_scout():
-            cfg = load_json(CONFIG, {})  # scout added creators
-    except Exception as e:
-        log(f"scout failed: {str(e)[:200]}")
     settings = cfg["settings"]
     chunk = settings["chunk_hours"] * 3600
     total = 0
@@ -267,11 +259,6 @@ def main():
                 log(f"  ERROR listing: {str(e)[:300]}")
                 continue
             for vod in vods:
-                if camp.get("permission_mode") == "per_video" and not vod.get("quote"):
-                    log(f"  no clip permission in this video's description, skipping: {vod['title'][:60]}")
-                    continue
-                if src["platform"] == "youtube" and 0 < vod["duration"] < 240 and not vod["live"]:
-                    continue  # Shorts / very short uploads: nothing to clip
                 ended = (vod["start_ts"] or 0) + vod["duration"]
                 if not vod["live"] and vod["start_ts"] and time.time() - ended > settings.get("max_age_hours", 24) * 3600:
                     log(f"  skipping old stream: {vod['title'][:60]}")
