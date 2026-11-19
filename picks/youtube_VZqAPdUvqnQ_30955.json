@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/youtube_VZqAPdUvqnQ_30955.json",
+  "clips": [
+    {
+      "moment_id": "m3",
+      "start": 32875.6,
+      "end": 32901.4,
+      "hook": "Kai's fishing trip started with theft",
+      "title": "Kai Cenat's GTA 6 fishing trip started with him stealing everything",
+      "caption": "Kai didn't bring his own gear, so he took someone else's 🎣",
+      "sfx": [
+        {
+          "t": 32875.8,
+          "type": "ding"
+        },
+        {
+          "t": 32899.8,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}

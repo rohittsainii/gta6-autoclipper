@@ -1,0 +1,25 @@
+{
+  "candidate_file": "candidates/kick_aacf8cb5-681b-4f63-91a8-37f52197a4a4_39766.json",
+  "clips": [
+    {
+      "moment_id": "m2",
+      "start": 40164.4,
+      "end": 40189.5,
+      "hook": "He asked for a push. Bad idea.",
+      "title": "Dom stopped to help a stranded van in GTA 6… big mistake",
+      "caption": "Never push a stranger's van in GTA 6 🐯",
+      "voice_intro": "Some strangers wave Dom down for a quick push. Their van has a passenger.",
+      "voice_outro": "Lesson learned: in GTA 6, check what's breathing in the back before you help anyone. Being a good Samaritan got him mauled.",
+      "sfx": [
+        {
+          "t": 40179.6,
+          "type": "scratch"
+        },
+        {
+          "t": 40182.0,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
