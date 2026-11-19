@@ -1,7 +1,7 @@
 {
   "vods": {
     "twitch_v2932194507": {
-      "done_until": 94920.0,
+      "done_until": 100557.0,
       "title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-18 20:27",
       "campaign": "lacy"
     },
@@ -29,6 +29,11 @@
       "done_until": 24398.0,
       "title": "Playing GTA 6 For The FIRST TIME!",
       "campaign": "tomo"
+    },
+    "twitch_v2933739024": {
+      "done_until": 0.0,
+      "title": "🚨 GTA MARATHON DAY 2 🚨 24/7 MARATHON WITH CORE 🚨 PS5 GIVEAWAYS 2026-11-19 15:14",
+      "campaign": "clix"
     }
   },
   "clip_cache": {
@@ -595,6 +600,12 @@
       "views": 105,
       "title": "clix in miami",
       "url": "https://www.twitch.tv/clix/clip/AliveDreamyPoxHassanChop-vRERJtUOGl1QiWUP"
+    },
+    "2579196413": {
+      "ts": 1795012651,
+      "views": 124,
+      "title": "second",
+      "url": "https://www.twitch.tv/clix/clip/SmallBlightedMacaroniCharlieBitMe-F3O-LHh_DUaSBYE-"
     }
   }
 }
