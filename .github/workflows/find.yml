@@ -40,8 +40,11 @@ jobs:
             python -m clipper.find_moments || echo "::warning::finder crashed this round"
             ./scripts/save.sh "moments" state candidates
             wait=$(( 1800 - ($(date +%s) - t0) ))
-            if [ "$wait" -gt 0 ] && [ $(( $(date +%s) + wait )) -lt "$end" ]; then sleep "$wait"; else [ "$wait" -gt 0 ] && break; fi
+            if [ "$wait" -gt 0 ] && [ $(( $(date +%s) + wait )) -lt "$end" ]; then sleep "$wait"
+            elif [ "$wait" -gt 0 ]; then break
+            fi
           done
+          echo "loop finished normally"
       - name: Start the next run (keeps the chain going)
         if: always()
         env:

@@ -84,7 +84,7 @@ def download_audio(vod_url, a, b, dest):
         f.unlink()
     cmd = ytdlp_base() + ["-f", "ba/Audio_Only/audio_only/worst", "--download-sections", f"*{a:.0f}-{b:.0f}",
                           "-o", f"{dest}.%(ext)s", "--print", "after_move:filepath", vod_url]
-    out = run(cmd, timeout=3 * 3600).strip().splitlines()
+    out = run(cmd, timeout=25 * 60).strip().splitlines()  # a stuck download is retried next round
     return out[-1] if out else str(next(Path(dest).parent.glob(Path(dest).name + ".*")))
 
 
@@ -160,7 +160,9 @@ def pick_peaks(score, k, threshold=0.8):
 def process_chunk(camp, vod, a, b, clips, settings):
     tag = f"{vod['id']}_{int(a)}"
     log(f"  chunk {a/3600:.2f}h-{b/3600:.2f}h of '{vod['title'][:60]}'")
+    t0 = time.time()
     audio = download_audio(vod["url"], a, b, str(WORK / f"chunk_{tag}"))
+    log(f"  audio downloaded in {time.time() - t0:.0f}s")
     levels = loudness_per_second(audio)
     n = len(levels)
     if n < 60:  # failed/partial download: don't mark this part as done, retry next run
@@ -234,7 +236,10 @@ def main():
                     left = vod["duration"] - a
                     if left <= 30 or (vod["live"] and left < settings["min_new_minutes"] * 60):
                         break
-                    b = min(vod["duration"], a + chunk)
+                    end_ok = vod["duration"] - (600 if vod["live"] else 0)  # stay 10 min behind the live edge
+                    if end_ok - a < 120:
+                        break
+                    b = min(end_ok, a + chunk)
                     try:
                         total += process_chunk(camp, vod, a, b, clips, settings)
                     except Exception as e:
