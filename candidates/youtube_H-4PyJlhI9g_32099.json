@@ -1,0 +1,1119 @@
+{
+  "status": "new",
+  "campaign": "kaicenat",
+  "streamer": "Kai Cenat",
+  "language": "en",
+  "vod_url": "https://www.youtube.com/watch?v=H-4PyJlhI9g",
+  "vod_title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 2)",
+  "chunk": [
+    32099.0,
+    42899.0
+  ],
+  "created": "2026-11-19 20:38 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m1/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m1/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m1/2.jpg"
+      ],
+      "start": 32224.0,
+      "end": 32334.0,
+      "peak": 32294.0,
+      "score": 10.68,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "Adagem42 tipped two Australian dollars and ninety-nine cents through Super Chat. Wakey wakey sleepy head",
+      "words": [
+        {
+          "w": "Adagem42",
+          "s": 32290.76,
+          "e": 32291.56
+        },
+        {
+          "w": "tipped",
+          "s": 32291.62,
+          "e": 32292.1
+        },
+        {
+          "w": "two",
+          "s": 32292.16,
+          "e": 32292.32
+        },
+        {
+          "w": "Australian",
+          "s": 32292.38,
+          "e": 32292.9
+        },
+        {
+          "w": "dollars",
+          "s": 32292.94,
+          "e": 32293.32
+        },
+        {
+          "w": "and",
+          "s": 32293.42,
+          "e": 32293.54
+        },
+        {
+          "w": "ninety-nine",
+          "s": 32293.58,
+          "e": 32294.26
+        },
+        {
+          "w": "cents",
+          "s": 32294.32,
+          "e": 32294.62
+        },
+        {
+          "w": "through",
+          "s": 32294.68,
+          "e": 32294.88
+        },
+        {
+          "w": "Super",
+          "s": 32294.92,
+          "e": 32295.2
+        },
+        {
+          "w": "Chat.",
+          "s": 32295.28,
+          "e": 32295.54
+        },
+        {
+          "w": "Wakey",
+          "s": 32296.04,
+          "e": 32296.38
+        },
+        {
+          "w": "wakey",
+          "s": 32296.42,
+          "e": 32296.78
+        },
+        {
+          "w": "sleepy",
+          "s": 32296.88,
+          "e": 32297.24
+        },
+        {
+          "w": "head",
+          "s": 32297.28,
+          "e": 32297.58
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m2/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m2/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m2/2.jpg"
+      ],
+      "start": 32627.0,
+      "end": 32737.0,
+      "peak": 32697.0,
+      "score": 1.74,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m3/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m3/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m3/2.jpg"
+      ],
+      "start": 33966.0,
+      "end": 34076.0,
+      "peak": 34036.0,
+      "score": 10.68,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "That transition of a world tipped five dollars through Super Chat. Saw an old man get jumped by two guys, so I jumped in. He didn't stand a chance against the three of us",
+      "words": [
+        {
+          "w": "That",
+          "s": 34032.26,
+          "e": 34032.4
+        },
+        {
+          "w": "transition",
+          "s": 34032.44,
+          "e": 34033.08
+        },
+        {
+          "w": "of",
+          "s": 34033.14,
+          "e": 34033.24
+        },
+        {
+          "w": "a",
+          "s": 34033.32,
+          "e": 34033.36
+        },
+        {
+          "w": "world",
+          "s": 34033.4,
+          "e": 34033.68
+        },
+        {
+          "w": "tipped",
+          "s": 34033.74,
+          "e": 34034.0
+        },
+        {
+          "w": "five",
+          "s": 34034.08,
+          "e": 34034.34
+        },
+        {
+          "w": "dollars",
+          "s": 34034.44,
+          "e": 34034.84
+        },
+        {
+          "w": "through",
+          "s": 34034.88,
+          "e": 34035.06
+        },
+        {
+          "w": "Super",
+          "s": 34035.16,
+          "e": 34035.44
+        },
+        {
+          "w": "Chat.",
+          "s": 34035.5,
+          "e": 34035.8
+        },
+        {
+          "w": "Saw",
+          "s": 34036.32,
+          "e": 34036.5
+        },
+        {
+          "w": "an",
+          "s": 34036.54,
+          "e": 34036.66
+        },
+        {
+          "w": "old",
+          "s": 34036.74,
+          "e": 34036.94
+        },
+        {
+          "w": "man",
+          "s": 34036.98,
+          "e": 34037.2
+        },
+        {
+          "w": "get",
+          "s": 34037.24,
+          "e": 34037.42
+        },
+        {
+          "w": "jumped",
+          "s": 34037.48,
+          "e": 34037.72
+        },
+        {
+          "w": "by",
+          "s": 34037.78,
+          "e": 34037.92
+        },
+        {
+          "w": "two",
+          "s": 34038.0,
+          "e": 34038.12
+        },
+        {
+          "w": "guys,",
+          "s": 34038.22,
+          "e": 34038.48
+        },
+        {
+          "w": "so",
+          "s": 34038.56,
+          "e": 34038.7
+        },
+        {
+          "w": "I",
+          "s": 34038.76,
+          "e": 34038.82
+        },
+        {
+          "w": "jumped",
+          "s": 34038.88,
+          "e": 34039.14
+        },
+        {
+          "w": "in.",
+          "s": 34039.28,
+          "e": 34039.5
+        },
+        {
+          "w": "He",
+          "s": 34039.98,
+          "e": 34040.12
+        },
+        {
+          "w": "didn't",
+          "s": 34040.16,
+          "e": 34040.5
+        },
+        {
+          "w": "stand",
+          "s": 34040.58,
+          "e": 34040.82
+        },
+        {
+          "w": "a",
+          "s": 34040.86,
+          "e": 34040.9
+        },
+        {
+          "w": "chance",
+          "s": 34040.96,
+          "e": 34041.3
+        },
+        {
+          "w": "against",
+          "s": 34041.36,
+          "e": 34041.74
+        },
+        {
+          "w": "the",
+          "s": 34041.78,
+          "e": 34041.86
+        },
+        {
+          "w": "three",
+          "s": 34041.9,
+          "e": 34042.08
+        },
+        {
+          "w": "of",
+          "s": 34042.14,
+          "e": 34042.24
+        },
+        {
+          "w": "us",
+          "s": 34042.32,
+          "e": 34042.54
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m4/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m4/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m4/2.jpg"
+      ],
+      "start": 35148.0,
+      "end": 35258.0,
+      "peak": 35218.0,
+      "score": 1.54,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m5",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m5/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m5/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m5/2.jpg"
+      ],
+      "start": 38087.0,
+      "end": 38197.0,
+      "peak": 38157.0,
+      "score": 1.63,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m6",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m6/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m6/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m6/2.jpg"
+      ],
+      "start": 38830.0,
+      "end": 38940.0,
+      "peak": 38900.0,
+      "score": 3.11,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m7",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m7/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m7/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m7/2.jpg"
+      ],
+      "start": 40490.0,
+      "end": 40600.0,
+      "peak": 40560.0,
+      "score": 9.81,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@user-bt7bz7vd3r tipped one dollar through Super Chat. @fa_x5m tipped ninety-nine euro cents through Super Chat.",
+      "words": [
+        {
+          "w": "@user-bt7bz7vd3r",
+          "s": 40558.58,
+          "e": 40560.94
+        },
+        {
+          "w": "tipped",
+          "s": 40561.58,
+          "e": 40561.88
+        },
+        {
+          "w": "one",
+          "s": 40561.96,
+          "e": 40562.12
+        },
+        {
+          "w": "dollar",
+          "s": 40562.16,
+          "e": 40562.46
+        },
+        {
+          "w": "through",
+          "s": 40562.52,
+          "e": 40562.74
+        },
+        {
+          "w": "Super",
+          "s": 40562.8,
+          "e": 40563.08
+        },
+        {
+          "w": "Chat.",
+          "s": 40563.14,
+          "e": 40563.46
+        },
+        {
+          "w": "@fa_x5m",
+          "s": 40576.82,
+          "e": 40577.36
+        },
+        {
+          "w": "tipped",
+          "s": 40577.42,
+          "e": 40577.86
+        },
+        {
+          "w": "ninety-nine",
+          "s": 40578.0,
+          "e": 40578.3
+        },
+        {
+          "w": "euro",
+          "s": 40578.34,
+          "e": 40578.62
+        },
+        {
+          "w": "cents",
+          "s": 40578.72,
+          "e": 40579.0
+        },
+        {
+          "w": "through",
+          "s": 40579.06,
+          "e": 40579.26
+        },
+        {
+          "w": "Super",
+          "s": 40579.32,
+          "e": 40579.6
+        },
+        {
+          "w": "Chat.",
+          "s": 40579.68,
+          "e": 40579.98
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m8/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m8/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m8/2.jpg"
+      ],
+      "start": 40720.0,
+      "end": 40830.0,
+      "peak": 40790.0,
+      "score": 9.56,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@yourtruecrime tipped $4.99 through Super Chat. Yo!",
+      "words": [
+        {
+          "w": "@yourtruecrime",
+          "s": 40787.88,
+          "e": 40788.78
+        },
+        {
+          "w": "tipped",
+          "s": 40788.84,
+          "e": 40789.34
+        },
+        {
+          "w": "$4.99",
+          "s": 40789.38,
+          "e": 40790.68
+        },
+        {
+          "w": "through",
+          "s": 40791.12,
+          "e": 40791.3
+        },
+        {
+          "w": "Super",
+          "s": 40791.36,
+          "e": 40791.68
+        },
+        {
+          "w": "Chat.",
+          "s": 40791.72,
+          "e": 40792.04
+        },
+        {
+          "w": "Yo!",
+          "s": 40792.52,
+          "e": 40792.76
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m9/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m9/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m9/2.jpg"
+      ],
+      "start": 41072.0,
+      "end": 41182.0,
+      "peak": 41142.0,
+      "score": 10.21,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@TrueCrimeTipped $4.99 through Super Chat. Wake the fuck up K, please we need more gameplay, the people are begging now. Wake up, wake up, wake up, wake up, wake up, wake up, wake up, wake up, wake up",
+      "words": [
+        {
+          "w": "@TrueCrimeTipped",
+          "s": 41134.3,
+          "e": 41135.12
+        },
+        {
+          "w": "$4.99",
+          "s": 41135.18,
+          "e": 41136.76
+        },
+        {
+          "w": "through",
+          "s": 41137.2,
+          "e": 41137.34
+        },
+        {
+          "w": "Super",
+          "s": 41137.44,
+          "e": 41137.72
+        },
+        {
+          "w": "Chat.",
+          "s": 41137.8,
+          "e": 41138.1
+        },
+        {
+          "w": "Wake",
+          "s": 41138.54,
+          "e": 41138.76
+        },
+        {
+          "w": "the",
+          "s": 41138.8,
+          "e": 41138.9
+        },
+        {
+          "w": "fuck",
+          "s": 41138.96,
+          "e": 41139.18
+        },
+        {
+          "w": "up",
+          "s": 41139.24,
+          "e": 41139.36
+        },
+        {
+          "w": "K,",
+          "s": 41139.44,
+          "e": 41139.46
+        },
+        {
+          "w": "please",
+          "s": 41140.04,
+          "e": 41140.32
+        },
+        {
+          "w": "we",
+          "s": 41140.36,
+          "e": 41140.48
+        },
+        {
+          "w": "need",
+          "s": 41140.52,
+          "e": 41140.7
+        },
+        {
+          "w": "more",
+          "s": 41140.76,
+          "e": 41140.96
+        },
+        {
+          "w": "gameplay,",
+          "s": 41141.02,
+          "e": 41141.64
+        },
+        {
+          "w": "the",
+          "s": 41141.94,
+          "e": 41142.02
+        },
+        {
+          "w": "people",
+          "s": 41142.1,
+          "e": 41142.4
+        },
+        {
+          "w": "are",
+          "s": 41142.44,
+          "e": 41142.56
+        },
+        {
+          "w": "begging",
+          "s": 41142.6,
+          "e": 41142.96
+        },
+        {
+          "w": "now.",
+          "s": 41142.98,
+          "e": 41143.32
+        },
+        {
+          "w": "Wake",
+          "s": 41143.7,
+          "e": 41143.9
+        },
+        {
+          "w": "up,",
+          "s": 41143.98,
+          "e": 41144.1
+        },
+        {
+          "w": "wake",
+          "s": 41144.18,
+          "e": 41144.38
+        },
+        {
+          "w": "up,",
+          "s": 41144.48,
+          "e": 41144.58
+        },
+        {
+          "w": "wake",
+          "s": 41144.72,
+          "e": 41144.94
+        },
+        {
+          "w": "up,",
+          "s": 41145.02,
+          "e": 41145.14
+        },
+        {
+          "w": "wake",
+          "s": 41145.28,
+          "e": 41145.5
+        },
+        {
+          "w": "up,",
+          "s": 41145.56,
+          "e": 41145.72
+        },
+        {
+          "w": "wake",
+          "s": 41145.82,
+          "e": 41146.02
+        },
+        {
+          "w": "up,",
+          "s": 41146.1,
+          "e": 41146.16
+        },
+        {
+          "w": "wake",
+          "s": 41146.16,
+          "e": 41146.16
+        },
+        {
+          "w": "up,",
+          "s": 41146.16,
+          "e": 41146.24
+        },
+        {
+          "w": "wake",
+          "s": 41146.34,
+          "e": 41146.54
+        },
+        {
+          "w": "up,",
+          "s": 41146.62,
+          "e": 41146.78
+        },
+        {
+          "w": "wake",
+          "s": 41146.88,
+          "e": 41147.16
+        },
+        {
+          "w": "up,",
+          "s": 41147.82,
+          "e": 41147.96
+        },
+        {
+          "w": "wake",
+          "s": 41148.04,
+          "e": 41181.9
+        },
+        {
+          "w": "up",
+          "s": 41181.94,
+          "e": 41181.94
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m10/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m10/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m10/2.jpg"
+      ],
+      "start": 41548.0,
+      "end": 41658.0,
+      "peak": 41618.0,
+      "score": 10.29,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@runningwithben9436 tipped $1.99 through Super Chat: You are now breathing and blinking manually",
+      "words": [
+        {
+          "w": "@runningwithben9436",
+          "s": 41613.08,
+          "e": 41615.38
+        },
+        {
+          "w": "tipped",
+          "s": 41615.48,
+          "e": 41615.7
+        },
+        {
+          "w": "$1.99",
+          "s": 41615.72,
+          "e": 41617.28
+        },
+        {
+          "w": "through",
+          "s": 41617.68,
+          "e": 41617.9
+        },
+        {
+          "w": "Super",
+          "s": 41617.94,
+          "e": 41618.22
+        },
+        {
+          "w": "Chat:",
+          "s": 41618.28,
+          "e": 41618.58
+        },
+        {
+          "w": "You",
+          "s": 41619.08,
+          "e": 41619.18
+        },
+        {
+          "w": "are",
+          "s": 41619.22,
+          "e": 41619.3
+        },
+        {
+          "w": "now",
+          "s": 41619.36,
+          "e": 41619.54
+        },
+        {
+          "w": "breathing",
+          "s": 41619.62,
+          "e": 41619.98
+        },
+        {
+          "w": "and",
+          "s": 41620.1,
+          "e": 41620.22
+        },
+        {
+          "w": "blinking",
+          "s": 41620.28,
+          "e": 41620.68
+        },
+        {
+          "w": "manually",
+          "s": 41620.72,
+          "e": 41621.3
+        }
+      ]
+    },
+    {
+      "id": "m11",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m11/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m11/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m11/2.jpg"
+      ],
+      "start": 41779.0,
+      "end": 41889.0,
+      "peak": 41849.0,
+      "score": 10.77,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@Maniac tipped ten remaining live through Super Chat. Wake up, wake up, wake up, wake up, wake up, wake up. @RunningRevan9436 tipped $1.99 through Super Chat. Nightmare, nightmare, nightmare, nightmare, nightmare. @CrazyEthan tipped $9.99 through Super Chat. Wake up, bro.",
+      "words": [
+        {
+          "w": "@Maniac",
+          "s": 41802.2,
+          "e": 41802.84
+        },
+        {
+          "w": "tipped",
+          "s": 41803.08,
+          "e": 41803.32
+        },
+        {
+          "w": "ten",
+          "s": 41803.38,
+          "e": 41803.56
+        },
+        {
+          "w": "remaining",
+          "s": 41803.62,
+          "e": 41804.06
+        },
+        {
+          "w": "live",
+          "s": 41804.1,
+          "e": 41804.28
+        },
+        {
+          "w": "through",
+          "s": 41804.34,
+          "e": 41804.54
+        },
+        {
+          "w": "Super",
+          "s": 41804.6,
+          "e": 41804.88
+        },
+        {
+          "w": "Chat.",
+          "s": 41804.96,
+          "e": 41805.26
+        },
+        {
+          "w": "Wake",
+          "s": 41805.68,
+          "e": 41805.92
+        },
+        {
+          "w": "up,",
+          "s": 41805.98,
+          "e": 41806.12
+        },
+        {
+          "w": "wake",
+          "s": 41806.18,
+          "e": 41806.4
+        },
+        {
+          "w": "up,",
+          "s": 41806.48,
+          "e": 41806.6
+        },
+        {
+          "w": "wake",
+          "s": 41806.68,
+          "e": 41806.96
+        },
+        {
+          "w": "up,",
+          "s": 41807.04,
+          "e": 41807.18
+        },
+        {
+          "w": "wake",
+          "s": 41807.26,
+          "e": 41807.48
+        },
+        {
+          "w": "up,",
+          "s": 41807.56,
+          "e": 41807.7
+        },
+        {
+          "w": "wake",
+          "s": 41807.8,
+          "e": 41807.86
+        },
+        {
+          "w": "up,",
+          "s": 41807.86,
+          "e": 41807.86
+        },
+        {
+          "w": "wake",
+          "s": 41807.86,
+          "e": 41808.1
+        },
+        {
+          "w": "up.",
+          "s": 41808.16,
+          "e": 41808.3
+        },
+        {
+          "w": "@RunningRevan9436",
+          "s": 41808.34,
+          "e": 41846.76
+        },
+        {
+          "w": "tipped",
+          "s": 41846.84,
+          "e": 41847.06
+        },
+        {
+          "w": "$1.99",
+          "s": 41847.78,
+          "e": 41848.62
+        },
+        {
+          "w": "through",
+          "s": 41849.04,
+          "e": 41849.24
+        },
+        {
+          "w": "Super",
+          "s": 41849.3,
+          "e": 41849.58
+        },
+        {
+          "w": "Chat.",
+          "s": 41849.66,
+          "e": 41849.96
+        },
+        {
+          "w": "Nightmare,",
+          "s": 41850.42,
+          "e": 41850.82
+        },
+        {
+          "w": "nightmare,",
+          "s": 41850.9,
+          "e": 41851.28
+        },
+        {
+          "w": "nightmare,",
+          "s": 41851.36,
+          "e": 41851.72
+        },
+        {
+          "w": "nightmare,",
+          "s": 41851.8,
+          "e": 41852.18
+        },
+        {
+          "w": "nightmare.",
+          "s": 41852.24,
+          "e": 41852.7
+        },
+        {
+          "w": "@CrazyEthan",
+          "s": 41881.54,
+          "e": 41882.32
+        },
+        {
+          "w": "tipped",
+          "s": 41882.5,
+          "e": 41882.72
+        },
+        {
+          "w": "$9.99",
+          "s": 41882.82,
+          "e": 41884.48
+        },
+        {
+          "w": "through",
+          "s": 41884.9,
+          "e": 41885.08
+        },
+        {
+          "w": "Super",
+          "s": 41885.16,
+          "e": 41885.44
+        },
+        {
+          "w": "Chat.",
+          "s": 41885.52,
+          "e": 41885.82
+        },
+        {
+          "w": "Wake",
+          "s": 41886.26,
+          "e": 41886.46
+        },
+        {
+          "w": "up,",
+          "s": 41886.56,
+          "e": 41886.68
+        },
+        {
+          "w": "bro.",
+          "s": 41886.72,
+          "e": 41886.98
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "frames": [
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m12/0.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m12/1.jpg",
+        "candidates/frames/youtube_H-4PyJlhI9g_32099/m12/2.jpg"
+      ],
+      "start": 41929.0,
+      "end": 42039.0,
+      "peak": 41999.0,
+      "score": 5.89,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "@renew5332 tipped £1.99 through Super Chat. Casting a spell on you to wake up",
+      "words": [
+        {
+          "w": "@renew5332",
+          "s": 41991.5,
+          "e": 41993.16
+        },
+        {
+          "w": "tipped",
+          "s": 41993.5,
+          "e": 41994.42
+        },
+        {
+          "w": "£1.99",
+          "s": 41994.44,
+          "e": 41995.34
+        },
+        {
+          "w": "through",
+          "s": 41995.46,
+          "e": 41996.02
+        },
+        {
+          "w": "Super",
+          "s": 41996.06,
+          "e": 41996.32
+        },
+        {
+          "w": "Chat.",
+          "s": 41996.4,
+          "e": 41996.62
+        },
+        {
+          "w": "Casting",
+          "s": 41997.16,
+          "e": 41997.56
+        },
+        {
+          "w": "a",
+          "s": 41997.6,
+          "e": 41997.68
+        },
+        {
+          "w": "spell",
+          "s": 41997.76,
+          "e": 41998.02
+        },
+        {
+          "w": "on",
+          "s": 41998.12,
+          "e": 41998.22
+        },
+        {
+          "w": "you",
+          "s": 41998.26,
+          "e": 41998.42
+        },
+        {
+          "w": "to",
+          "s": 41998.46,
+          "e": 41998.54
+        },
+        {
+          "w": "wake",
+          "s": 41998.62,
+          "e": 41998.86
+        },
+        {
+          "w": "up",
+          "s": 42037.02,
+          "e": 42037.12
+        }
+      ]
+    }
+  ]
+}
