@@ -67,12 +67,12 @@
       ],
       "overlay": null,
       "end_text": "",
-      "hold": true,
+      "hold": false,
       "id": "kaicenat",
       "name": "Kai Cenat",
       "campaign": "Kai Cenat $10,000 GTA 6 Pool (Clipped & Shipped)",
       "permission_proof": "Joined Kai Cenat GTA 6 pool campaign (Nov 2026)",
-      "rules": "Clip Kai Cenat's GTA 6 streams. Pool split by views; each clip needs 1K views to count; 750K total views to share the pool. Full rules (reference files) not seen yet: hold until Rohit sends them.",
+      "rules": "Only footage from Kai Cenat's GTA 6 marathon on Twitch and YouTube. Kai Cenat playing GTA 6 must be the main focus. Captions must use #KaiCenat. $10K pool split by views; each clip needs 1K views to count; 750K total views to share the pool; paid when the pool ends. (Voice kept off to be safe.)",
       "sources": [
         {
           "platform": "twitch",
@@ -128,12 +128,12 @@
       ],
       "overlay": {
         "file": "assets/overlays/kreekcraft.png",
-        "w": 300,
+        "w": 400,
         "x": "W-w-36",
         "y": "36"
       },
       "end_text": "",
-      "hold": true,
+      "hold": false,
       "id": "kreekcraft",
       "name": "KreekCraft",
       "campaign": "KreekCraft GTA 6 Clipping (ClipLaunch)",
@@ -166,12 +166,12 @@
       ],
       "overlay": {
         "file": "assets/overlays/brett_banner.png",
-        "w": 1000,
+        "w": 760,
         "x": "(W-w)/2",
         "y": "H-h-130"
       },
       "end_text": "",
-      "hold": true,
+      "hold": false,
       "id": "brettliftsxp",
       "name": "BrettLiftsXP",
       "campaign": "BrettLiftsXP GTA VI Clipping (Clips by Jai)",
@@ -204,12 +204,12 @@
       ],
       "overlay": null,
       "end_text": "",
-      "hold": true,
+      "hold": false,
       "id": "dylanpage",
       "name": "Dylan Page",
       "campaign": "$5,000 Dylan Page GTA VI Marathon",
       "permission_proof": "Joined Dylan Page GTA VI marathon campaign (Nov 2026)",
-      "rules": "Rules not seen yet: hold until Rohit sends them.",
+      "rules": "Only TikTok, Instagram Reels, X and YouTube Shorts. Footage from Dylan Page's GTA 6 marathon (from 19 Nov 2026): streams, VODs, marathon clips. 9:16. Dylan must be the main focus THROUGHOUT the clip (not just the intro). Include #DylanPage. Gaming/streamer account. No misleading edits, false claims or out-of-context clips that hurt Dylan's reputation. No added watermarks or third-party branding. Titles/captions must match the clip; all captions and subtitles in English. Own edits only, no collab posts, no fake engagement. NO AI-generated footage, voices or fabricated reactions (permanent ban); automatic subtitles are allowed. $5,000 budget.",
       "sources": [
         {
           "platform": "youtube",
@@ -217,8 +217,8 @@
         }
       ],
       "credit": "Dylan Page",
-      "credit_line": "🎥 Dylan Page",
-      "caption_suffix": "Dylan Page #GTA6"
+      "credit_line": "🎥 Dylan Page's GTA 6 marathon",
+      "caption_suffix": "Dylan Page #DylanPage #GTA6"
     }
   ],
   "skipped_campaigns": {

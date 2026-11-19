@@ -314,6 +314,8 @@ def main(pick_files):
                 for q in c.get("sfx", []):
                     t = float(q.get("t", 0)) - s
                     kind = q.get("type", "boom")
+                    if kind == "gasp" and not use_voice:
+                        continue  # a generated human gasp could count as a "fabricated reaction" in no-AI campaigns
                     if 0 <= t <= clip_dur:
                         cues.append((t, kind, 0.8 if kind == "boom" else 0.6))
                         if kind == "boom":
