@@ -1,0 +1,16 @@
+{
+  "candidate_file": "candidates/twitch_v2932204601_24918.json",
+  "sample": true,
+  "clips": [
+    {
+      "moment_id": "m12",
+      "start": 33972.8,
+      "end": 34010.0,
+      "hook": "Wrong car, wrong time",
+      "title": "Clix tried to steal a car in GTA 6 and instantly regretted it",
+      "caption": "\"I am so getting banned\" 🚔",
+      "voice_intro": "Clix walks up to a parked car like he owns the street.",
+      "voice_outro": "The panicked apologies to an NPC are what get me. He knew he was cooked the second those sirens started."
+    }
+  ]
+}

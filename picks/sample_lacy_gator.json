@@ -1,0 +1,16 @@
+{
+  "candidate_file": "candidates/twitch_v2932194507_26163.json",
+  "sample": true,
+  "clips": [
+    {
+      "moment_id": "m8",
+      "start": 30810.5,
+      "end": 30855.0,
+      "hook": "Tried to pet a gator in GTA 6",
+      "title": "Lacy tried to make friends with a gator in GTA 6…",
+      "caption": "Rule one of Leonida: do not pet the gator 🐊",
+      "voice_intro": "Lacy spots a gator in the swamp and decides it looks friendly.",
+      "voice_outro": "Easily the most Florida thing to happen in a video game. Trying to befriend the gator was a bold choice."
+    }
+  ]
+}

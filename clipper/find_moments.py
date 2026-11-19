@@ -193,7 +193,7 @@ def process_chunk(camp, vod, a, b, clips, settings):
     Path(audio).unlink(missing_ok=True)
     if moments:
         save_json(CANDIDATES / f"{tag}.json", {
-            "status": "new", "campaign": camp["id"], "streamer": camp["streamer"], "language": camp["language"],
+            "status": "new", "campaign": camp["id"], "streamer": camp.get("name", camp.get("streamer", "")), "language": camp["language"],
             "vod_url": vod["url"], "vod_title": vod["title"], "chunk": [a, b],
             "created": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "moments": moments})
     return len(moments)
@@ -207,7 +207,7 @@ def main():
     chunk = settings["chunk_hours"] * 3600
     total = 0
     deadline = time.time() + float(os.environ.get("MAX_RUN_MINUTES", "240")) * 60
-    for camp in cfg["campaigns"]:
+    for camp in cfg.get("creators", cfg.get("campaigns", [])):
         if not camp.get("enabled"):
             continue
         for src in camp.get("sources", []):

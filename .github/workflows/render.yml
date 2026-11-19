@@ -37,14 +37,27 @@ jobs:
           python -m clipper.render $files
         env:
           YT_COOKIES: ${{ secrets.YT_COOKIES }}
-      - name: Publish as a GitHub Release (download on your phone)
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      - name: Publish each clip as its own GitHub Release (Zapier posts new releases)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if ls out/*.mp4 >/dev/null 2>&1; then
-            tag="clips-$(date -u +%Y%m%d-%H%M%S)"
-            gh release create "$tag" out/*.mp4 out/POST.md --title "Clips $(date -u '+%d %b %H:%M') UTC" --notes-file out/POST.md
-          fi
+          shopt -s nullglob
+          for d in out/*/; do
+            d=${d%/}
+            [ -f "$d/clip.mp4" ] || continue
+            title=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["title"])' "$d/meta.json")
+            python3 -c 'import json,sys; m=json.load(open(sys.argv[1])); print(m["description"])' "$d/meta.json" > "$d/notes.md"
+            sample=$(python3 -c 'import json,sys; print("yes" if json.load(open(sys.argv[1])).get("sample") else "no")' "$d/meta.json")
+            tag="clip-$(date -u +%Y%m%d-%H%M%S)-$(basename "$d" | tr '_' '-' | cut -c1-40)"
+            if [ "$sample" = "yes" ]; then
+              gh release create "$tag" "$d/clip.mp4" --title "[SAMPLE] $title" --notes-file "$d/notes.md" --prerelease
+            else
+              gh release create "$tag" "$d/clip.mp4" --title "$title" --notes-file "$d/notes.md"
+            fi
+            echo "released $tag"
+            sleep 3
+          done
       - name: Mark picks as rendered
         if: always()
         run: ./scripts/save.sh "rendered" picks state

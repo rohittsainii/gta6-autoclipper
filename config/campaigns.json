@@ -1,5 +1,5 @@
 {
-  "_help": "One entry per Whop campaign. Set enabled=false to pause one. sources: twitch handle or a YouTube channel/streams URL. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = no facecam split, uses the blurred-background layout). YouTube needs the YT_COOKIES secret.",
+  "_help": "creators: who the clipper watches. permission=true only after Rohit has joined that creator's clipping program (proof in permission_proof); the picker skips creators without permission. channel: en = GTA 6 Clips (English), hi = Indian channel. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = blurred-background layout). YouTube sources need the YT_COOKIES secret.",
   "settings": {
     "chunk_hours": 3,
     "backfill_hours": 3,
@@ -9,68 +9,68 @@
     "max_age_hours": 24,
     "max_behind_hours": 6
   },
-  "campaigns": [
+  "channels": {
+    "en": {
+      "name": "GTA 6 Clips",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+      "voice_name": "Liam (ElevenLabs)",
+      "voice_speed": 1.08,
+      "hashtags": "#GTA6 #GTAVI #GTA #gaming #shorts"
+    },
+    "hi": {
+      "name": "Indian clips channel (not created yet)",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+      "voice_speed": 1.05,
+      "hashtags": "#GTA6 #GTAVI #gaming #shorts #hindi"
+    }
+  },
+  "creators": [
     {
       "id": "lacy",
-      "name": "LACY GTA VI Marathon Pool Campaign",
+      "name": "Lacy",
       "enabled": true,
-      "streamer": "Lacy",
+      "permission": false,
+      "permission_proof": "Needs: join Lacy's clipping Discord (linked from his Twitch chat).",
+      "channel": "en",
       "language": "en",
-      "sources": [
-        {
-          "platform": "twitch",
-          "handle": "lacy"
-        }
-      ],
-      "caption_must_include": "Lacy #LACY",
-      "rules": "Lacy must be the main focus. Caption needs his name and #LACY. Pool split; needs 1,000,000 approved views total to get a share.",
-      "on_video_disclosure": "#ad",
+      "credit": "Lacy (twitch.tv/lacy)",
+      "sources": [{"platform": "twitch", "handle": "lacy"}],
       "facecam": null
     },
     {
       "id": "clix",
-      "name": "Clix GTA VI Marathon Pool Campaign",
+      "name": "Clix",
       "enabled": true,
-      "streamer": "Clix",
+      "permission": false,
+      "permission_proof": "Needs: an open Clix clipping campaign (Reach) that Rohit has joined.",
+      "channel": "en",
       "language": "en",
-      "sources": [
-        {
-          "platform": "twitch",
-          "handle": "clix"
-        }
-      ],
-      "caption_must_include": "Clix #Clix",
-      "rules": "Clix must be the main focus. Caption needs his name and #Clix. No AI-generated videos. Pool split; needs 400,000 approved views total.",
-      "on_video_disclosure": "#ad",
+      "credit": "Clix (twitch.tv/clix)",
+      "sources": [{"platform": "twitch", "handle": "clix"}],
       "facecam": null
     },
     {
       "id": "tomo",
-      "name": "TOMO GTA VI Clipping",
+      "name": "Tomo",
       "enabled": true,
-      "streamer": "Tomo",
+      "permission": false,
+      "permission_proof": "Needs: join the TOMO GTA VI Clipping campaign (Clipping Nation).",
+      "channel": "en",
       "language": "en",
-      "sources": [
-        {
-          "platform": "youtube",
-          "url": "https://www.youtube.com/@Tomovids/streams"
-        }
-      ],
-      "caption_must_include": "Tomo",
-      "rules": "Clip Tomo's GTA 6 livestreams and his YouTube videos. $2.00 per 1,000 views, cap $150 per clip. Check the brief for any required tags.",
-      "on_video_disclosure": "#ad",
+      "credit": "Tomo (youtube.com/@Tomovids)",
+      "sources": [{"platform": "youtube", "url": "https://www.youtube.com/@Tomovids/streams"}],
       "facecam": null
     },
     {
-      "id": "dom",
-      "name": "Ruckus campaign (Dasgasd3m / Dom)",
+      "id": "kreekcraft",
+      "name": "KreekCraft",
       "enabled": false,
-      "streamer": "Dom",
+      "permission": false,
+      "permission_proof": "Needs: join the KreekCraft GTA 6 Clipping campaign (ClipLaunch). Check his GTA 6 stream link in the brief.",
+      "channel": "en",
       "language": "en",
+      "credit": "KreekCraft",
       "sources": [],
-      "caption_must_include": "",
-      "rules": "Clip Dom's funny GTA 6 moments. TikTok + YouTube Shorts. Needs an account that posts GTA 6 content. Paused: channel link not found yet.",
-      "on_video_disclosure": "#ad",
       "facecam": null
     }
   ]
