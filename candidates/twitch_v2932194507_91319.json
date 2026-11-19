@@ -1,0 +1,67 @@
+{
+  "status": "new",
+  "campaign": "lacy",
+  "streamer": "Lacy",
+  "language": "en",
+  "vod_url": "https://www.twitch.tv/videos/2932194507",
+  "vod_title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-19 12:03",
+  "chunk": [
+    91319.0,
+    93120.0
+  ],
+  "created": "2026-11-19 12:03 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "start": 91385.0,
+      "end": 91495.0,
+      "peak": 91455.0,
+      "score": 1.0,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m2",
+      "start": 91766.0,
+      "end": 91876.0,
+      "peak": 91836.0,
+      "score": 1.25,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "start": 92075.0,
+      "end": 92185.0,
+      "peak": 92145.0,
+      "score": 1.1,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m4",
+      "start": 92615.0,
+      "end": 92725.0,
+      "peak": 92685.0,
+      "score": 1.18,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    }
+  ]
+}
