@@ -1,0 +1,19 @@
+{
+  "candidate_file": "candidates/twitch_v2933739024_0.json",
+  "clips": [
+    {
+      "moment_id": "m4",
+      "start": 1185.1,
+      "end": 1221.6,
+      "hook": "WAIT DID I JUST DIE",
+      "caption": "#ad Clix panics mid shootout in GTA 6 and Lucia saves him Clix #Clix #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m3",
+      "start": 777.2,
+      "end": 812.0,
+      "hook": "HOSPITAL SHOOTOUT HAS CLIX LOSING IT",
+      "caption": "#ad Clix can't believe how sick this GTA 6 hospital escape is Clix #Clix #GTA6 #GTAVI"
+    }
+  ]
+}
