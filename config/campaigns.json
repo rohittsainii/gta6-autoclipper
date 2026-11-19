@@ -34,7 +34,9 @@
       "voice": false,
       "platforms": [
         "youtube",
-        "instagram"
+        "instagram",
+        "facebook",
+        "tiktok"
       ],
       "overlay": null,
       "end_text": "",
@@ -63,7 +65,9 @@
       "voice": false,
       "platforms": [
         "youtube",
-        "instagram"
+        "instagram",
+        "facebook",
+        "tiktok"
       ],
       "overlay": null,
       "end_text": "",
@@ -95,7 +99,8 @@
       "facecam": null,
       "voice": true,
       "platforms": [
-        "youtube"
+        "youtube",
+        "tiktok"
       ],
       "overlay": null,
       "end_text": "WATCH DOM LIVE: KICK.COM/DASGASD3M",
@@ -124,7 +129,9 @@
       "voice": true,
       "platforms": [
         "youtube",
-        "instagram"
+        "instagram",
+        "facebook",
+        "tiktok"
       ],
       "overlay": {
         "file": "assets/overlays/kreekcraft.png",
@@ -162,7 +169,9 @@
       "voice": false,
       "platforms": [
         "youtube",
-        "instagram"
+        "instagram",
+        "facebook",
+        "tiktok"
       ],
       "overlay": {
         "file": "assets/overlays/brett_banner.png",
@@ -200,7 +209,9 @@
       "voice": false,
       "platforms": [
         "youtube",
-        "instagram"
+        "instagram",
+        "facebook",
+        "tiktok"
       ],
       "overlay": null,
       "end_text": "",
