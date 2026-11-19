@@ -3,12 +3,16 @@
 Returns a crop box that follows the face smoothly over the clip, or None when there is no stable face
 (no webcam, or OpenCV not installed) so the renderer falls back to the full-frame layout.
 """
-from .common import log
+from pathlib import Path
+
+from .common import ROOT, log
+
+YUNET = ROOT / "models" / "face_detection_yunet_2023mar.onnx"
 
 PANEL_ASPECT = 1080 / 768  # width / height of the top panel
 
 
-def track_face(path, dur, samples=14):
+def track_face(path, dur, samples=18):
     try:
         import cv2
     except ImportError:
@@ -18,15 +22,23 @@ def track_face(path, dur, samples=14):
     H = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
     if not W or not H:
         return None
-    try:
-        det = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-    except Exception:
-        det = None
-    if det is None or det.empty():
-        log("  face finder unavailable (OpenCV face data missing) -> full-frame layout")
-        cap.release()
-        return None
-    scale = 640.0 / W
+    yunet = None
+    if YUNET.exists() and hasattr(cv2, "FaceDetectorYN"):
+        try:  # OpenCV's own DNN face model: far fewer false matches than the classic cascade
+            yunet = cv2.FaceDetectorYN.create(str(YUNET), "", (960, int(H * 960.0 / W)), 0.8, 0.3, 50)
+        except Exception as e:
+            log(f"  YuNet unavailable ({str(e)[:80]}), using cascade")
+    det = None
+    if yunet is None:
+        try:
+            det = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+        except Exception:
+            det = None
+        if det is None or det.empty():
+            log("  face finder unavailable (OpenCV face data missing) -> full-frame layout")
+            cap.release()
+            return None
+    scale = 960.0 / W
     hits = []  # (t, cx, cy, size) in source pixels
     for i in range(samples):
         t = dur * (i + 0.5) / samples
@@ -34,9 +46,13 @@ def track_face(path, dur, samples=14):
         ok, frame = cap.read()
         if not ok:
             continue
-        small = cv2.resize(frame, (640, int(H * scale)))
-        gray = cv2.equalizeHist(cv2.cvtColor(small, cv2.COLOR_BGR2GRAY))
-        faces = det.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=6, minSize=(22, 22))
+        small = cv2.resize(frame, (960, int(H * scale)))
+        if yunet is not None:
+            _, found = yunet.detect(small)
+            faces = [] if found is None else [tuple(int(v) for v in f[:4]) for f in found]
+        else:
+            gray = cv2.equalizeHist(cv2.cvtColor(small, cv2.COLOR_BGR2GRAY))
+            faces = det.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4, minSize=(16, 16))
         for (x, y, w, h) in faces:
             hits.append((t, (x + w / 2) / scale, (y + h / 2) / scale, w / scale))
     cap.release()
@@ -45,7 +61,7 @@ def track_face(path, dur, samples=14):
     # the webcam face stays in roughly one place: take the biggest cluster of detections
     best = []
     for _, cx, cy, s in hits:
-        group = [h for h in hits if abs(h[1] - cx) < s * 1.2 and abs(h[2] - cy) < s * 1.2]
+        group = [h for h in hits if abs(h[1] - cx) < s * 0.6 and abs(h[2] - cy) < s * 0.6]
         if len(group) > len(best):
             best = group
     times = sorted({h[0] for h in best})
@@ -54,6 +70,10 @@ def track_face(path, dur, samples=14):
         return None
     best.sort(key=lambda h: h[0])
     size = sorted(h[3] for h in best)[len(best) // 2]
+    xs, ys = [h[1] for h in best], [h[2] for h in best]
+    if (max(xs) - min(xs)) > size * 0.9 or (max(ys) - min(ys)) > size * 0.9:
+        log("  face candidate moves too much (likely in-game), using full-frame layout")
+        return None
     ch = min(H, size * 2.4)          # head and shoulders
     cw = min(W, ch * PANEL_ASPECT)
     ch = cw / PANEL_ASPECT

@@ -27,6 +27,11 @@ jobs:
           mkdir -p fonts
           curl -sfL -o fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || true
           file fonts/Anton-Regular.ttf | grep -qi font || rm -f fonts/Anton-Regular.ttf
+          # OpenCV's YuNet face model (official opencv_zoo), used to find the streamer's webcam face
+          mkdir -p models
+          curl -sfL -o models/face_detection_yunet_2023mar.onnx https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx || true
+          [ "$(stat -c %s models/face_detection_yunet_2023mar.onnx 2>/dev/null || echo 0)" -gt 100000 ] || rm -f models/face_detection_yunet_2023mar.onnx
+          ls -la models || true
       - name: Render picked clips
         run: |
           # only the picks files added/changed by this push (avoids re-rendering old clips)

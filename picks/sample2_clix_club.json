@@ -1,0 +1,30 @@
+{
+  "candidate_file": "candidates/twitch_v2932204601_24918.json",
+  "sample": true,
+  "clips": [
+    {
+      "moment_id": "m12",
+      "start": 33972.8,
+      "end": 34000.0,
+      "hook": "Every door is locked",
+      "title": "Clix tried every door in GTA 6 and it went wrong fast",
+      "caption": "\"Sorry, sorry, sorry\" 😭",
+      "voice_intro": "Clix is trying every door on the block. None of them want to open.",
+      "voice_outro": "Apologising six times to someone who can't hear him is peak panic. You could feel him realise he was cooked.",
+      "sfx": [
+        {
+          "t": 33977.4,
+          "type": "ding"
+        },
+        {
+          "t": 33987.4,
+          "type": "scratch"
+        },
+        {
+          "t": 33996.6,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}

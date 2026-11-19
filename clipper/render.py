@@ -42,6 +42,26 @@ def ass_time(t):
     return f"{h}:{m:02d}:{t % 60:05.2f}"
 
 
+SWEARS = re.compile(r"^((mother)?f+u+c+k\w*|sh+i+t+(s|ty|ting|ted)?|bitch\w*|n+i+g+(g+a|a|e+r)s?|cunts?|dick(head)?s?|puss(y|ies)|fag+(ot)?s?)$", re.I)
+
+
+def _is_swear(word):
+    core = re.sub(r"[^A-Za-z]", "", word)
+    return bool(core) and bool(SWEARS.match(core))
+
+
+def mask(word):
+    """F*CK-style caption masking for strong swears."""
+    if not _is_swear(word):
+        return word
+    return re.sub(r"[A-Za-z]+", lambda m: m.group(0)[0] + "*" * (len(m.group(0)) - 2) + m.group(0)[-1]
+                  if len(m.group(0)) > 2 else m.group(0), word, count=1)
+
+
+def bleep_ranges(words):
+    return [(max(0.0, w["s"] - 0.03), w["e"] + 0.03) for w in words if _is_swear(w["w"])]
+
+
 def clean(text):
     text = text.replace("{", "(").replace("}", ")").replace("\\", "/")
     return "".join(ch for ch in text if ord(ch) < 0x10000)  # libass can't draw colour emoji
@@ -66,7 +86,7 @@ def caption_events(words, y, hi_colour, style="Cap"):
             e = min(e, s + 2.5)
             parts = []
             for k, x in enumerate(g):
-                t = clean(x["w"]).upper()
+                t = clean(mask(x["w"])).upper()
                 parts.append("{\\c" + hi_colour + "\\fscx108\\fscy108}" + t + "{\\c&HFFFFFF&\\fscx100\\fscy100}"
                              if k == wi else t)
             pop = "{\\fscx82\\fscy82\\t(0,90,\\fscx100\\fscy100)}" if wi == 0 else ""
@@ -139,7 +159,7 @@ def has_video(path):
 
 
 def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total,
-                face=None, sfx=()):
+                face=None, sfx=(), bleeps=()):
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     hold = max(0.0, total - clip_dur)
     if face:  # streamer's face (tracked) on top 40%, gameplay below 60%
@@ -163,21 +183,30 @@ def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3
     inputs = ["-i", src]
     duck_until = intro_dur + 0.2 if intro_mp3 else 0
     a = (f"[0:a]atrim=0:{clip_dur:.3f},asetpts=PTS-STARTPTS,"
-         f"volume='if(lt(t,{duck_until:.2f}),0.22,1)':eval=frame,apad[a0]")
+         f"volume='if(lt(t,{duck_until:.2f}),0.22,1)':eval=frame")
+    if bleeps:  # mute the swear in the stream audio and lay a beep over it
+        on = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in bleeps)
+        a += f",volume='if({on},0,1)':eval=frame"
+    a += ",apad[a0]"
     mix = ["[a0]"]
     if intro_mp3:
         inputs += ["-i", intro_mp3]
-        a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay=150|150,volume=1.6[ai]"
+        a += f";[{inputs.count('-i') - 1}:a]aresample=48000,adelay=150|150,volume=1.6[ai]"
         mix.append("[ai]")
     if outro_mp3:
         inputs += ["-i", outro_mp3]
         d = int(outro_at * 1000)
-        a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay={d}|{d},volume=1.6[ao]"
+        a += f";[{inputs.count('-i') - 1}:a]aresample=48000,adelay={d}|{d},volume=1.6[ao]"
         mix.append("[ao]")
+    if bleeps:
+        on = "+".join(f"between(t,{a0:.2f},{b0:.2f})" for a0, b0 in bleeps)
+        inputs += ["-f", "lavfi", "-i", f"sine=frequency=1000:sample_rate=48000:duration={clip_dur:.2f}"]
+        a += f";[{inputs.count('-i') - 1}:a]volume='if({on},0.18,0)':eval=frame[bp]"
+        mix.append("[bp]")
     for k, (t, name, vol) in enumerate(sfx):
         inputs += ["-i", name]
         d = max(0, int(t * 1000))
-        a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay={d}|{d},volume={vol}[x{k}]"
+        a += f";[{inputs.count('-i') - 1}:a]aresample=48000,adelay={d}|{d},volume={vol}[x{k}]"
         mix.append(f"[x{k}]")
     a += f";{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
     run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", *inputs, "-filter_complex", v + ";" + a,
@@ -274,7 +303,7 @@ def main(pick_files):
                 folder.mkdir(parents=True, exist_ok=True)
                 outp = folder / "clip.mp4"
                 render_clip(src, ass, None if facecam == "off" else facecam, outp, clip_dur, intro_mp3, outro_mp3,
-                            intro_dur, outro_at, total, face=face, sfx=sfx)
+                            intro_dur, outro_at, total, face=face, sfx=sfx, bleeps=bleep_ranges(words))
                 Path(src).unlink(missing_ok=True)
                 credit_line = f"🎥 Clip from {cr.get('credit', cand.get('streamer', ''))}"
                 hashtags = ch.get("hashtags", "#GTA6 #shorts")
