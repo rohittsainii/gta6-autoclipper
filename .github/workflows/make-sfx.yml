@@ -1,0 +1,22 @@
+name: Make sound effects
+# One-time job: creates assets/sfx/*.mp3 with ElevenLabs Sound Effects (skips files that already exist).
+on:
+  workflow_dispatch:
+  push:
+    paths: ["scripts/make_sfx.py"]
+permissions:
+  contents: write
+jobs:
+  sfx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - run: python scripts/make_sfx.py
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      - run: ./scripts/save.sh "sound effects" assets

@@ -20,13 +20,18 @@ For every `candidates/*.json` with `"status": "new"`:
    - `caption`: 1–2 lines for Instagram/Facebook/YouTube description, may use 1 emoji. The renderer adds the creator credit and hashtags. **No #ad** (this is not a paid campaign).
    - `voice_intro`: **our commentary**, read by the channel voice over the first seconds (stream audio is lowered). Max ~14 words. Set up what's about to happen in our own words; never just repeat the hook.
    - `voice_outro`: **our take**, read over the frozen last frame. Max ~22 words. A real opinion, insight, comparison or joke about what just happened (why it's funny, what it says about GTA 6, what the creator should have done). This commentary is what makes the channel original, so make it specific to the clip.
+   - `sfx`: 1–3 sound-effect cues at the exact funny/shocking beats, as `{"t": <absolute VOD seconds>, "type": "..."}`.
+     Types: `boom` (the punchline / biggest reaction; also flashes the screen; max one per clip), `scratch` (a fail or things going wrong),
+     `ding` (a discovery / "wait, what?"), `gasp` (something shocking), `pop` (small beat). A whoosh at the start and a riser into
+     the outro are added automatically. Fewer, well-timed sounds beat many: never cover the streamer's punchline words.
    Never reuse the same intro/outro wording across clips (YouTube penalises repetitive templates). No made-up facts about the game: if unsure, give an opinion instead of a claim.
 5. Language: `en` creators → English everywhere, no `words`. `hi` creators → commentary in natural Hinglish (Hindi in Roman letters), plus `words`: the transcript words with the same timings rewritten in Hinglish.
 6. Save `picks/<candidate-file-name>.json`:
    ```json
    {"candidate_file": "candidates/<name>.json",
     "clips": [{"moment_id": "m3", "start": 4521.3, "end": 4549.0, "hook": "...", "title": "...",
-               "caption": "...", "voice_intro": "...", "voice_outro": "..."}]}
+               "caption": "...", "voice_intro": "...", "voice_outro": "...",
+               "sfx": [{"t": 4530.2, "type": "boom"}]}]}
    ```
    and set the candidate's `"status": "picked"` (or `"skipped"` if nothing is good enough).
    Then delete that candidate's stills (`git rm -r -q candidates/frames/<candidate-file-name-without-.json>`) to keep the repo small.

@@ -32,6 +32,7 @@ from .common import CONFIG, PICKS, ROOT, WORK, load_json, log, run, save_json, w
 W, H = 1080, 1920
 OUT = ROOT / "out"
 FONTS = ROOT / "fonts"
+SFX = ROOT / "assets" / "sfx"
 YELLOW, CYAN = "&H00F0FF&", "&HFFE52E&"   # ASS colours are BGR
 
 
@@ -68,11 +69,13 @@ def caption_events(words, y, hi_colour, style="Cap"):
                 t = clean(x["w"]).upper()
                 parts.append("{\\c" + hi_colour + "\\fscx108\\fscy108}" + t + "{\\c&HFFFFFF&\\fscx100\\fscy100}"
                              if k == wi else t)
-            ev.append(f"Dialogue: 1,{ass_time(s)},{ass_time(e)},{style},,0,0,0,,{{\\pos({W//2},{y})}}" + " ".join(parts))
+            pop = "{\\fscx82\\fscy82\\t(0,90,\\fscx100\\fscy100)}" if wi == 0 else ""
+            ev.append(f"Dialogue: 1,{ass_time(s)},{ass_time(e)},{style},,0,0,0,,{{\\pos({W//2},{y})}}" + pop + " ".join(parts))
     return ev
 
 
-def build_ass(stream_words, intro_words, outro_words, clip_dur, total, hook, credit, disclosure, cap_y, hook_y):
+def build_ass(stream_words, intro_words, outro_words, clip_dur, total, hook, credit, disclosure, cap_y, hook_y,
+              flashes=()):
     font = "Anton" if (FONTS / "Anton-Regular.ttf").exists() else "DejaVu Sans"
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -98,6 +101,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         ev.append(f"Dialogue: 3,{ass_time(0)},{ass_time(total)},Credit,,0,0,0,,CLIP: {clean(credit)}")
     if disclosure:
         ev.append(f"Dialogue: 3,{ass_time(0)},{ass_time(min(4, total))},Tag,,0,0,0,,{clean(disclosure)}")
+    for t in flashes:  # quick white flash on the big moment
+        ev.append(f"Dialogue: 5,{ass_time(t)},{ass_time(t + 0.22)},Hook,,0,0,0,,"
+                  "{\\an7\\pos(0,0)\\bord0\\shad0\\1c&HFFFFFF&\\alpha&H50&\\fad(0,180)\\p1}"
+                  f"m 0 0 l {W} 0 {W} {H} 0 {H}{{\\p0}}")
     ev += caption_events(intro_words, cap_y, CYAN, "Narr")
     ev += caption_events(stream_words, cap_y, YELLOW)
     ev += caption_events(outro_words, cap_y, CYAN, "Narr")
@@ -131,10 +138,18 @@ def has_video(path):
     return bool(out)
 
 
-def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total):
+def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total,
+                face=None, sfx=()):
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     hold = max(0.0, total - clip_dur)
-    if facecam:  # facecam on top (40%), gameplay below (60%)
+    if face:  # streamer's face (tracked) on top 40%, gameplay below 60%
+        from .face import lerp_expr
+        cam_h, game_h = 768, H - 768
+        xe, ye = lerp_expr(face["track"], 1), lerp_expr(face["track"], 2)
+        v = (f"[0:v]trim=0:{clip_dur:.3f},setpts=PTS-STARTPTS,split[s1][s2];"
+             f"[s1]crop={face['w']}:{face['h']}:{xe}:{ye},scale={W}:{cam_h}[cam];"
+             f"[s2]crop=ih*{W}/{game_h}:ih,scale={W}:{game_h}[game];[cam][game]vstack[lay];")
+    elif facecam:  # fixed facecam box from config on top (40%), gameplay below (60%)
         fx, fy, fw, fh = facecam
         cam_h, game_h = 768, H - 768
         v = (f"[0:v]trim=0:{clip_dur:.3f},setpts=PTS-STARTPTS,split[s1][s2];"
@@ -159,6 +174,11 @@ def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3
         d = int(outro_at * 1000)
         a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay={d}|{d},volume=1.6[ao]"
         mix.append("[ao]")
+    for k, (t, name, vol) in enumerate(sfx):
+        inputs += ["-i", name]
+        d = max(0, int(t * 1000))
+        a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay={d}|{d},volume={vol}[x{k}]"
+        mix.append(f"[x{k}]")
     a += f";{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
     run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", *inputs, "-filter_complex", v + ";" + a,
          "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
@@ -219,18 +239,42 @@ def main(pick_files):
                                            if s - 0.1 <= w["s"] < e]
                 words = [{"w": w["w"], "s": w["s"] - s, "e": w["e"] - s} for w in words]
                 words = [w for w in words if w["s"] >= intro_dur + 0.25]
-                facecam = cr.get("facecam")
-                cap_y = 1640 if facecam else 1500
-                hook_y = 120 if facecam else 380
-                ass = WORK / f"{name}.ass"
-                ass.write_text(build_ass(words, intro_words, outro_words, clip_dur, total, c.get("hook", ""),
-                                         cr.get("credit", ""), cr.get("on_video_disclosure", ""), cap_y, hook_y))
                 log(f"{name}: downloading {s:.0f}-{e:.0f}s")
                 src = download_section(cand["vod_url"], s, e, WORK / f"src_{name}")
+                facecam = cr.get("facecam")
+                face = None
+                if facecam != "off" and not facecam:
+                    try:
+                        from .face import track_face
+                        face = track_face(src, clip_dur)
+                    except Exception as fe:
+                        log(f"  face tracking failed ({str(fe)[:120]}) -> full-frame layout")
+                        face = None
+                split = bool(face or facecam)
+                cap_y = 1560 if split else 1500
+                hook_y = 840 if split else 380
+                # sound effects: whoosh in, picker's cues (boom/scratch/ding/gasp/pop), riser into the outro
+                cues = [(0.0, "whoosh", 0.55)]
+                flashes = []
+                for q in c.get("sfx", []):
+                    t = float(q.get("t", 0)) - s
+                    kind = q.get("type", "boom")
+                    if 0 <= t <= clip_dur:
+                        cues.append((t, kind, 0.8 if kind == "boom" else 0.6))
+                        if kind == "boom":
+                            flashes.append(t)
+                if outro_mp3:
+                    cues.append((max(0.0, outro_at - 1.8), "riser", 0.35))
+                sfx = [(t, str(SFX / f"{k}.mp3"), v) for t, k, v in cues if (SFX / f"{k}.mp3").exists()]
+                ass = WORK / f"{name}.ass"
+                ass.write_text(build_ass(words, intro_words, outro_words, clip_dur, total, c.get("hook", ""),
+                                         cr.get("credit", ""), cr.get("on_video_disclosure", ""), cap_y, hook_y,
+                                         flashes))
                 folder = OUT / name
                 folder.mkdir(parents=True, exist_ok=True)
                 outp = folder / "clip.mp4"
-                render_clip(src, ass, facecam, outp, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total)
+                render_clip(src, ass, None if facecam == "off" else facecam, outp, clip_dur, intro_mp3, outro_mp3,
+                            intro_dur, outro_at, total, face=face, sfx=sfx)
                 Path(src).unlink(missing_ok=True)
                 credit_line = f"🎥 Clip from {cr.get('credit', cand.get('streamer', ''))}"
                 hashtags = ch.get("hashtags", "#GTA6 #shorts")
