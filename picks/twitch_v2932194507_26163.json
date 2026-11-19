@@ -4,10 +4,20 @@
     {
       "moment_id": "m8",
       "start": 30810.5,
-      "end": 30875.0,
+      "end": 30845.0,
       "hook": "Tried to pet a gator in GTA 6",
-      "caption": "#ad Lacy tried to make friends with a gator in GTA 6... it did not go well 💀 #LACY #GTA6 #GTAVI"
+      "title": "LACY tried to make friends with a gator in GTA 6…",
+      "caption": "Rule one of Leonida: do not pet the gator 🐊",
+      "sfx": [
+        {
+          "t": 30813.2,
+          "type": "ding"
+        },
+        {
+          "t": 30825.5,
+          "type": "boom"
+        }
+      ]
     }
-  ],
-  "status": "rendered"
+  ]
 }

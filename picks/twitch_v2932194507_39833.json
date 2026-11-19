@@ -6,16 +6,18 @@
       "start": 40862.0,
       "end": 40905.2,
       "hook": "11 HOURS OF GTA 6 PROGRESS GONE",
-      "caption": "#ad Lacy finds out 11 hours of GTA 6 progress just got reset Lacy #LACY #GTA6 #GTAVI"
+      "title": "LACY thinks 11 hours of GTA 6 progress just got wiped",
+      "caption": "11 hours. No save. Pure panic 😭",
+      "sfx": []
     },
     {
       "moment_id": "m8",
       "start": 41501.8,
       "end": 41546.7,
-      "hook": "LACY WILL END THE MARATHON IF...",
-      "caption": "#ad Lacy refuses to risk his GTA 6 save: one wrong move and the marathon is over Lacy #LACY #GTA6 #GTAVI"
+      "hook": "HE WILL NOT RISK THIS SAVE",
+      "title": "LACY refuses to risk his GTA 6 save file",
+      "caption": "One wrong move and the whole marathon is gone 😬",
+      "sfx": []
     }
-  ],
-  "status": "rendered",
-  "rendered_at": "2026-11-18 22:30 UTC"
+  ]
 }
