@@ -159,7 +159,7 @@ def has_video(path):
 
 
 def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total,
-                face=None, sfx=(), bleeps=()):
+                face=None, sfx=(), bleeps=(), overlay=None):
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     hold = max(0.0, total - clip_dur)
     if face:  # streamer's face (tracked) on top 40%, gameplay below 60%
@@ -179,8 +179,15 @@ def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3
         v = (f"[0:v]trim=0:{clip_dur:.3f},setpts=PTS-STARTPTS,split[s1][s2];"
              f"[s1]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:2,eq=brightness=-0.18[bg];"
              f"[s2]scale={W}:-2[fg];[bg][fg]overlay=0:(H-h)/2-60[lay];")
-    v += f"[lay]fps=30,tpad=stop_mode=clone:stop_duration={hold:.3f},ass={ass_path}{fontsdir}[v]"
     inputs = ["-i", src]
+    if overlay:  # required campaign logo/banner, visible for the whole video
+        inputs += ["-loop", "1", "-i", str(ROOT / overlay["file"])]
+        v += (f"[lay]fps=30,tpad=stop_mode=clone:stop_duration={hold:.3f}[pre];"
+              f"[1:v]scale={overlay.get('w', 300)}:-1,format=rgba[ov];"
+              f"[pre][ov]overlay=x={overlay.get('x', 'W-w-36')}:y={overlay.get('y', '36')}:shortest=1[pre2];"
+              f"[pre2]ass={ass_path}{fontsdir}[v]")
+    else:
+        v += f"[lay]fps=30,tpad=stop_mode=clone:stop_duration={hold:.3f},ass={ass_path}{fontsdir}[v]"
     duck_until = intro_dur + 0.2 if intro_mp3 else 0
     a = (f"[0:a]atrim=0:{clip_dur:.3f},asetpts=PTS-STARTPTS,"
          f"volume='if(lt(t,{duck_until:.2f}),0.22,1)':eval=frame")
@@ -238,6 +245,19 @@ def main(pick_files):
         sample = bool(picks.get("sample"))
         if cr.get("added_by") == "scout":  # campaigns only: never use auto-found creators
             cr = dict(cr, permission=False)
+        overlay = cr.get("overlay") or None
+        if overlay and not (ROOT / overlay["file"]).exists():
+            log(f"{pf.name}: HELD, required overlay {overlay['file']} is missing")
+            if not sample:
+                picks["status"] = "held"
+                save_json(pf, picks)
+                continue
+            overlay = None
+        if cr.get("hold") and not sample:
+            log(f"{pf.name}: HELD, campaign rules/assets for {cr.get('name')} not complete yet")
+            picks["status"] = "held"
+            save_json(pf, picks)
+            continue
         if not sample and not cr.get("permission"):
             log(f"{pf.name}: SKIPPED, no clipping permission recorded for {cr.get('name', cand.get('campaign'))}")
             picks["status"] = "rendered"
@@ -253,17 +273,21 @@ def main(pick_files):
                 # commentary voice
                 intro_mp3 = outro_mp3 = None
                 intro_words, outro_words, intro_dur, outro_dur = [], [], 0.0, 0.0
-                if c.get("voice_intro"):
+                use_voice = cr.get("voice", True)
+                if use_voice and c.get("voice_intro"):
                     from .voice import speak
                     intro_mp3 = str(WORK / f"{name}_intro.mp3")
                     intro_words, intro_dur = speak(c["voice_intro"], ch.get("voice_id"), intro_mp3, ch.get("voice_speed", 1.08))
                     intro_words = [{"w": w["w"], "s": w["s"] + 0.15, "e": w["e"] + 0.15} for w in intro_words]
-                if c.get("voice_outro"):
+                if use_voice and c.get("voice_outro"):
                     from .voice import speak
                     outro_mp3 = str(WORK / f"{name}_outro.mp3")
                     outro_words, outro_dur = speak(c["voice_outro"], ch.get("voice_id"), outro_mp3, ch.get("voice_speed", 1.08))
                 outro_at = clip_dur + 0.25
                 total = outro_at + outro_dur + 0.6 if outro_mp3 else clip_dur
+                end_text = cr.get("end_text", "")
+                if end_text and not outro_mp3:
+                    total = clip_dur + 2.5
                 outro_words = [{"w": w["w"], "s": w["s"] + outro_at, "e": w["e"] + outro_at} for w in outro_words]
                 # stream captions (skip what is said under the voice intro)
                 words = c.get("words") or [w for w in moments.get(c.get("moment_id"), {}).get("words", [])
@@ -298,22 +322,27 @@ def main(pick_files):
                     cues.append((max(0.0, outro_at - 1.8), "riser", 0.35))
                 sfx = [(t, str(SFX / f"{k}.mp3"), v) for t, k, v in cues if (SFX / f"{k}.mp3").exists()]
                 ass = WORK / f"{name}.ass"
-                ass.write_text(build_ass(words, intro_words, outro_words, clip_dur, total, c.get("hook", ""),
-                                         cr.get("credit", ""), cr.get("on_video_disclosure", ""), cap_y, hook_y,
-                                         flashes))
+                ass_text = build_ass(words, intro_words, outro_words, clip_dur, total, c.get("hook", ""),
+                                     cr.get("credit", ""), cr.get("on_video_disclosure", ""), cap_y, hook_y, flashes)
+                if end_text:  # campaign call-to-action at the end
+                    t0 = max(0.0, total - 3.0)
+                    ass_text += (f"Dialogue: 4,{ass_time(t0)},{ass_time(total)},Hook,,0,0,0,,"
+                                 f"{{\\pos({W//2},{1250 if split else 1180})\\fad(200,0)}}{clean(end_text)}\n")
+                ass.write_text(ass_text)
                 folder = OUT / name
                 folder.mkdir(parents=True, exist_ok=True)
                 outp = folder / "clip.mp4"
                 render_clip(src, ass, None if facecam == "off" else facecam, outp, clip_dur, intro_mp3, outro_mp3,
-                            intro_dur, outro_at, total, face=face, sfx=sfx, bleeps=bleep_ranges(words))
+                            intro_dur, outro_at, total, face=face, sfx=sfx, bleeps=bleep_ranges(words), overlay=overlay)
                 Path(src).unlink(missing_ok=True)
-                credit_line = f"🎥 Clip from {cr.get('credit', cand.get('streamer', ''))}"
-                hashtags = ch.get("hashtags", "#GTA6 #shorts")
+                credit_line = cr.get("credit_line") or f"🎥 Clip from {cr.get('credit', cand.get('streamer', ''))}"
+                hashtags = " ".join(dict.fromkeys((cr.get("caption_suffix", "") + " " + ch.get("hashtags", "#GTA6 #shorts")).split()))
                 title = (c.get("title") or c.get("hook", "GTA 6 moment")).strip()[:90]
                 caption = c.get("caption", "").strip()
                 description = f"{caption}\n\n{credit_line}\n{hashtags}".strip()
                 save_json(folder / "meta.json", {
                     "title": title, "description": description, "sample": sample,
+                    "platforms": cr.get("platforms", ["youtube", "instagram", "facebook"]),
                     "creator": cr.get("name", cand.get("streamer", "")), "channel": cr.get("channel", "en"),
                     "source": f"{cand['vod_url']} at {int(s//3600)}:{int(s%3600//60):02d}:{int(s%60):02d}",
                     "duration": round(media_duration(str(outp)), 1)})

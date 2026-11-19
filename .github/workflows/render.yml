@@ -54,7 +54,8 @@ jobs:
             title=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["title"])' "$d/meta.json")
             python3 -c 'import json,sys; m=json.load(open(sys.argv[1])); print(m["description"])' "$d/meta.json" > "$d/notes.md"
             sample=$(python3 -c 'import json,sys; print("yes" if json.load(open(sys.argv[1])).get("sample") else "no")' "$d/meta.json")
-            tag="clip-$(date -u +%Y%m%d-%H%M%S)-$(basename "$d" | tr '_' '-' | cut -c1-40)"
+            plat=$(python3 -c 'import json,sys; m=json.load(open(sys.argv[1])); print("-".join({"youtube":"yt","instagram":"ig","facebook":"fb"}[p] for p in m.get("platforms",["youtube","instagram","facebook"])))' "$d/meta.json")
+            tag="clip-$(date -u +%Y%m%d-%H%M%S)-$(basename "$d" | tr '_' '-' | cut -c1-40)--${plat}"
             if [ "$sample" = "yes" ]; then
               gh release create "$tag" "$d/clip.mp4" --title "[SAMPLE] $title" --notes-file "$d/notes.md" --prerelease
             else

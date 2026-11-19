@@ -1,23 +1,27 @@
 # How Claude picks clips (read on every scheduled run)
 
 Channels: `en` = **GTA 6 Clips** (English creators), `hi` = Indian channel (later). Every finished clip is posted
-automatically to that channel's YouTube, Instagram and Facebook, with no human review, so the bar is high.
+automatically (12:30 PM–5 PM IST) to the platforms its campaign allows, with no human review, so the bar is high.
+Each creator in `config/campaigns.json` is a **Whop campaign Rohit joined**; its `rules` are the campaign's rules and
+breaking one means the clip earns nothing or the account gets banned. Read `rules` before picking.
 
 For every `candidates/*.json` with `"status": "new"`:
 
 1. Find the creator in `config/campaigns.json` → `creators` (the candidate's `campaign` field is the creator id).
    **If `permission` is not `true`, do not pick anything**: set the candidate's status to `"no_permission"` and move on.
+   **If `hold` is `true`** (rules not read yet, or a required overlay file is missing), don't pick either: set status `"held"` and move on.
 2. Read each moment's `text`, `signals` and `score`, and **look at its `frames`** (3 small stills: start, peak, end; open them with your image-reading tool). Hooks, titles and commentary must match what is actually on screen. If a moment has no frames, only say what the transcript makes certain. Pick the **1–4 best** per file (quality over quantity). Skip a moment if:
    - it needs context a new viewer won't have, it's dead air or menu/loading talk, or nothing actually happens
    - it's a pure cutscene (Rockstar takes those down), a story spoiler, leaked content, or drama/harassment bait
-   - it's another person's stream or music (copyright risk), or the creator isn't the focus
+   - it's another person's stream or music (copyright risk), or **the campaign creator isn't the main focus** (Lacy's campaign rejects clips where he isn't)
    - it contains slurs, sexual content or anything that would get the channel limited
    Prefer: first reactions, "NO WAY" discoveries, funny fails, chaos, big laughs, hot takes. `viewer clip` signals are strong evidence.
 3. Exact `start`/`end` from the word timestamps (absolute seconds into the VOD): **15–45 s**. Start 0.5 s before the setup, end right after the payoff/reaction, never mid-sentence.
 4. Write, for each clip:
    - `hook`: on-screen title, max 7 words, no emoji, true to the clip.
    - `title`: YouTube title, max 90 chars, names the creator and GTA 6, curiosity without lying (e.g. "Lacy tried to pet a gator in GTA 6…").
-   - `caption`: 1–2 lines for Instagram/Facebook/YouTube description, may use 1 emoji. The renderer adds the creator credit and hashtags. **No #ad** (this is not a paid campaign).
+   - `caption`: 1–2 lines for Instagram/Facebook/YouTube description, may use 1 emoji. The renderer adds the campaign's credit line and required hashtags. **No URLs or @links in the caption** (KreekCraft's campaign bans links; keep it uniform). No #ad.
+   - **If the creator's `voice` is `false`** (Lacy, Kai Cenat, Brett: their campaigns ban AI-generated content), leave out `voice_intro` and `voice_outro` entirely; the clip runs on the stream audio alone, so pick moments that land without explanation.
    - `voice_intro`: **our commentary**, read by the channel voice over the first seconds (stream audio is lowered). Max ~14 words. Set up what's about to happen in our own words; never just repeat the hook.
    - `voice_outro`: **our take**, read over the frozen last frame. Max ~22 words. A real opinion, insight, comparison or joke about what just happened (why it's funny, what it says about GTA 6, what the creator should have done). This commentary is what makes the channel original, so make it specific to the clip.
    - `sfx`: 1–3 sound-effect cues at the exact funny/shocking beats, as `{"t": <absolute VOD seconds>, "type": "..."}`.

@@ -23,6 +23,8 @@ MIN_GAP = 150                           # seconds between two picked peaks
 # ---------- listing new footage ----------
 
 def list_vods(src, max_n):
+    if src["platform"] == "kick":
+        return list_kick_vods(src["handle"], max_n)
     if src["platform"] == "twitch":
         h = src["handle"]
         flat = ytdlp_json(f"https://www.twitch.tv/{h}/videos?filter=archives&sort=time", flat=True)
@@ -56,6 +58,33 @@ def list_vods(src, max_n):
             "live": bool(info.get("is_live")) or info.get("live_status") == "is_live",
             "heatmap": info.get("heatmap") or [],
         })
+    return vods
+
+
+def list_kick_vods(handle, max_n):
+    """Kick: past broadcasts from Kick's public channel API; the HLS playlist is used directly as the source."""
+    import datetime as _dt
+    import requests
+    r = requests.get(f"https://kick.com/api/v2/channels/{handle}/videos", timeout=30,
+                     headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                            "(KHTML, like Gecko) Chrome/131.0 Safari/537.36",
+                              "Accept": "application/json"})
+    if r.status_code != 200:
+        raise RuntimeError(f"Kick API {r.status_code} (Kick may be blocking GitHub's servers)")
+    vods = []
+    for v in (r.json() or [])[:max_n]:
+        src = v.get("source")
+        if not src:
+            continue
+        start = v.get("start_time") or v.get("created_at") or ""
+        try:
+            ts = _dt.datetime.fromisoformat(start.replace("Z", "+00:00").replace(" ", "T")).timestamp()
+        except ValueError:
+            ts = None
+        uuid = (v.get("video") or {}).get("uuid") or str(v.get("id"))
+        vods.append({"url": src, "id": f"kick_{uuid}", "title": v.get("session_title", ""), "start_ts": ts,
+                     "duration": float(v.get("duration") or 0) / 1000.0, "live": bool(v.get("is_live")),
+                     "heatmap": [], "page": f"https://kick.com/{handle}/videos/{uuid}"})
     return vods
 
 

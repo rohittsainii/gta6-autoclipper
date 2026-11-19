@@ -1,5 +1,5 @@
 {
-  "_help": "creators: who the clipper watches. permission=true only after Rohit has joined that creator's clipping program (proof in permission_proof); the picker skips creators without permission. channel: en = GTA 6 Clips (English), hi = Indian channel. language: en = English captions, hi = Hinglish captions. facecam: [x, y, w, h] as fractions of the frame (null = blurred-background layout). YouTube sources need the YT_COOKIES secret.",
+  "_help": "creators = campaigns Rohit has joined. permission=true means he joined the campaign (permission_proof says which). platforms: where clips may be posted (campaign rules). voice: AI commentary voice allowed. caption_suffix: required caption text/tags. credit_line: credit text in the post (no URLs where the campaign forbids links). overlay: required image on the whole video. end_text: on-screen call to action at the end. hold: true = do not post yet (rules or assets missing).",
   "settings": {
     "chunk_hours": 3,
     "backfill_hours": 3,
@@ -26,52 +26,212 @@
   },
   "creators": [
     {
+      "enabled": true,
+      "permission": true,
+      "channel": "en",
+      "language": "en",
+      "facecam": null,
+      "voice": false,
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "overlay": null,
+      "end_text": "",
+      "hold": false,
       "id": "lacy",
       "name": "Lacy",
-      "enabled": true,
-      "permission": false,
-      "permission_proof": "Needs: join Lacy's clipping Discord (linked from his Twitch chat).",
-      "channel": "en",
-      "language": "en",
-      "credit": "Lacy (twitch.tv/lacy)",
-      "sources": [{"platform": "twitch", "handle": "lacy"}],
-      "facecam": null
+      "campaign": "$12,500 LACY GTA VI Marathon Pool (Reach) — reachclipping.com/LACYGTA",
+      "permission_proof": "Joined Reach LACY GTA VI pool campaign (Nov 2026)",
+      "rules": "Lacy must be the main focus; caption/overlay must mention LACY; hashtag #LACY; no logos; no AI-generated content (Reach bans it permanently); never portray Lacy negatively; English audience 50%+; pool needs 750K total approved views; submit within 30 min of posting.",
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "lacy"
+        }
+      ],
+      "credit": "LACY (twitch.tv/lacy)",
+      "credit_line": "🎥 LACY on Twitch",
+      "caption_suffix": "LACY #LACY #GTA6"
     },
     {
-      "id": "clix",
-      "name": "Clix",
       "enabled": true,
-      "permission": false,
-      "permission_proof": "Needs: an open Clix clipping campaign (Reach) that Rohit has joined.",
+      "permission": true,
       "channel": "en",
       "language": "en",
-      "credit": "Clix (twitch.tv/clix)",
-      "sources": [{"platform": "twitch", "handle": "clix"}],
-      "facecam": null
+      "facecam": null,
+      "voice": false,
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "overlay": null,
+      "end_text": "",
+      "hold": true,
+      "id": "kaicenat",
+      "name": "Kai Cenat",
+      "campaign": "Kai Cenat $10,000 GTA 6 Pool (Clipped & Shipped)",
+      "permission_proof": "Joined Kai Cenat GTA 6 pool campaign (Nov 2026)",
+      "rules": "Clip Kai Cenat's GTA 6 streams. Pool split by views; each clip needs 1K views to count; 750K total views to share the pool. Full rules (reference files) not seen yet: hold until Rohit sends them.",
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "kaicenat"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCvCfpQXRXdJdL07pzTIA6Cw/streams"
+        }
+      ],
+      "credit": "Kai Cenat (twitch.tv/kaicenat)",
+      "credit_line": "🎥 Kai Cenat on Twitch",
+      "caption_suffix": "Kai Cenat #KaiCenat #GTA6"
     },
     {
-      "id": "tomo",
-      "name": "Tomo",
       "enabled": true,
-      "permission": false,
-      "permission_proof": "Needs: join the TOMO GTA VI Clipping campaign (Clipping Nation).",
+      "permission": true,
       "channel": "en",
       "language": "en",
-      "credit": "Tomo (youtube.com/@Tomovids)",
-      "sources": [{"platform": "youtube", "url": "https://www.youtube.com/@Tomovids/streams"}],
-      "facecam": null
+      "facecam": null,
+      "voice": true,
+      "platforms": [
+        "youtube"
+      ],
+      "overlay": null,
+      "end_text": "WATCH DOM LIVE: KICK.COM/DASGASD3M",
+      "hold": false,
+      "id": "dasgasd3m",
+      "name": "Dom (dasgasd3m)",
+      "campaign": "dasgasd3m x RUCKUS GTA 6 (Content Rewards)",
+      "permission_proof": "Joined RUCKUS dasgasd3m GTA 6 campaign (Nov 2026)",
+      "rules": "Only footage: Dom's GTA 6 streams on Kick from 18 Nov 2026 onward. Post on GTA 6-specific TikTok or YouTube Shorts only. Tag #dasgasdom3, credit dasgasd3m on screen, end by pointing to kick.com/dasgasd3m. Keep his meaning; never fabricate his voice/reactions. $2 CPM (raised), min 10K views per post, cap $150. Submit within 30 min. Deadline 19 Dec 2026.",
+      "sources": [
+        {
+          "platform": "kick",
+          "handle": "dasgasd3m"
+        }
+      ],
+      "credit": "dasgasd3m on Kick",
+      "credit_line": "🎥 dasgasd3m on Kick",
+      "caption_suffix": "#dasgasdom3 #GTA6"
     },
     {
+      "enabled": true,
+      "permission": true,
+      "channel": "en",
+      "language": "en",
+      "facecam": null,
+      "voice": true,
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "overlay": {
+        "file": "assets/overlays/kreekcraft.png",
+        "w": 300,
+        "x": "W-w-36",
+        "y": "36"
+      },
+      "end_text": "",
+      "hold": true,
       "id": "kreekcraft",
       "name": "KreekCraft",
-      "enabled": false,
-      "permission": false,
-      "permission_proof": "Needs: join the KreekCraft GTA 6 Clipping campaign (ClipLaunch). Check his GTA 6 stream link in the brief.",
+      "campaign": "KreekCraft GTA 6 Clipping (ClipLaunch)",
+      "permission_proof": "Joined ClipLaunch KreekCraft GTA 6 campaign (Nov 2026)",
+      "rules": "Only KreekCraft's GTA 6 livestreams/replays on YouTube or Twitch. Official KreekCraft logo overlay visible the whole video. Caption must include 'Watch KreekCraft on YouTube and Twitch' + #GTA6 #KreekCraft #GrandTheftAutoVI, NO links/URLs. Likes visible, keep 30 days, 0.8% engagement, 40% Tier-1 audience. $1 CPM, max $300/clip. No misleading titles or fake reactions.",
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "kreekcraft"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@Kreek/streams"
+        }
+      ],
+      "credit": "KreekCraft",
+      "credit_line": "Watch KreekCraft on YouTube and Twitch!",
+      "caption_suffix": "#GTA6 #KreekCraft #GrandTheftAutoVI"
+    },
+    {
+      "enabled": true,
+      "permission": true,
       "channel": "en",
       "language": "en",
-      "credit": "KreekCraft",
-      "sources": [],
-      "facecam": null
+      "facecam": null,
+      "voice": false,
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "overlay": {
+        "file": "assets/overlays/brett_banner.png",
+        "w": 1000,
+        "x": "(W-w)/2",
+        "y": "H-h-130"
+      },
+      "end_text": "",
+      "hold": true,
+      "id": "brettliftsxp",
+      "name": "BrettLiftsXP",
+      "campaign": "BrettLiftsXP GTA VI Clipping (Clips by Jai)",
+      "permission_proof": "Joined BrettLiftsXP GTA VI campaign (Nov 2026)",
+      "rules": "Clip Brett's Twitch streams (IRL) and YouTube videos (gaming) from 20 Oct 2026 on. Show Brett's face and the provided Twitch banner in every video. Tag @BrettLiftsXP; Twitch and YouTube links in bio. No AI clipping platforms (Opus/Vizard), no fake reactions, no platform logos, never delete posts. $1 CPM YouTube/Instagram, min $2, max $100. 50% Tier-1. Analytics screen recording when asked.",
+      "sources": [
+        {
+          "platform": "twitch",
+          "handle": "brettliftsxp"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@BrettLiftsXP/videos"
+        }
+      ],
+      "credit": "@BrettLiftsXP",
+      "credit_line": "🎥 @BrettLiftsXP on Twitch & YouTube",
+      "caption_suffix": "@BrettLiftsXP #BrettLiftsXP #GTA6"
+    },
+    {
+      "enabled": true,
+      "permission": true,
+      "channel": "en",
+      "language": "en",
+      "facecam": null,
+      "voice": false,
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "overlay": null,
+      "end_text": "",
+      "hold": true,
+      "id": "dylanpage",
+      "name": "Dylan Page",
+      "campaign": "$5,000 Dylan Page GTA VI Marathon",
+      "permission_proof": "Joined Dylan Page GTA VI marathon campaign (Nov 2026)",
+      "rules": "Rules not seen yet: hold until Rohit sends them.",
+      "sources": [
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@dylan.page./streams"
+        }
+      ],
+      "credit": "Dylan Page",
+      "credit_line": "🎥 Dylan Page",
+      "caption_suffix": "Dylan Page #GTA6"
     }
-  ]
+  ],
+  "skipped_campaigns": {
+    "Tokyo Girl (Passive)": "Music campaign: needs the official song added inside TikTok/Instagram and no talking at all; can't be automated. Manual only.",
+    "Aron Orlando - Stephanie": "Music campaign: platform audio must be added inside each app; can't be automated. Manual only.",
+    "Gattouz x 1WIN": "Not done: 1WIN is a betting brand; advertising online money games is illegal in India (Online Gaming Act 2025).",
+    "BenDaDonnn x Puffco": "Not done: Puffco is a cannabis vape brand; promoting it risks YouTube/Instagram strikes, and cannabis is illegal in India."
+  },
+  "posting": {
+    "hours_ist": [
+      9,
+      24
+    ],
+    "notify": "github_issue"
+  }
 }
