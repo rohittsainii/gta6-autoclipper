@@ -7,6 +7,10 @@ For every `candidates/*.json` with `"status": "new"`:
 
 1. Find the creator in `config/campaigns.json` → `creators` (the candidate's `campaign` field is the creator id).
    **If `permission` is not `true`, do not pick anything**: set the candidate's status to `"no_permission"` and move on.
+   For creators with `"permission_mode": "per_video"` (found by the scout), also read the candidate's `permission_quote`:
+   it must clearly let anyone clip/re-use the content (e.g. "feel free to clip, just credit me"). If it is ambiguous, limited
+   (e.g. "members only", "for my clip channel only", "ask first") or not really permission, set status `"no_permission"`,
+   set that creator's `permission` to `false` in config with a short reason in `permission_proof`, and move on.
 2. Read each moment's `text`, `signals` and `score`, and **look at its `frames`** (3 small stills: start, peak, end; open them with your image-reading tool). Hooks, titles and commentary must match what is actually on screen. If a moment has no frames, only say what the transcript makes certain. Pick the **1–4 best** per file (quality over quantity). Skip a moment if:
    - it needs context a new viewer won't have, it's dead air or menu/loading talk, or nothing actually happens
    - it's a pure cutscene (Rockstar takes those down), a story spoiler, leaked content, or drama/harassment bait
