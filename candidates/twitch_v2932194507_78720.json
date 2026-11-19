@@ -1,0 +1,171 @@
+{
+  "status": "new",
+  "campaign": "lacy",
+  "streamer": "Lacy",
+  "language": "en",
+  "vod_url": "https://www.twitch.tv/videos/2932194507",
+  "vod_title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-19 11:03",
+  "chunk": [
+    78720.0,
+    89520.0
+  ],
+  "created": "2026-11-19 11:07 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "start": 78720.0,
+      "end": 78767.0,
+      "peak": 78727.0,
+      "score": 1.55,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m2",
+      "start": 81126.0,
+      "end": 81236.0,
+      "peak": 81196.0,
+      "score": 1.59,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "start": 81374.0,
+      "end": 81484.0,
+      "peak": 81444.0,
+      "score": 1.46,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m4",
+      "start": 82298.0,
+      "end": 82408.0,
+      "peak": 82368.0,
+      "score": 1.58,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m5",
+      "start": 83462.0,
+      "end": 83572.0,
+      "peak": 83532.0,
+      "score": 1.77,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m6",
+      "start": 84104.0,
+      "end": 84214.0,
+      "peak": 84174.0,
+      "score": 1.73,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m7",
+      "start": 84332.0,
+      "end": 84442.0,
+      "peak": 84402.0,
+      "score": 1.87,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m8",
+      "start": 86043.0,
+      "end": 86153.0,
+      "peak": 86113.0,
+      "score": 1.72,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m9",
+      "start": 86245.0,
+      "end": 86355.0,
+      "peak": 86315.0,
+      "score": 1.7,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m10",
+      "start": 86792.0,
+      "end": 86902.0,
+      "peak": 86862.0,
+      "score": 1.8,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m11",
+      "start": 88850.0,
+      "end": 88960.0,
+      "peak": 88920.0,
+      "score": 1.64,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m12",
+      "start": 89316.0,
+      "end": 89426.0,
+      "peak": 89386.0,
+      "score": 1.76,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    }
+  ]
+}
