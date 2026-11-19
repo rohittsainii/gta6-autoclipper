@@ -21,4 +21,4 @@ For every `candidates/*.json` with `"status": "new"`:
    and set the candidate's `"status": "picked"` (or `"skipped"` if nothing is good enough).
 8. Commit and push. The push starts the render workflow, which publishes the videos as a GitHub Release with `POST.md`.
 
-Then read `state/last_run.md` and report any ERROR lines.
+Then read `state/find_log.md` and `state/render_log.md` and report any ERROR lines.

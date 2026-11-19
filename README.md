@@ -22,4 +22,4 @@ on push     ──>  Render clips (GitHub Actions) → 9:16 mp4 with hook, #ad, 
 - New clips: **Releases** on this repo (GitHub app on your phone works). Each release has the mp4s and POST.md.
 - Add/turn on a campaign: edit `config/campaigns.json` (add the streamer's Twitch handle or YouTube URL, set `enabled: true`).
 - Facecam split layout: set `facecam` to `[x, y, w, h]` (fractions of the frame) for that streamer.
-- Problems: `state/last_run.md` shows the last run's log.
+- Problems: `state/find_log.md` and `state/render_log.md` show the latest logs. The finder runs non-stop (each run loops ~4.5 h, then starts the next).

@@ -156,7 +156,7 @@ def main(pick_files):
         save_json(pf, picks)
     (OUT / "POST.md").write_text("\n".join(post))
     log(f"rendered {len(made)} clip(s)")
-    write_runlog("Renderer")
+    write_runlog("Renderer", "render_log.md")
     return made
 
 

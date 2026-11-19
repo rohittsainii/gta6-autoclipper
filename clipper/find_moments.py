@@ -225,6 +225,10 @@ def main():
                 v = st["vods"].setdefault(vod["id"], {
                     "done_until": max(0.0, vod["duration"] - settings["backfill_hours"] * 3600),
                     "title": vod["title"], "campaign": camp["id"]})
+                behind = vod["duration"] - v["done_until"]
+                if behind > settings.get("max_behind_hours", 6) * 3600:
+                    v["done_until"] = vod["duration"] - settings.get("max_behind_hours", 6) * 3600
+                    log(f"  {behind/3600:.1f}h behind -> jumping to the latest {settings.get('max_behind_hours', 6)}h")
                 while time.time() < deadline:
                     a = v["done_until"]
                     left = vod["duration"] - a
@@ -243,7 +247,7 @@ def main():
         st["clip_cache"] = dict(list(st["clip_cache"].items())[-400:])
     save_json(STATE, st)
     log(f"done: {total} new candidate moments")
-    write_runlog("Moment finder")
+    write_runlog("Moment finder", "find_log.md")
 
 
 if __name__ == "__main__":

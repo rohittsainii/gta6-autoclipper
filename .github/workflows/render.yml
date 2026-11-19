@@ -47,13 +47,4 @@ jobs:
           fi
       - name: Mark picks as rendered
         if: always()
-        run: |
-          git config user.name "clipper-bot"
-          git config user.email "clipper-bot@users.noreply.github.com"
-          git add picks state || true
-          git commit -q -m "rendered $(date -u +%F_%H%M)" || exit 0
-          for i in 1 2 3 4; do
-            if git pull --rebase && git push; then echo "saved"; exit 0; fi
-            sleep 7
-          done
-          echo "::error::could not save render status"; exit 1
+        run: ./scripts/save.sh "rendered" picks state

@@ -1,7 +1,9 @@
 name: Find moments
+# One run loops every 30 min for ~4.5 h, then starts its own successor, so it never stops.
+# The schedule is only a backup that restarts the chain if it ever breaks.
 on:
   schedule:
-    - cron: "7 * * * *"      # every hour
+    - cron: "17 */3 * * *"
   workflow_dispatch:
   push:
     paths: ["config/**", "clipper/find_moments.py"]
@@ -10,10 +12,11 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  actions: write
 jobs:
   find:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,17 +27,23 @@ jobs:
         run: |
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install -q -r requirements.txt
-      - name: Find the best moments
-        run: python -m clipper.find_moments
+      - name: Find the best moments every 30 minutes
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           YT_COOKIES: ${{ secrets.YT_COOKIES }}
-          MAX_RUN_MINUTES: "240"
-      - name: Save results to the repo
-        if: always()
+          MAX_RUN_MINUTES: "60"
         run: |
-          git config user.name "clipper-bot"
-          git config user.email "clipper-bot@users.noreply.github.com"
-          git add state candidates || true
-          git commit -q -m "moments $(date -u +%F_%H%M)" || exit 0
-          for i in 1 2 3 4; do git pull -q --rebase && git push -q && break; sleep 7; done
+          end=$(( $(date +%s) + 270*60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            t0=$(date +%s)
+            git pull -q --rebase || true
+            python -m clipper.find_moments || echo "::warning::finder crashed this round"
+            ./scripts/save.sh "moments" state candidates
+            wait=$(( 1800 - ($(date +%s) - t0) ))
+            if [ "$wait" -gt 0 ] && [ $(( $(date +%s) + wait )) -lt "$end" ]; then sleep "$wait"; else [ "$wait" -gt 0 ] && break; fi
+          done
+      - name: Start the next run (keeps the chain going)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run find.yml --ref main

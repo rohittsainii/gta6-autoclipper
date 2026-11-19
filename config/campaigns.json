@@ -6,7 +6,8 @@
     "min_new_minutes": 25,
     "moments_per_chunk": 12,
     "max_vods_per_source": 2,
-    "max_age_hours": 24
+    "max_age_hours": 24,
+    "max_behind_hours": 6
   },
   "campaigns": [
     {

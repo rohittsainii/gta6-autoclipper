@@ -8,7 +8,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config" / "campaigns.json"
 STATE = ROOT / "state" / "state.json"
-RUNLOG = ROOT / "state" / "last_run.md"
 CANDIDATES = ROOT / "candidates"
 PICKS = ROOT / "picks"
 WORK = Path(os.environ.get("CLIPPER_WORK", "/tmp/clipper"))
@@ -24,10 +23,11 @@ def log(msg):
     _log_lines.append(line)
 
 
-def write_runlog(title):
-    RUNLOG.parent.mkdir(parents=True, exist_ok=True)
+def write_runlog(title, name):
+    path = ROOT / "state" / name
+    path.parent.mkdir(parents=True, exist_ok=True)
     now = dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    RUNLOG.write_text(f"# {title}\n\nRun at {now}\n\n```\n" + "\n".join(_log_lines[-300:]) + "\n```\n")
+    path.write_text(f"# {title}\n\nRun at {now}\n\n```\n" + "\n".join(_log_lines[-300:]) + "\n```\n")
 
 
 def load_json(path, default):
