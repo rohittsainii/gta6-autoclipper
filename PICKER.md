@@ -7,7 +7,7 @@ For every `candidates/*.json` with `"status": "new"`:
 
 1. Find the creator in `config/campaigns.json` → `creators` (the candidate's `campaign` field is the creator id).
    **If `permission` is not `true`, do not pick anything**: set the candidate's status to `"no_permission"` and move on.
-2. Read each moment's `text`, `signals` and `score`. Pick the **1–4 best** per file (quality over quantity). Skip a moment if:
+2. Read each moment's `text`, `signals` and `score`, and **look at its `frames`** (3 small stills: start, peak, end; open them with your image-reading tool). Hooks, titles and commentary must match what is actually on screen. If a moment has no frames, only say what the transcript makes certain. Pick the **1–4 best** per file (quality over quantity). Skip a moment if:
    - it needs context a new viewer won't have, it's dead air or menu/loading talk, or nothing actually happens
    - it's a pure cutscene (Rockstar takes those down), a story spoiler, leaked content, or drama/harassment bait
    - it's another person's stream or music (copyright risk), or the creator isn't the focus
@@ -29,6 +29,7 @@ For every `candidates/*.json` with `"status": "new"`:
                "caption": "...", "voice_intro": "...", "voice_outro": "..."}]}
    ```
    and set the candidate's `"status": "picked"` (or `"skipped"` if nothing is good enough).
+   Then delete that candidate's stills (`git rm -r -q candidates/frames/<candidate-file-name-without-.json>`) to keep the repo small.
 7. Commit and push. The push starts the render workflow; each finished clip becomes its own GitHub Release, which Zapier posts.
 
 Then read `state/find_log.md` and `state/render_log.md` and report any ERROR lines.

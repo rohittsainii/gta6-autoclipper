@@ -117,6 +117,42 @@ def excitement(levels):
     return out
 
 
+# ---------- still frames so the picker can SEE each moment ----------
+
+_stream_urls = {}
+
+
+def video_url(vod_url):
+    if vod_url not in _stream_urls:
+        try:
+            out = run(ytdlp_base() + ["-g", "-f", "b[vcodec!=none][height<=480]/bv*[height<=480]/b[vcodec!=none]", vod_url],
+                      timeout=120).strip().splitlines()
+            _stream_urls[vod_url] = out[0] if out else None
+        except Exception as e:
+            log(f"  no frame URL: {str(e)[:150]}")
+            _stream_urls[vod_url] = None
+    return _stream_urls[vod_url]
+
+
+def grab_frames(vod_url, times, folder):
+    """Save small JPEG stills at the given VOD times; returns repo-relative paths."""
+    url = video_url(vod_url)
+    if not url:
+        return []
+    folder.mkdir(parents=True, exist_ok=True)
+    paths = []
+    for k, t in enumerate(times):
+        out = folder / f"{k}.jpg"
+        try:
+            run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-ss", f"{max(0, t):.1f}", "-i", url,
+                 "-frames:v", "1", "-vf", "scale=320:-2", "-q:v", "7", str(out)], timeout=60)
+            if out.exists():
+                paths.append(str(out.relative_to(CANDIDATES.parent)))
+        except Exception:
+            pass
+    return paths
+
+
 # ---------- scoring ----------
 
 def score_chunk(n, a, excite, clips, vod_start, heatmap):
@@ -180,8 +216,11 @@ def process_chunk(camp, vod, a, b, clips, settings):
         for w in words:  # make times absolute (seconds into the VOD)
             w["s"] = round(w["s"] + a + s, 2)
             w["e"] = round(w["e"] + a + s, 2)
+        mid = f"m{j+1}"
+        frames = grab_frames(vod["url"], [a + s + (e - s) * 0.2, a + p, a + e - 3], CANDIDATES / "frames" / tag / mid)
         moments.append({
-            "id": f"m{j+1}",
+            "id": mid,
+            "frames": frames,
             "start": round(a + s, 1), "end": round(a + e, 1), "peak": round(a + p, 1),
             "score": round(score[p], 2),
             "signals": sorted({x for i in range(max(0, p - 30), min(n, p + 5)) for x in why[i]})[:6],

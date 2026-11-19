@@ -114,7 +114,21 @@ def download_section(url, s, e, dest):
         return out
     cmd = ytdlp_base() + ["-f", "bv*[height<=1080]+ba/b[height<=1080]/b", "--download-sections", f"*{s:.2f}-{e:.2f}",
                           "--merge-output-format", "mp4", "-o", f"{dest}.%(ext)s", "--print", "after_move:filepath", url]
-    return run(cmd, timeout=1800).strip().splitlines()[-1]
+    path = run(cmd, timeout=1800).strip().splitlines()[-1]
+    if not has_video(path):  # Twitch sometimes hands back audio only near the live edge: retry forcing a video format
+        log("  downloaded section had no video, retrying with a video-only format choice")
+        Path(path).unlink(missing_ok=True)
+        cmd[cmd.index("-f") + 1] = "b[vcodec!=none][height<=1080]/b[vcodec!=none]"
+        path = run(cmd, timeout=1800).strip().splitlines()[-1]
+        if not has_video(path):
+            raise RuntimeError("source section has no video stream")
+    return path
+
+
+def has_video(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=index",
+                          "-of", "csv=p=0", path], capture_output=True, text=True).stdout.strip()
+    return bool(out)
 
 
 def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3, intro_dur, outro_at, total):
@@ -145,7 +159,7 @@ def render_clip(src, ass_path, facecam, out_path, clip_dur, intro_mp3, outro_mp3
         d = int(outro_at * 1000)
         a += f";[{len(inputs)//2 - 1}:a]aresample=48000,adelay={d}|{d},volume=1.6[ao]"
         mix.append("[ao]")
-    a += f";{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=longest[a]"
+    a += f";{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
     run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", *inputs, "-filter_complex", v + ";" + a,
          "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
