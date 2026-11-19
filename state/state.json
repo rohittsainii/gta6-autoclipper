@@ -1,7 +1,7 @@
 {
   "vods": {
     "twitch_v2932194507": {
-      "done_until": 93120.0,
+      "done_until": 94920.0,
       "title": "🔴 GTA 6 EARLY ACCESS 🔴 FIRST TIME EVER 🔴 24/7 MARATHON 🔴 GIVING AWAY GTA 6 TO VIEWERS 🔴 GREATEST GAME EVER? 🔴 !CLIPPING !GTA6 2026-11-18 20:27",
       "campaign": "lacy"
     },
@@ -11,7 +11,7 @@
       "campaign": "lacy"
     },
     "twitch_v2932204601": {
-      "done_until": 91769.0,
+      "done_until": 93573.0,
       "title": "🚨 FIRST PERSON TO PLAY GTA 🚨 EARLY ACCESS 🚨 24/7 MARATHON 🚨 PS5 GIVEAWAYS 2026-11-18 20:29",
       "campaign": "clix"
     },
@@ -23,6 +23,11 @@
     "youtube_XRo2L3077NI": {
       "done_until": 10872.0,
       "title": "PLAYING GTA 6 FOR THE FIRST TIME",
+      "campaign": "tomo"
+    },
+    "youtube_ktjcN5jasro": {
+      "done_until": 24398.0,
+      "title": "Playing GTA 6 For The FIRST TIME!",
       "campaign": "tomo"
     }
   },
