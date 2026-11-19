@@ -1,0 +1,26 @@
+{
+  "candidate_file": "candidates/twitch_v2932194507_67920.json",
+  "clips": [
+    {
+      "moment_id": "m2",
+      "start": 72555.0,
+      "end": 72597.9,
+      "hook": "LACY THREATENS TO WIPE THEIR SAVES",
+      "caption": "#ad Lacy says he'll reset their GTA 6 progress if he sees them at Waffle House Lacy #LACY #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m2",
+      "start": 72605.4,
+      "end": 72642.2,
+      "hook": "ASKED FOR PROTEIN, GOT PIZZA",
+      "caption": "#ad Lacy asked for protein bars on the GTA 6 marathon and got a whole pizza Lacy #LACY #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m5",
+      "start": 73270.0,
+      "end": 73309.5,
+      "hook": "LACY GIVES AWAY A FREE GTA 6",
+      "caption": "#ad Lacy rerolls the giveaway and a viewer wins a free copy of GTA 6 Lacy #LACY #GTA6 #GTAVI"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "candidate_file": "candidates/twitch_v2932204601_64753.json",
+  "clips": [
+    {
+      "moment_id": "m2",
+      "start": 65616.0,
+      "end": 65657.9,
+      "hook": "CLIX HITTING WHEELIES IN GTA 6",
+      "caption": "#ad Clix turns on house music and starts hitting wheelies in GTA 6 Clix #Clix #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m5",
+      "start": 72698.5,
+      "end": 72732.8,
+      "hook": "20 HOURS IN: CLIX RATES GTA 6",
+      "caption": "#ad After 20 hours straight, Clix gives his honest take on GTA 6 Clix #Clix #GTA6 #GTAVI"
+    },
+    {
+      "moment_id": "m9",
+      "start": 74351.0,
+      "end": 74378.8,
+      "hook": "20 HOURS AND ONLY 19% DONE",
+      "caption": "#ad Clix can't believe he's only 19% through GTA 6 after a full day Clix #Clix #GTA6 #GTAVI"
+    }
+  ]
+}
