@@ -1,0 +1,55 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_33264.json",
+  "clips": [
+    {
+      "moment_id": "m6",
+      "start": 34838.4,
+      "end": 34871.8,
+      "hook": "He used to live in Miami",
+      "title": "Lacy drove through GTA 6's Vice City and said it feels exactly like real Miami",
+      "caption": "Lacy grabs a car, hits the traffic and can't believe how much it feels like home \ud83c\udf34",
+      "sfx": [
+        {
+          "t": 34842.9,
+          "type": "ding"
+        },
+        {
+          "t": 34869.3,
+          "type": "pop"
+        }
+      ]
+    },
+    {
+      "moment_id": "m7",
+      "start": 35213.0,
+      "end": 35236.6,
+      "hook": "He found his real-life spot",
+      "title": "Lacy found the exact volleyball courts from real life in GTA 6",
+      "caption": "Standing in the same spot he knows from real life, and already planning a GTA Online recreation",
+      "sfx": [
+        {
+          "t": 35218.6,
+          "type": "ding"
+        }
+      ]
+    },
+    {
+      "moment_id": "m9",
+      "start": 35816.6,
+      "end": 35856.0,
+      "hook": "Cops chased him for an hour",
+      "title": "Lacy asked the GTA 6 cops why they've been chasing him for a whole hour",
+      "caption": "One stolen car and the whole department is on him. Lacy finally shakes them \ud83d\ude05",
+      "sfx": [
+        {
+          "t": 35839.3,
+          "type": "pop"
+        },
+        {
+          "t": 35852.6,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
