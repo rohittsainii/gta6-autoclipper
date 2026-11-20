@@ -1,0 +1,363 @@
+{
+  "status": "new",
+  "campaign": "lacy",
+  "streamer": "Lacy",
+  "language": "en",
+  "vod_url": "https://www.twitch.tv/videos/2933767012",
+  "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 15:50",
+  "chunk": [
+    83301.0,
+    87824.0
+  ],
+  "created": "2026-11-20 15:52 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m1/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m1/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m1/2.jpg"
+      ],
+      "start": 83673.0,
+      "end": 83783.0,
+      "peak": 83743.0,
+      "score": 1.79,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m2",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m2/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m2/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m2/2.jpg"
+      ],
+      "start": 84407.0,
+      "end": 84517.0,
+      "peak": 84477.0,
+      "score": 1.96,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m3/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m3/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m3/2.jpg"
+      ],
+      "start": 84583.0,
+      "end": 84693.0,
+      "peak": 84653.0,
+      "score": 1.73,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m4",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m4/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m4/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m4/2.jpg"
+      ],
+      "start": 85019.0,
+      "end": 85129.0,
+      "peak": 85089.0,
+      "score": 1.74,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m5",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m5/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m5/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m5/2.jpg"
+      ],
+      "start": 85320.0,
+      "end": 85430.0,
+      "peak": 85390.0,
+      "score": 1.97,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "All right, chat. I'm gonna rest my eyes for just a couple more minutes. Just like little re-- eye rest. J-two minutes",
+      "words": [
+        {
+          "w": "All",
+          "s": 85413.48,
+          "e": 85413.56
+        },
+        {
+          "w": "right,",
+          "s": 85413.58,
+          "e": 85413.64
+        },
+        {
+          "w": "chat.",
+          "s": 85413.68,
+          "e": 85413.86
+        },
+        {
+          "w": "I'm",
+          "s": 85413.88,
+          "e": 85413.9
+        },
+        {
+          "w": "gonna",
+          "s": 85413.92,
+          "e": 85413.96
+        },
+        {
+          "w": "rest",
+          "s": 85414.0,
+          "e": 85414.14
+        },
+        {
+          "w": "my",
+          "s": 85414.2,
+          "e": 85414.32
+        },
+        {
+          "w": "eyes",
+          "s": 85414.36,
+          "e": 85414.58
+        },
+        {
+          "w": "for",
+          "s": 85414.62,
+          "e": 85414.72
+        },
+        {
+          "w": "just",
+          "s": 85414.74,
+          "e": 85414.82
+        },
+        {
+          "w": "a",
+          "s": 85414.86,
+          "e": 85414.88
+        },
+        {
+          "w": "couple",
+          "s": 85414.92,
+          "e": 85415.04
+        },
+        {
+          "w": "more",
+          "s": 85415.08,
+          "e": 85415.2
+        },
+        {
+          "w": "minutes.",
+          "s": 85415.24,
+          "e": 85415.54
+        },
+        {
+          "w": "Just",
+          "s": 85415.88,
+          "e": 85416.0
+        },
+        {
+          "w": "like",
+          "s": 85416.04,
+          "e": 85416.18
+        },
+        {
+          "w": "little",
+          "s": 85416.3,
+          "e": 85416.48
+        },
+        {
+          "w": "re--",
+          "s": 85416.52,
+          "e": 85416.62
+        },
+        {
+          "w": "eye",
+          "s": 85416.8,
+          "e": 85416.92
+        },
+        {
+          "w": "rest.",
+          "s": 85416.98,
+          "e": 85417.26
+        },
+        {
+          "w": "J-two",
+          "s": 85417.86,
+          "e": 85418.3
+        },
+        {
+          "w": "minutes",
+          "s": 85418.34,
+          "e": 85418.64
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m6/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m6/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m6/2.jpg"
+      ],
+      "start": 85637.0,
+      "end": 85747.0,
+      "peak": 85707.0,
+      "score": 2.1,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m7",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m7/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m7/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m7/2.jpg"
+      ],
+      "start": 85993.0,
+      "end": 86103.0,
+      "peak": 86063.0,
+      "score": 1.84,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m8",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m8/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m8/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m8/2.jpg"
+      ],
+      "start": 86291.0,
+      "end": 86401.0,
+      "peak": 86361.0,
+      "score": 1.86,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m9",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m9/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m9/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m9/2.jpg"
+      ],
+      "start": 87004.0,
+      "end": 87114.0,
+      "peak": 87074.0,
+      "score": 1.7,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m10",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m10/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m10/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m10/2.jpg"
+      ],
+      "start": 87184.0,
+      "end": 87294.0,
+      "peak": 87254.0,
+      "score": 1.91,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m11",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m11/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m11/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m11/2.jpg"
+      ],
+      "start": 87478.0,
+      "end": 87588.0,
+      "peak": 87548.0,
+      "score": 1.76,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m12",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_83301/m12/0.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m12/1.jpg",
+        "candidates/frames/twitch_v2933767012_83301/m12/2.jpg"
+      ],
+      "start": 87659.0,
+      "end": 87769.0,
+      "peak": 87729.0,
+      "score": 1.71,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "Oh, that's the spot",
+      "words": [
+        {
+          "w": "Oh,",
+          "s": 87745.6,
+          "e": 87745.98
+        },
+        {
+          "w": "that's",
+          "s": 87747.68,
+          "e": 87748.04
+        },
+        {
+          "w": "the",
+          "s": 87748.04,
+          "e": 87748.12
+        },
+        {
+          "w": "spot",
+          "s": 87748.26,
+          "e": 87749.02
+        }
+      ]
+    }
+  ]
+}
