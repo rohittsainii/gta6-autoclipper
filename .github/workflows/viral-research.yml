@@ -1,0 +1,30 @@
+name: Viral research
+# Collects public YouTube Shorts data (titles, views, length, hashtags) for GTA 6 streamer clips,
+# plus each clip channel's recent Shorts so we can compare a video to its own channel's median.
+on:
+  push:
+    paths: [".github/research-trigger"]
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Collect
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: |
+          printf '%s\n' "$YT_COOKIES" > /tmp/c.txt
+          python3 scripts/viral_collect.py /tmp/c.txt research/shorts_raw.json
+          rm -f /tmp/c.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/
+          git commit -m "viral research data" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
