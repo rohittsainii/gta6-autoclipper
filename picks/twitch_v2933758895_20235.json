@@ -1,0 +1,45 @@
+{
+  "candidate_file": "candidates/twitch_v2933758895_20235.json",
+  "clips": [
+    {
+      "moment_id": "m7",
+      "start": 25972.3,
+      "end": 26016.6,
+      "hook": "He went back for the bag",
+      "title": "KreekCraft went back for the money bag in GTA 6… big mistake",
+      "caption": "Had the getaway bike. Went back for the bag anyway 💸",
+      "voice_intro": "Lucia just hit an armored truck, but in the chaos the money bag got left behind.",
+      "voice_outro": "Heist rule number one: the bag you drop is already gone. Riding off with what he had would have kept the cops far away.",
+      "sfx": [
+        {
+          "t": 25973.3,
+          "type": "scratch"
+        },
+        {
+          "t": 26011.2,
+          "type": "boom"
+        }
+      ]
+    },
+    {
+      "moment_id": "m11",
+      "start": 30000.5,
+      "end": 30031.2,
+      "hook": "Robbing a bank in leopard print",
+      "title": "KreekCraft refused to rob a bank in leopard print shorts in GTA 6",
+      "caption": "Tactical vest on top, leopard print on the bottom. Something had to change 🐆",
+      "voice_intro": "KreekCraft is gearing Lucia up for a bank job, then he finally notices the outfit.",
+      "voice_outro": "Body armor up top, leopard print down below. Changing pants was the right call, though that combo would have confused every guard inside.",
+      "sfx": [
+        {
+          "t": 30015.0,
+          "type": "boom"
+        },
+        {
+          "t": 30026.5,
+          "type": "ding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "candidate_file": "candidates/twitch_v2933758895_31035.json",
+  "clips": [
+    {
+      "moment_id": "m3",
+      "start": 34193.6,
+      "end": 34237.6,
+      "hook": "KreekCraft's GTA 6 pitch to a mom",
+      "title": "A viewer's mom asked KreekCraft what GTA 6 is about… his answer is perfect",
+      "caption": "Someone's mom asked what GTA 6 is about and KreekCraft gave the most wholesome answer possible 😂",
+      "voice_intro": "Halfway up a radio tower, KreekCraft gets asked to explain GTA 6 to someone's mom.",
+      "voice_outro": "Rescuing cats and finding grandma's car keys. That's the most innocent GTA pitch ever, and the mom might actually buy it.",
+      "sfx": [
+        {
+          "t": 34194.0,
+          "type": "pop"
+        },
+        {
+          "t": 34227.2,
+          "type": "boom"
+        },
+        {
+          "t": 34237.3,
+          "type": "ding"
+        }
+      ]
+    },
+    {
+      "moment_id": "m4",
+      "start": 34393.7,
+      "end": 34432.2,
+      "hook": "He climbed all the way up for this",
+      "title": "KreekCraft climbed a giant tower in GTA 6 because chat promised an Easter egg",
+      "caption": "Chat promised an Easter egg at the top. KreekCraft had questions 🗼",
+      "voice_intro": "Chat swore there's a secret at the top of this tower. KreekCraft is about to find out.",
+      "voice_outro": "That whole climb, his stream on the line, and the first thing he finds is a parachute. Chat either trolled him or hid something good.",
+      "sfx": [
+        {
+          "t": 34398.4,
+          "type": "ding"
+        },
+        {
+          "t": 34416.6,
+          "type": "pop"
+        },
+        {
+          "t": 34431.8,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
