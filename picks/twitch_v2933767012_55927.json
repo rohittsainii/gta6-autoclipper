@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_55927.json",
+  "clips": [
+    {
+      "moment_id": "m9",
+      "start": 57540.4,
+      "end": 57572.1,
+      "hook": "Wait, is that LeBron?",
+      "title": "Lacy cracked a GTA 6 safe and found a 'Laroy' rookie card",
+      "caption": "Lacy opens a safe, finds a Laroy rookie auto card and has some questions 🏀",
+      "sfx": [
+        {
+          "t": 57541.2,
+          "type": "ding"
+        },
+        {
+          "t": 57571.0,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}

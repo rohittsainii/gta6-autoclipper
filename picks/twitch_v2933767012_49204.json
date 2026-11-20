@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_49204.json",
+  "clips": [
+    {
+      "moment_id": "m10",
+      "start": 51488.7,
+      "end": 51520.6,
+      "hook": "Halfway through and still broke",
+      "title": "Lacy is halfway through GTA 6 and still can't figure out why he's broke",
+      "caption": "Halfway through the GTA 6 marathon, no car, no money, and Lacy wants answers 💸",
+      "sfx": [
+        {
+          "t": 51495.9,
+          "type": "scratch"
+        },
+        {
+          "t": 51516.4,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_52413.json",
+  "clips": [
+    {
+      "moment_id": "m6",
+      "start": 54136.8,
+      "end": 54158.4,
+      "hook": "Lacy wants a real heist",
+      "title": "Lacy explains the GTA 6 heist he wishes Rockstar had made",
+      "caption": "Lacy pitches his dream mission: plan it out, do the setups, then hit the big score",
+      "sfx": [
+        {
+          "t": 54144.8,
+          "type": "ding"
+        }
+      ]
+    },
+    {
+      "moment_id": "m8",
+      "start": 54724.3,
+      "end": 54763.4,
+      "hook": "Either he's good or...",
+      "title": "Lacy walks right past the GTA 6 cops and decides he's just that good",
+      "caption": "Masks on, bags full, cops everywhere, and Lacy still strolls out. Gamer confidence 🎮",
+      "sfx": [
+        {
+          "t": 54738.5,
+          "type": "ding"
+        },
+        {
+          "t": 54759.6,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
