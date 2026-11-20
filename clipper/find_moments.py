@@ -287,18 +287,24 @@ def main():
             except Exception as e:
                 log(f"  ERROR listing: {str(e)[:300]}")
                 continue
+            # YouTube serves recent streams at playback speed (3 min takes ~3 min), so take
+            # small 20-minute bites, only the latest hour, and one bite per pass.
+            is_yt = src["platform"] == "youtube"
+            src_chunk = settings.get("youtube_chunk_minutes", 20) * 60 if is_yt else chunk
+            backfill_h = settings.get("youtube_backfill_hours", 1) if is_yt else settings["backfill_hours"]
+            behind_h = settings.get("youtube_backfill_hours", 1) if is_yt else settings.get("max_behind_hours", 6)
             for vod in vods:
                 ended = (vod["start_ts"] or 0) + vod["duration"]
                 if not vod["live"] and vod["start_ts"] and time.time() - ended > settings.get("max_age_hours", 24) * 3600:
                     log(f"  skipping old stream: {vod['title'][:60]}")
                     continue
                 v = st["vods"].setdefault(vod["id"], {
-                    "done_until": max(0.0, vod["duration"] - settings["backfill_hours"] * 3600),
+                    "done_until": max(0.0, vod["duration"] - backfill_h * 3600),
                     "title": vod["title"], "campaign": camp["id"]})
                 behind = vod["duration"] - v["done_until"]
-                if behind > settings.get("max_behind_hours", 6) * 3600:
-                    v["done_until"] = vod["duration"] - settings.get("max_behind_hours", 6) * 3600
-                    log(f"  {behind/3600:.1f}h behind -> jumping to the latest {settings.get('max_behind_hours', 6)}h")
+                if behind > behind_h * 3600:
+                    v["done_until"] = vod["duration"] - behind_h * 3600
+                    log(f"  {behind/3600:.1f}h behind -> jumping to the latest {behind_h}h")
                 while time.time() < deadline:
                     a = v["done_until"]
                     left = vod["duration"] - a
@@ -307,7 +313,7 @@ def main():
                     end_ok = vod["duration"] - (600 if vod["live"] else 0)  # stay 10 min behind the live edge
                     if end_ok - a < 120:
                         break
-                    b = min(end_ok, a + chunk)
+                    b = min(end_ok, a + src_chunk)
                     try:
                         total += process_chunk(camp, vod, a, b, clips, settings)
                     except Exception as e:
@@ -315,6 +321,8 @@ def main():
                         break
                     v["done_until"] = b
                     save_json(STATE, st)
+                    if is_yt:
+                        break  # one YouTube bite per pass so other creators keep moving
     # keep the clip cache small
     if len(st["clip_cache"]) > 600:
         st["clip_cache"] = dict(list(st["clip_cache"].items())[-400:])
