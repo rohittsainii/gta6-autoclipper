@@ -1,0 +1,177 @@
+{
+  "status": "new",
+  "campaign": "lacy",
+  "streamer": "Lacy",
+  "language": "en",
+  "vod_url": "https://www.twitch.tv/videos/2933767012",
+  "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 12:32",
+  "chunk": [
+    74114.0,
+    75914.0
+  ],
+  "created": "2026-11-20 12:32 UTC",
+  "moments": [
+    {
+      "id": "m1",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m1/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m1/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m1/2.jpg"
+      ],
+      "start": 74114.0,
+      "end": 74171.0,
+      "peak": 74131.0,
+      "score": 1.63,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m2",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m2/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m2/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m2/2.jpg"
+      ],
+      "start": 74240.0,
+      "end": 74350.0,
+      "peak": 74310.0,
+      "score": 1.61,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m3",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m3/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m3/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m3/2.jpg"
+      ],
+      "start": 74419.0,
+      "end": 74529.0,
+      "peak": 74489.0,
+      "score": 1.37,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m4",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m4/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m4/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m4/2.jpg"
+      ],
+      "start": 74616.0,
+      "end": 74726.0,
+      "peak": 74686.0,
+      "score": 1.96,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m5",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m5/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m5/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m5/2.jpg"
+      ],
+      "start": 74915.0,
+      "end": 75025.0,
+      "peak": 74985.0,
+      "score": 2.11,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m6",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m6/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m6/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m6/2.jpg"
+      ],
+      "start": 75171.0,
+      "end": 75281.0,
+      "peak": 75241.0,
+      "score": 1.47,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m7",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m7/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m7/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m7/2.jpg"
+      ],
+      "start": 75370.0,
+      "end": 75480.0,
+      "peak": 75440.0,
+      "score": 1.87,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m8",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m8/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m8/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m8/2.jpg"
+      ],
+      "start": 75549.0,
+      "end": 75659.0,
+      "peak": 75619.0,
+      "score": 1.55,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    },
+    {
+      "id": "m9",
+      "frames": [
+        "candidates/frames/twitch_v2933767012_74114/m9/0.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m9/1.jpg",
+        "candidates/frames/twitch_v2933767012_74114/m9/2.jpg"
+      ],
+      "start": 75727.0,
+      "end": 75837.0,
+      "peak": 75797.0,
+      "score": 1.6,
+      "signals": [
+        "loud"
+      ],
+      "stt": "elevenlabs",
+      "text": "",
+      "words": []
+    }
+  ]
+}
