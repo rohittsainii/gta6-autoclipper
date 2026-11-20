@@ -339,6 +339,13 @@ def main(pick_files):
                 Path(src).unlink(missing_ok=True)
                 credit_line = cr.get("credit_line") or f"🎥 Clip from {cr.get('credit', cand.get('streamer', ''))}"
                 hashtags = " ".join(dict.fromkeys((cr.get("caption_suffix", "") + " " + ch.get("hashtags", "#GTA6 #shorts")).split()))
+                # 3-5 hashtags beat a hashtag wall: keep the creator's own words/tags first, always end with #shorts
+                _words = [w for w in hashtags.split() if not w.startswith("#")]
+                _tags, _seen = [], set()
+                for h in [w for w in hashtags.split() if w.startswith("#")]:
+                    if h.lower() not in _seen and h.lower() != "#shorts":
+                        _seen.add(h.lower()); _tags.append(h)
+                hashtags = " ".join(_words + _tags[:4] + ["#shorts"])
                 title = (c.get("title") or c.get("hook", "GTA 6 moment")).strip()[:90]
                 caption = c.get("caption", "").strip()
                 description = f"{caption}\n\n{credit_line}\n{hashtags}".strip()
