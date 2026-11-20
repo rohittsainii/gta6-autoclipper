@@ -44,17 +44,6 @@ for q, url in SOURCES:
                            "channel_id": e.get("channel_id"), "query": q}
     print(q, len(videos), flush=True)
 
-# channel medians: channels with the most hits
-counts = collections.Counter(v["channel_id"] for v in videos.values() if v.get("channel_id"))
-channels = {}
-for cid, _ in counts.most_common(40):
-    ents = flat(f"https://www.youtube.com/channel/{cid}/shorts", 40)
-    views = sorted(x.get("view_count") or 0 for x in ents if x.get("view_count") is not None)
-    if len(views) >= 4:
-        channels[cid] = {"n": len(views), "median": views[len(views) // 2],
-                         "name": next((v["channel"] for v in videos.values() if v["channel_id"] == cid), cid)}
-    print("channel", cid, len(views), flush=True)
-
 # full metadata for the 60 most-viewed
 top = sorted(videos.values(), key=lambda v: v.get("views") or 0, reverse=True)[:120]
 for v in top:
@@ -66,7 +55,20 @@ for v in top:
     v.update({"description": (j.get("description") or "")[:600], "tags": (j.get("tags") or [])[:25],
               "upload_date": j.get("upload_date"), "likes": j.get("like_count"),
               "comments": j.get("comment_count"), "followers": j.get("channel_follower_count"),
-              "width": j.get("width"), "height": j.get("height")})
+              "width": j.get("width"), "height": j.get("height"),
+              "channel": j.get("channel") or v.get("channel"), "channel_id": j.get("channel_id") or v.get("channel_id"),
+              "duration": j.get("duration") or v.get("duration"), "views": j.get("view_count") or v.get("views")})
+
+# channel medians: channels with the most hits
+counts = collections.Counter(v["channel_id"] for v in videos.values() if v.get("channel_id"))
+channels = {}
+for cid, _ in counts.most_common(40):
+    ents = flat(f"https://www.youtube.com/channel/{cid}/shorts", 40)
+    views = sorted(x.get("view_count") or 0 for x in ents if x.get("view_count") is not None)
+    if len(views) >= 4:
+        channels[cid] = {"n": len(views), "median": views[len(views) // 2],
+                         "name": next((v["channel"] for v in videos.values() if v["channel_id"] == cid), cid)}
+    print("channel", cid, len(views), flush=True)
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 json.dump({"videos": list(videos.values()), "channels": channels}, open(OUT, "w"), indent=1, ensure_ascii=False)
