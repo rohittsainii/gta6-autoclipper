@@ -55,16 +55,21 @@ jobs:
             python3 -c 'import json,sys; m=json.load(open(sys.argv[1])); print(m["description"])' "$d/meta.json" > "$d/notes.md"
             sample=$(python3 -c 'import json,sys; print("yes" if json.load(open(sys.argv[1])).get("sample") else "no")' "$d/meta.json")
             plat=$(python3 -c 'import json,sys; m=json.load(open(sys.argv[1])); print("-".join({"youtube":"yt","instagram":"ig","facebook":"fb","tiktok":"tt"}[p] for p in m.get("platforms",["youtube","instagram","facebook"])))' "$d/meta.json")
-            # New channels get throttled/sandboxed when they flood Shorts: max YT_DAILY_CAP YouTube posts per 24 h.
-            # Extra clips still go to the other platforms; a clip that is YouTube-only is kept for YouTube.
-            if [[ "$plat" == *yt* && "$plat" != "yt" ]]; then
-              yt24=$(gh release list --limit 100 --json tagName,createdAt \
-                --jq "[.[] | select(.tagName | test(\"--(.*-)?yt(-|$)\")) | select((.createdAt | fromdateiso8601) > (now - 86400))] | length" || echo 0)
-              if [ "${yt24:-0}" -ge "${YT_DAILY_CAP:-4}" ]; then
-                plat=$(echo "$plat" | sed -E 's/(^|-)yt(-|$)/\1/; s/^-//; s/-$//')
-                echo "YouTube cap reached ($yt24 in 24h): posting to $plat only"
+            # New accounts get throttled when they flood: cap posts per 24 h per platform
+            # (TikTok blocked API posting for 24 h after ~15 in one day). Over the cap, that platform is
+            # dropped for this clip; if nothing is left, the clip is kept unposted.
+            for pc in "yt:${YT_DAILY_CAP:-4}" "tt:${TT_DAILY_CAP:-3}"; do
+              p=${pc%%:*}; cap=${pc##*:}
+              if [[ "-$plat-" == *"-$p-"* ]]; then
+                n24=$(gh release list --limit 100 --json tagName,createdAt \
+                  --jq "[.[] | select(.tagName | test(\"--(.*-)?$p(-|\$)\")) | select((.createdAt | fromdateiso8601) > (now - 86400))] | length" || echo 0)
+                if [ "${n24:-0}" -ge "$cap" ]; then
+                  plat=$(echo "$plat" | sed -E "s/(^|-)$p(-|\$)/\\1/; s/^-//; s/-\$//")
+                  echo "$p cap reached ($n24 in 24h): now '$plat'"
+                fi
               fi
-            fi
+            done
+            if [ -z "$plat" ]; then echo "all platforms at cap, keeping $d unposted"; continue; fi
             tag="clip-$(date -u +%Y%m%d-%H%M%S)-$(basename "$d" | tr '_' '-' | cut -c1-40)--${plat}"
             if [ "$sample" = "yes" ]; then
               gh release create "$tag" "$d/clip.mp4" --title "[SAMPLE] $title" --notes-file "$d/notes.md" --prerelease
