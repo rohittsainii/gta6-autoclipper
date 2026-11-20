@@ -1,0 +1,45 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_46046.json",
+  "clips": [
+    {
+      "moment_id": "m3",
+      "start": 46568.7,
+      "end": 46593.4,
+      "hook": "Lacy's seafood ravioli breakdown",
+      "title": "Mid GTA 6 marathon, Lacy explains why seafood ravioli is elite",
+      "caption": "The heist can wait, the ravioli review can't \ud83c\udf5d",
+      "sfx": [
+        {
+          "t": 46571.6,
+          "type": "ding"
+        },
+        {
+          "t": 46593.0,
+          "type": "pop"
+        }
+      ]
+    },
+    {
+      "moment_id": "m12",
+      "start": 49137.3,
+      "end": 49180.6,
+      "hook": "Side missions actually pay off",
+      "title": "Lacy cracked a GTA 6 side-mission safe and found eight bands inside",
+      "caption": "Lacy and Lucia hit a side job, grab the cash and get out before the cops close in",
+      "sfx": [
+        {
+          "t": 49138.5,
+          "type": "ding"
+        },
+        {
+          "t": 49146.7,
+          "type": "boom"
+        },
+        {
+          "t": 49176.0,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}
