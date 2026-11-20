@@ -1,5 +1,5 @@
 {
-  "status": "new",
+  "status": "skipped",
   "campaign": "kaicenat",
   "streamer": "Kai Cenat",
   "language": "en",
@@ -9176,5 +9176,6 @@
         }
       ]
     }
-  ]
+  ],
+  "skip_reason": "No frames to confirm Kai is the focus; moments are mostly cutscene/mission dialogue, chat talk or suggestive gym scene; nothing lands without voice"
 }

@@ -1,5 +1,5 @@
 {
-  "status": "new",
+  "status": "skipped",
   "campaign": "lacy",
   "streamer": "Lacy",
   "language": "en",
@@ -191,5 +191,6 @@
       "text": "",
       "words": []
     }
-  ]
+  ],
+  "skip_reason": "Lacy asleep (sleep stream), no GTA 6 gameplay"
 }
