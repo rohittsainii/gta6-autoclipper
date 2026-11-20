@@ -1,19 +1,16 @@
 # Renderer
 
-Run at 2026-11-20 08:33 UTC
+Run at 2026-11-20 10:31 UTC
 
 ```
-[08:30:57] lacy_twitch_v2933767012_49204_1: downloading 51489-51521s
-[08:31:04]   webcam face found in 18/18 frames, crop 175x124
-[08:31:26] lacy_twitch_v2933767012_49204_1: done (20.8 MB, 31.9s)
-[08:31:26] lacy_twitch_v2933767012_52413_1: downloading 54137-54158s
-[08:31:32]   webcam face found in 18/18 frames, crop 135x96
-[08:31:48] lacy_twitch_v2933767012_52413_1: done (16.8 MB, 21.6s)
-[08:31:48] lacy_twitch_v2933767012_52413_2: downloading 54724-54763s
-[08:31:54]   face candidate moves too much (likely in-game), using full-frame layout
-[08:32:55] lacy_twitch_v2933767012_52413_2: done (27.2 MB, 39.1s)
-[08:32:55] lacy_twitch_v2933767012_55927_1: downloading 57540-57572s
-[08:33:01]   face candidate moves too much (likely in-game), using full-frame layout
-[08:33:47] lacy_twitch_v2933767012_55927_1: done (7.7 MB, 31.7s)
-[08:33:47] rendered 4 clip(s)
+[10:30:35] dasgasd3m_kick_be2c2aad-f224-407d-ba7c-4b3e7c599d80_0_1: downloading 1442-1480s
+[10:30:39]   webcam face found in 18/18 frames, crop 249x177
+[10:30:54] dasgasd3m_kick_be2c2aad-f224-407d-ba7c-4b3e7c599d80_0_1: done (15.3 MB, 44.6s)
+[10:30:55] dasgasd3m_kick_be2c2aad-f224-407d-ba7c-4b3e7c599d80_0_2: downloading 1788-1828s
+[10:30:59]   webcam face found in 18/18 frames, crop 283x201
+[10:31:16] dasgasd3m_kick_be2c2aad-f224-407d-ba7c-4b3e7c599d80_0_2: done (23.1 MB, 45.8s)
+[10:31:16] lacy_twitch_v2933767012_58044_1: downloading 58177-58198s
+[10:31:20]   webcam face found in 10/18 frames, crop 182x129
+[10:31:28] lacy_twitch_v2933767012_58044_1: done (11.4 MB, 20.6s)
+[10:31:28] rendered 3 clip(s)
 ```
