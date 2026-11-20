@@ -1,0 +1,41 @@
+{
+  "candidate_file": "candidates/twitch_v2933395174_0.json",
+  "clips": [
+    {
+      "moment_id": "m5",
+      "start": 2323.0,
+      "end": 2365.5,
+      "hook": "Then he hit the headshot",
+      "title": "BrettLiftsXP chased him down and landed the headshot in GTA 6",
+      "caption": "Don't lose him… then one clean shot 🎯",
+      "sfx": [
+        {
+          "t": 2349.5,
+          "type": "pop"
+        },
+        {
+          "t": 2359.1,
+          "type": "boom"
+        }
+      ]
+    },
+    {
+      "moment_id": "m6",
+      "start": 3151.4,
+      "end": 3191.7,
+      "hook": "He really wants to touch it",
+      "title": "BrettLiftsXP went scuba diving in GTA 6 and wanted to pet a jellyfish",
+      "caption": "He knows he shouldn't touch the jellyfish. He really wants to 🪼",
+      "sfx": [
+        {
+          "t": 3155.3,
+          "type": "ding"
+        },
+        {
+          "t": 3172.5,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_file": "candidates/youtube_dy-oCN2NxfA_31302.json",
+  "clips": [
+    {
+      "moment_id": "m10",
+      "start": 41155.2,
+      "end": 41195.1,
+      "hook": "That is NOT a deer",
+      "title": "KreekCraft heard something in the GTA 6 swamp… it was not a deer",
+      "caption": "Off-roading through the swamp was a mistake 😭",
+      "voice_intro": "KreekCraft is off-roading through the swamp when something out there makes a terrible noise.",
+      "voice_outro": "Whatever was making that noise, these swamps clearly aren't empty. Taking a road car through them was always asking for trouble.",
+      "sfx": [
+        {
+          "t": 41178.0,
+          "type": "gasp"
+        },
+        {
+          "t": 41183.6,
+          "type": "boom"
+        }
+      ]
+    },
+    {
+      "moment_id": "m5",
+      "start": 38903.9,
+      "end": 38933.8,
+      "hook": "No way he ran out of gas",
+      "title": "KreekCraft actually ran out of gas in GTA 6",
+      "caption": "Saw the gas station. Didn't make it ⛽",
+      "voice_intro": "His tank is nearly dry, and KreekCraft just spotted a gas station.",
+      "voice_outro": "Running dry in GTA still feels wrong to me. Fuel stranding KreekCraft mid-drive is brutal, but kind of brilliant too.",
+      "sfx": [
+        {
+          "t": 38922.8,
+          "type": "scratch"
+        },
+        {
+          "t": 38925.6,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_file": "candidates/twitch_v2932147800_63284.json",
+  "clips": [
+    {
+      "moment_id": "m1",
+      "start": 64979.5,
+      "end": 65019.6,
+      "hook": "The cops just lost him",
+      "title": "KreekCraft escaped a full police hunt in GTA 6… and kept the rocket launcher",
+      "caption": "Cops lost the trail and KreekCraft walked away with a rocket launcher 🚀",
+      "voice_intro": "The cops are closing in on KreekCraft. Just listen to that police radio.",
+      "voice_outro": "Lose the cops, keep a rocket launcher. Honestly a decent trade, but next time he should fire it before the chase even starts.",
+      "sfx": [
+        {
+          "t": 65000.7,
+          "type": "pop"
+        },
+        {
+          "t": 65015.9,
+          "type": "ding"
+        }
+      ]
+    }
+  ]
+}

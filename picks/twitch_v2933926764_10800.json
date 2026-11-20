@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2933926764_10800.json",
+  "clips": [
+    {
+      "moment_id": "m7",
+      "start": 17474.6,
+      "end": 17517.9,
+      "hook": "He blamed the ATV",
+      "title": "BrettLiftsXP got wiped in GTA 6 and blamed an ATV",
+      "caption": "Out of bullets, out of luck, and the ATV takes the blame 💀",
+      "sfx": [
+        {
+          "t": 17502.5,
+          "type": "scratch"
+        },
+        {
+          "t": 17512.4,
+          "type": "pop"
+        }
+      ]
+    }
+  ]
+}
