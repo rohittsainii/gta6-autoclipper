@@ -4,7 +4,7 @@ Step 1: search recent Shorts for each query, keep ones <= 3 min.
 Step 2: for the channels that show up most, list their last 40 Shorts (views) for a median.
 Step 3: for the top videos, fetch full metadata (description, tags, upload date, likes, comments).
 """
-import json, subprocess, sys, collections
+import json, subprocess, sys, collections, os
 
 COOKIES, OUT = sys.argv[1], sys.argv[2]
 QUERIES = [
@@ -28,13 +28,16 @@ def flat(url, n):
         return []
 
 
+HASHTAGS = ["gta6", "gtavi", "gta6clips", "kaicenat", "lacy", "kreekcraft", "ishowspeed", "gta6funny", "gta6shorts"]
+SOURCES = [("q:" + q, "https://www.youtube.com/results?search_query=" + q.replace(" ", "+") + "&sp=EgIQCQ%253D%253D")
+           for q in QUERIES]  # sp = type Shorts
+SOURCES += [("#" + h, f"https://www.youtube.com/hashtag/{h}/shorts") for h in HASHTAGS]
+
 videos = {}
-for q in QUERIES:
-    # sp=EgIIAw%3D%3D = uploaded this week
-    url = "https://www.youtube.com/results?search_query=" + q.replace(" ", "+") + "&sp=EgIIAw%253D%253D"
-    for e in flat(url, 60):
+for q, url in SOURCES:
+    for e in flat(url, 80):
         d = e.get("duration") or 0
-        if not e.get("id") or not d or d > 180:
+        if not e.get("id") or (d and d > 180):
             continue
         videos[e["id"]] = {"id": e["id"], "title": e.get("title"), "views": e.get("view_count"),
                            "duration": d, "channel": e.get("channel") or e.get("uploader"),
@@ -44,7 +47,7 @@ for q in QUERIES:
 # channel medians: channels with the most hits
 counts = collections.Counter(v["channel_id"] for v in videos.values() if v.get("channel_id"))
 channels = {}
-for cid, _ in counts.most_common(30):
+for cid, _ in counts.most_common(40):
     ents = flat(f"https://www.youtube.com/channel/{cid}/shorts", 40)
     views = sorted(x.get("view_count") or 0 for x in ents if x.get("view_count") is not None)
     if len(views) >= 4:
@@ -53,7 +56,7 @@ for cid, _ in counts.most_common(30):
     print("channel", cid, len(views), flush=True)
 
 # full metadata for the 60 most-viewed
-top = sorted(videos.values(), key=lambda v: v.get("views") or 0, reverse=True)[:60]
+top = sorted(videos.values(), key=lambda v: v.get("views") or 0, reverse=True)[:120]
 for v in top:
     out = ytdlp(["--skip-download", "-J", f"https://www.youtube.com/shorts/{v['id']}"], timeout=120)
     try:
@@ -65,5 +68,6 @@ for v in top:
               "comments": j.get("comment_count"), "followers": j.get("channel_follower_count"),
               "width": j.get("width"), "height": j.get("height")})
 
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 json.dump({"videos": list(videos.values()), "channels": channels}, open(OUT, "w"), indent=1, ensure_ascii=False)
 print("done", len(videos), len(channels))
