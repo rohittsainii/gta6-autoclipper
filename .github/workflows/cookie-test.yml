@@ -1,0 +1,41 @@
+name: Cookie check
+# Checks the YT_COOKIES secret without printing it: counts YouTube login cookies
+# and asks yt-dlp to read one GTA 6 stream page (no download).
+on:
+  push:
+    paths: [".github/cookie-test-trigger"]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Test cookies
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: |
+          printf '%s\n' "$YT_COOKIES" > /tmp/c.txt
+          {
+            echo "# Cookie check $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo "- lines in secret: $(grep -c . /tmp/c.txt)"
+            echo "- youtube.com cookies: $(grep -c 'youtube.com' /tmp/c.txt)"
+            echo "- login cookies (SID/LOGIN_INFO/__Secure-3PSID): $(grep -cE $'\t(SID|LOGIN_INFO|__Secure-3PSID)\t' /tmp/c.txt)"
+            if yt-dlp --cookies /tmp/c.txt --no-warnings -s --print title "https://www.youtube.com/watch?v=yX4DH_msPkI" > /tmp/out.txt 2> /tmp/err.txt; then
+              echo "- yt-dlp read a YouTube stream: OK ($(head -c 80 /tmp/out.txt))"
+            else
+              echo "- yt-dlp FAILED: $(grep -oiE 'sign in[^.]*|not a bot|HTTP Error [0-9]+[^.]*|ERROR:[^\n]{0,160}' /tmp/err.txt | head -2 | tr '\n' ' ')"
+            fi
+          } > state/cookie_check.md
+          rm -f /tmp/c.txt
+          cat state/cookie_check.md
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/cookie_check.md
+          git commit -m "cookie check" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
