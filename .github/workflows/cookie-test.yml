@@ -9,12 +9,12 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null && pip install -r requirements.txt
       - name: Test cookies
         env:
           YT_COOKIES: ${{ secrets.YT_COOKIES }}
@@ -30,6 +30,20 @@ jobs:
             else
               echo "- yt-dlp FAILED: $(grep -oiE 'sign in[^.]*|not a bot|HTTP Error [0-9]+[^.]*|ERROR:[^\n]{0,160}' /tmp/err.txt | head -2 | tr '\n' ' ')"
             fi
+            echo ""
+            echo "## Live download test (3 min of each creator's newest YouTube stream)"
+            for src in "Kai Cenat|https://www.youtube.com/channel/UCvCfpQXRXdJdL07pzTIA6Cw/streams" "Dylan Page|https://www.youtube.com/@dylan.page./streams" "KreekCraft|https://www.youtube.com/@Kreek/streams" "BrettLiftsXP|https://www.youtube.com/@BrettLiftsXP/videos"; do
+              name="${src%%|*}"; url="${src#*|}"
+              vid=$(yt-dlp --cookies /tmp/c.txt --no-warnings --flat-playlist --playlist-end 1 --print id "$url" 2>/tmp/e1.txt | head -1)
+              if [ -z "$vid" ]; then echo "- $name: could not list videos: $(grep -oE 'ERROR:.{0,140}' /tmp/e1.txt | head -1)"; continue; fi
+              t0=$(date +%s); rm -f /tmp/t_*
+              if timeout 300 yt-dlp --cookies /tmp/c.txt --no-warnings -f 'ba/worst' --download-sections '*600-780' -o "/tmp/t_$vid.%(ext)s" "https://www.youtube.com/watch?v=$vid" >/dev/null 2>/tmp/e2.txt; then
+                f=$(ls /tmp/t_$vid.* | head -1); d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" | cut -d. -f1)
+                echo "- $name: OK, got ${d}s of audio from video $vid in $(( $(date +%s)-t0 ))s"
+              else
+                echo "- $name: FAILED on $vid after $(( $(date +%s)-t0 ))s: $(grep -oiE 'sign in[^.]*|not a bot|HTTP Error [0-9]+[^.]*|ERROR:.{0,140}' /tmp/e2.txt | head -1)"
+              fi
+            done
           } > state/cookie_check.md
           rm -f /tmp/c.txt
           cat state/cookie_check.md
