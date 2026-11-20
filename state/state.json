@@ -41,7 +41,7 @@
       "campaign": "lacy"
     },
     "twitch_v2932305259": {
-      "done_until": 110201.0,
+      "done_until": 113274.0,
       "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴 2026-11-19 20:09",
       "campaign": "kaicenat"
     },
@@ -91,7 +91,7 @@
       "campaign": "dylanpage"
     },
     "twitch_v2933758895": {
-      "done_until": 17598.0,
+      "done_until": 41835.0,
       "title": "GTA 6 LIVE (FULL GAME) ALL ENDINGS | DAY 2 2026-11-19 21:37",
       "campaign": "kreekcraft"
     },
@@ -109,6 +109,16 @@
       "done_until": 32974.0,
       "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 3)",
       "campaign": "kaicenat"
+    },
+    "youtube_cWPhAshHWk4": {
+      "done_until": 30947.0,
+      "title": "GTA 6 LIVE (FULL GAME) ALL ENDINGS | DAY 2",
+      "campaign": "kreekcraft"
+    },
+    "twitch_v2934461054": {
+      "done_until": 3927.0,
+      "title": "🔴GTA 6 MARATHON!🔴 FIRST LOOKS AT THE GAME🔴GTA 6 WALKTHROUGH🔴 COME TALK !discord !socials 2026-11-20 02:57",
+      "campaign": "brettliftsxp"
     }
   },
   "clip_cache": {
@@ -1629,6 +1639,18 @@
       "views": 2,
       "title": "cal",
       "url": "https://www.twitch.tv/brettliftsxp/clip/TalentedGrossMacaroniKappaRoss-6LKYoljU_mLO1dqI"
+    },
+    "2794967439": {
+      "ts": 1794997747,
+      "views": 1764,
+      "title": "gta 6 reaction",
+      "url": "https://www.twitch.tv/kaicenat/clip/TentativeFriendlySandpiperNotLikeThis-bnrx7Wfyqgfs7ZJg"
+    },
+    "2131405255": {
+      "ts": 1795042707,
+      "views": 754,
+      "title": "finding skunk ape",
+      "url": "https://www.twitch.tv/kaicenat/clip/BoldEncouragingHamJonCarnage-pe0Q59lJ1Zj-4lUY"
     }
   }
 }
