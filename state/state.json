@@ -36,7 +36,7 @@
       "campaign": "clix"
     },
     "twitch_v2933767012": {
-      "done_until": 87824.0,
+      "done_until": 90736.0,
       "title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-19 16:15",
       "campaign": "lacy"
     },
@@ -131,7 +131,7 @@
       "campaign": "dylanpage"
     },
     "youtube_yX4DH_msPkI": {
-      "done_until": 30835.0,
+      "done_until": 39240.0,
       "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 4)",
       "campaign": "kaicenat"
     },
@@ -144,6 +144,11 @@
       "done_until": 0.0,
       "title": "🔴LIVE! BEATING GTA 6 (ALL ENDINGS) | GIVEAWAYS | DAY 3 2026-11-20 15:26",
       "campaign": "kreekcraft"
+    },
+    "youtube_tvT6ZVHOtWs": {
+      "done_until": 25536.0,
+      "title": "FIRST TO BEAT GTA 6 (By Cheating) | DAY 3",
+      "campaign": "dylanpage"
     }
   },
   "clip_cache": {
@@ -1796,6 +1801,18 @@
       "views": 1266,
       "title": "Lucy hard",
       "url": "https://www.twitch.tv/lacy/clip/FilthyRefinedSkirretLeeroyJenkins-fIZvW74IyvHXhDQD"
+    },
+    "2141091169": {
+      "ts": 1795037190,
+      "views": 1399,
+      "title": "kai wildn",
+      "url": "https://www.twitch.tv/kaicenat/clip/EnthusiasticHumbleGaurBuddhaBar-8zMmWpT7_POQpgxf"
+    },
+    "155911996": {
+      "ts": 1795109265,
+      "views": 94,
+      "title": "lucias first job gone wrong",
+      "url": "https://www.twitch.tv/kreekcraft/clip/ObliviousTallWormDogFace-PLENfd6n4UBfW7qb"
     }
   }
 }
