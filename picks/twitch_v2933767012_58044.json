@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2933767012_58044.json",
+  "clips": [
+    {
+      "moment_id": "m1",
+      "start": 58177.0,
+      "end": 58197.6,
+      "hook": "Not another fishing trip with Cal",
+      "title": "Lacy wanted the next GTA 6 story mission. The game sent him fishing with Cal instead",
+      "caption": "LACY wanted story progress, GTA 6 handed him another day out with Cal 🎣",
+      "sfx": [
+        {
+          "t": 58189.5,
+          "type": "ding"
+        },
+        {
+          "t": 58193.2,
+          "type": "scratch"
+        }
+      ]
+    }
+  ]
+}

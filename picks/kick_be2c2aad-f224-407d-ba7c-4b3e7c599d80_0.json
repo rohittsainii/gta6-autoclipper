@@ -1,0 +1,49 @@
+{
+  "candidate_file": "candidates/kick_be2c2aad-f224-407d-ba7c-4b3e7c599d80_0.json",
+  "clips": [
+    {
+      "moment_id": "m6",
+      "start": 1442.3,
+      "end": 1479.9,
+      "hook": "The gold AK he can't afford",
+      "title": "Dom maxed out an AK in GTA 6, found the gold finish… and didn't have the cash",
+      "caption": "Fully upgraded AK, gold finish on screen, not enough money in the pocket 💰",
+      "voice_intro": "Dom is deep in the weapon customization menu, piling every upgrade onto one rifle.",
+      "voice_outro": "Finding the gold finish and not having the cash is peak GTA. That rifle just became his whole reason to grind tonight.",
+      "sfx": [
+        {
+          "t": 1457.9,
+          "type": "ding"
+        },
+        {
+          "t": 1466.7,
+          "type": "boom"
+        }
+      ]
+    },
+    {
+      "moment_id": "m8",
+      "start": 1788.3,
+      "end": 1827.7,
+      "hook": "The money was clean, supposedly",
+      "title": "Dom swore his money was clean in GTA 6… it did not go well",
+      "caption": "Swore the cash was clean. The receipts conversation went downhill fast 😬",
+      "voice_intro": "Someone wants to know where Dom's cash came from, and he has an answer ready.",
+      "voice_outro": "Claiming you won it at the Botanica is a bold alibi. Nobody on that street bought it, and neither did I.",
+      "sfx": [
+        {
+          "t": 1791.7,
+          "type": "pop"
+        },
+        {
+          "t": 1816.2,
+          "type": "scratch"
+        },
+        {
+          "t": 1825.0,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
