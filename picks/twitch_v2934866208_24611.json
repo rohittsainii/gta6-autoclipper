@@ -1,37 +1,39 @@
 {
- "candidate_file": "candidates/twitch_v2934866208_24611.json",
- "clips": [
-  {
-   "moment_id": "m6",
-   "start": 29122.7,
-   "end": 29155.4,
-   "hook": "Kai wants the next GTA in New York",
-   "title": "Kai Cenat Wants The Next GTA To Be Like San Andreas 😂🌆",
-   "caption": "San Andreas vibe or New York next? 👀",
-   "sfx": [
+  "candidate_file": "candidates/twitch_v2934866208_24611.json",
+  "clips": [
     {
-     "t": 29128.1,
-     "type": "ding"
+      "moment_id": "m6",
+      "start": 29122.7,
+      "end": 29155.4,
+      "hook": "Kai wants the next GTA in New York",
+      "title": "Kai Cenat Wants The Next GTA To Be Like San Andreas 😂🌆",
+      "caption": "San Andreas vibe or New York next? 👀",
+      "sfx": [
+        {
+          "t": 29128.1,
+          "type": "ding"
+        },
+        {
+          "t": 29154.6,
+          "type": "pop"
+        }
+      ]
     },
     {
-     "t": 29154.6,
-     "type": "pop"
+      "moment_id": "m11",
+      "start": 31491.6,
+      "end": 31514.3,
+      "hook": "Kai noticed every GTA 6 NPC is different",
+      "title": "Kai Cenat Can't Get Over GTA 6's NPCs 😭👥",
+      "caption": "Have you noticed this in GTA 6 yet? 😭",
+      "sfx": [
+        {
+          "t": 31491.8,
+          "type": "ding"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "moment_id": "m11",
-   "start": 31491.6,
-   "end": 31514.3,
-   "hook": "Kai noticed every GTA 6 NPC is different",
-   "title": "Kai Cenat Can't Get Over GTA 6's NPCs 😭👥",
-   "caption": "Have you noticed this in GTA 6 yet? 😭",
-   "sfx": [
-    {
-     "t": 31491.8,
-     "type": "ding"
-    }
-   ]
-  }
- ]
+  ],
+  "status": "rendered",
+  "rendered_at": "2026-11-21 00:30 UTC"
 }

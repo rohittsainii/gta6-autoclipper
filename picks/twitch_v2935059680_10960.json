@@ -1,41 +1,43 @@
 {
- "candidate_file": "candidates/twitch_v2935059680_10960.json",
- "clips": [
-  {
-   "moment_id": "m2",
-   "start": 11338.0,
-   "end": 11363.3,
-   "hook": "Lacy found the mission tab on day 3",
-   "title": "Lacy Found GTA 6's Story Mission Tab On Day 3 😭🗺️",
-   "caption": "How did nobody in chat tell him? 😭",
-   "sfx": [
+  "candidate_file": "candidates/twitch_v2935059680_10960.json",
+  "clips": [
     {
-     "t": 11340.3,
-     "type": "ding"
+      "moment_id": "m2",
+      "start": 11338.0,
+      "end": 11363.3,
+      "hook": "Lacy found the mission tab on day 3",
+      "title": "Lacy Found GTA 6's Story Mission Tab On Day 3 😭🗺️",
+      "caption": "How did nobody in chat tell him? 😭",
+      "sfx": [
+        {
+          "t": 11340.3,
+          "type": "ding"
+        },
+        {
+          "t": 11362.8,
+          "type": "boom"
+        }
+      ]
     },
     {
-     "t": 11362.8,
-     "type": "boom"
+      "moment_id": "m9",
+      "start": 15062.6,
+      "end": 15095.5,
+      "hook": "GTA 6 told Lacy to wait for missions",
+      "title": "Lacy Got Told To Wait For A Mission In GTA 6 💀⏳",
+      "caption": "Would you wait or go cause chaos? 💀",
+      "sfx": [
+        {
+          "t": 15073.0,
+          "type": "scratch"
+        },
+        {
+          "t": 15095.0,
+          "type": "boom"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "moment_id": "m9",
-   "start": 15062.6,
-   "end": 15095.5,
-   "hook": "GTA 6 told Lacy to wait for missions",
-   "title": "Lacy Got Told To Wait For A Mission In GTA 6 💀⏳",
-   "caption": "Would you wait or go cause chaos? 💀",
-   "sfx": [
-    {
-     "t": 15073.0,
-     "type": "scratch"
-    },
-    {
-     "t": 15095.0,
-     "type": "boom"
-    }
-   ]
-  }
- ]
+  ],
+  "status": "rendered",
+  "rendered_at": "2026-11-21 00:31 UTC"
 }
