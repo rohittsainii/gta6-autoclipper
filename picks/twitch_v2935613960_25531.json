@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2935613960_25531.json",
+  "clips": [
+    {
+      "moment_id": "m2",
+      "start": 25767.6,
+      "end": 25788.6,
+      "hook": "Kai's honest GTA 6 vs GTA 5 take",
+      "title": "Kai Cenat Says GTA 6's Realism Kills Every Game 💀🎮",
+      "caption": "Is GTA 6 better than GTA 5? Be honest 👀",
+      "sfx": [
+        {
+          "t": 25776.6,
+          "type": "ding"
+        },
+        {
+          "t": 25787.6,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}

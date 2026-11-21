@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2935059680_49545.json",
+  "clips": [
+    {
+      "moment_id": "m12",
+      "start": 53072.4,
+      "end": 53093.6,
+      "hook": "Salesman snubs Lacy, then switches up",
+      "title": "Lacy Roasted A Car Salesman Who Snubbed Him 😭🚗",
+      "caption": "Would you still buy a car from Rob? 😭",
+      "sfx": [
+        {
+          "t": 53073.2,
+          "type": "scratch"
+        },
+        {
+          "t": 53090.4,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}

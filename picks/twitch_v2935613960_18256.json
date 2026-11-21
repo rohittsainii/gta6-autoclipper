@@ -1,0 +1,23 @@
+{
+  "candidate_file": "candidates/twitch_v2935613960_18256.json",
+  "clips": [
+    {
+      "moment_id": "m3",
+      "start": 19526.3,
+      "end": 19546.0,
+      "hook": "Kai sees his penthouse garage",
+      "title": "Kai Cenat Wants To Sell His Penthouse Cars 😭🏎️",
+      "caption": "Would you keep the cars or sell them? 🏎️",
+      "sfx": [
+        {
+          "t": 19527.6,
+          "type": "ding"
+        },
+        {
+          "t": 19540.9,
+          "type": "boom"
+        }
+      ]
+    }
+  ]
+}
