@@ -1,19 +1,16 @@
 # Renderer
 
-Run at 2026-11-21 00:31 UTC
+Run at 2026-11-21 09:30 UTC
 
 ```
-[00:28:59] kaicenat_twitch_v2934866208_24611_1: downloading 29123-29155s
-[00:29:06]   face candidate moves too much (likely in-game), using full-frame layout
-[00:29:56] kaicenat_twitch_v2934866208_24611_1: done (18.6 MB, 32.7s)
-[00:29:56] kaicenat_twitch_v2934866208_24611_2: downloading 31492-31514s
-[00:30:03]   webcam face found in 10/18 frames, crop 161x115
-[00:30:18] kaicenat_twitch_v2934866208_24611_2: done (15.7 MB, 22.7s)
-[00:30:18] lacy_twitch_v2935059680_10960_1: downloading 11338-11363s
-[00:30:24]   webcam face found in 16/18 frames, crop 195x139
-[00:30:38] lacy_twitch_v2935059680_10960_1: done (9.2 MB, 25.3s)
-[00:30:38] lacy_twitch_v2935059680_10960_2: downloading 15063-15096s
-[00:30:43]   face candidate moves too much (likely in-game), using full-frame layout
-[00:31:30] lacy_twitch_v2935059680_10960_2: done (7.4 MB, 32.9s)
-[00:31:30] rendered 4 clip(s)
+[09:29:21] lacy_twitch_v2935059680_49545_1: downloading 53072-53094s
+[09:29:28]   webcam face found in 18/18 frames, crop 222x158
+[09:29:41] lacy_twitch_v2935059680_49545_1: done (9.1 MB, 21.2s)
+[09:29:41] kaicenat_twitch_v2935613960_18256_1: downloading 19526-19546s
+[09:29:47]   webcam face found in 18/18 frames, crop 175x124
+[09:30:00] kaicenat_twitch_v2935613960_18256_1: done (12.3 MB, 19.7s)
+[09:30:00] kaicenat_twitch_v2935613960_25531_1: downloading 25768-25789s
+[09:30:06]   face candidate moves too much (likely in-game), using full-frame layout
+[09:30:37] kaicenat_twitch_v2935613960_25531_1: done (9.6 MB, 21.0s)
+[09:30:37] rendered 3 clip(s)
 ```
