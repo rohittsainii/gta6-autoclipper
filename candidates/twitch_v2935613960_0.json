@@ -1,3542 +1,3542 @@
 {
-  "status": "new",
-  "campaign": "kaicenat",
-  "streamer": "Kai Cenat",
-  "language": "en",
-  "vod_url": "https://www.twitch.tv/videos/2935613960",
-  "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 01:44",
-  "chunk": [
-    0.0,
-    1015.0
-  ],
-  "created": "2026-11-21 02:00 UTC",
-  "moments": [
+ "status": "skipped",
+ "campaign": "kaicenat",
+ "streamer": "Kai Cenat",
+ "language": "en",
+ "vod_url": "https://www.twitch.tv/videos/2935613960",
+ "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 01:44",
+ "chunk": [
+  0.0,
+  1015.0
+ ],
+ "created": "2026-11-21 02:00 UTC",
+ "moments": [
+  {
+   "id": "m1",
+   "frames": [
+    "candidates/frames/twitch_v2935613960_0/m1/0.jpg",
+    "candidates/frames/twitch_v2935613960_0/m1/1.jpg",
+    "candidates/frames/twitch_v2935613960_0/m1/2.jpg"
+   ],
+   "start": 77.0,
+   "end": 187.0,
+   "peak": 147.0,
+   "score": 1.21,
+   "signals": [
+    "loud"
+   ],
+   "stt": "elevenlabs",
+   "text": "Wow, right? Oh, yeah. He was undercover the whole time. Was trying to get in with the Polians. Hmm. You know, I'm surprised you didn't get a read on him. Hey, cops aren't usually that bad at reading people. Hold on. Yeah, so what were you saying? I guess so. I thought he, like, liked me or something. Hey, both can be true. Yeah, well, he's gone anyway. Crashed out and blew up. Damn. Are you okay? Yeah, I'm fine. It's just... Did I tell you he made me a sandwich? Can't remember the last guy that made me a sandwich. My uncle, maybe. Hmm. Well, I'm here if you wanna talk. Yeah. Yeah, I know. Thanks. Love you, Lucia. Goddamn. You're all going to hell. Because what? I'm not good enough. Hey, look, I was the number one athlete. Scholarship player my whole life, man. What the hell? Yo, chat, I think Jason should get a new haircut. What y'all think? Does he, does he have any good hairstyles? Yo, what's good? Bro, bro, bro, bro, bro. I still don't think you understand. You can't compete with me. You can't. I'll buy every fucking bottle in the place. Bro, it is... Wait, creative styles. I'll buy every single bottle if that means I have to.",
+   "words": [
     {
-      "id": "m1",
-      "frames": [
-        "candidates/frames/twitch_v2935613960_0/m1/0.jpg",
-        "candidates/frames/twitch_v2935613960_0/m1/1.jpg",
-        "candidates/frames/twitch_v2935613960_0/m1/2.jpg"
-      ],
-      "start": 77.0,
-      "end": 187.0,
-      "peak": 147.0,
-      "score": 1.21,
-      "signals": [
-        "loud"
-      ],
-      "stt": "elevenlabs",
-      "text": "Wow, right? Oh, yeah. He was undercover the whole time. Was trying to get in with the Polians. Hmm. You know, I'm surprised you didn't get a read on him. Hey, cops aren't usually that bad at reading people. Hold on. Yeah, so what were you saying? I guess so. I thought he, like, liked me or something. Hey, both can be true. Yeah, well, he's gone anyway. Crashed out and blew up. Damn. Are you okay? Yeah, I'm fine. It's just... Did I tell you he made me a sandwich? Can't remember the last guy that made me a sandwich. My uncle, maybe. Hmm. Well, I'm here if you wanna talk. Yeah. Yeah, I know. Thanks. Love you, Lucia. Goddamn. You're all going to hell. Because what? I'm not good enough. Hey, look, I was the number one athlete. Scholarship player my whole life, man. What the hell? Yo, chat, I think Jason should get a new haircut. What y'all think? Does he, does he have any good hairstyles? Yo, what's good? Bro, bro, bro, bro, bro. I still don't think you understand. You can't compete with me. You can't. I'll buy every fucking bottle in the place. Bro, it is... Wait, creative styles. I'll buy every single bottle if that means I have to.",
-      "words": [
-        {
-          "w": "Wow,",
-          "s": 77.0,
-          "e": 77.26
-        },
-        {
-          "w": "right?",
-          "s": 77.64,
-          "e": 77.92
-        },
-        {
-          "w": "Oh,",
-          "s": 78.5,
-          "e": 78.74
-        },
-        {
-          "w": "yeah.",
-          "s": 78.8,
-          "e": 79.08
-        },
-        {
-          "w": "He",
-          "s": 79.66,
-          "e": 79.74
-        },
-        {
-          "w": "was",
-          "s": 79.8,
-          "e": 79.86
-        },
-        {
-          "w": "undercover",
-          "s": 79.92,
-          "e": 80.3
-        },
-        {
-          "w": "the",
-          "s": 80.34,
-          "e": 80.4
-        },
-        {
-          "w": "whole",
-          "s": 80.44,
-          "e": 80.58
-        },
-        {
-          "w": "time.",
-          "s": 80.64,
-          "e": 80.94
-        },
-        {
-          "w": "Was",
-          "s": 81.52,
-          "e": 81.58
-        },
-        {
-          "w": "trying",
-          "s": 81.62,
-          "e": 81.76
-        },
-        {
-          "w": "to",
-          "s": 81.78,
-          "e": 81.82
-        },
-        {
-          "w": "get",
-          "s": 81.86,
-          "e": 81.92
-        },
-        {
-          "w": "in",
-          "s": 81.96,
-          "e": 81.98
-        },
-        {
-          "w": "with",
-          "s": 82.0,
-          "e": 82.08
-        },
-        {
-          "w": "the",
-          "s": 82.1,
-          "e": 82.18
-        },
-        {
-          "w": "Polians.",
-          "s": 82.22,
-          "e": 82.68
-        },
-        {
-          "w": "Hmm.",
-          "s": 83.16,
-          "e": 83.46
-        },
-        {
-          "w": "You",
-          "s": 84.24,
-          "e": 84.28
-        },
-        {
-          "w": "know,",
-          "s": 84.32,
-          "e": 84.4
-        },
-        {
-          "w": "I'm",
-          "s": 84.46,
-          "e": 84.54
-        },
-        {
-          "w": "surprised",
-          "s": 84.6,
-          "e": 85.04
-        },
-        {
-          "w": "you",
-          "s": 85.08,
-          "e": 85.12
-        },
-        {
-          "w": "didn't",
-          "s": 85.16,
-          "e": 85.3
-        },
-        {
-          "w": "get",
-          "s": 85.34,
-          "e": 85.44
-        },
-        {
-          "w": "a",
-          "s": 85.5,
-          "e": 85.56
-        },
-        {
-          "w": "read",
-          "s": 85.64,
-          "e": 85.84
-        },
-        {
-          "w": "on",
-          "s": 85.9,
-          "e": 86.02
-        },
-        {
-          "w": "him.",
-          "s": 86.06,
-          "e": 86.12
-        },
-        {
-          "w": "Hey,",
-          "s": 86.88,
-          "e": 87.08
-        },
-        {
-          "w": "cops",
-          "s": 87.36,
-          "e": 87.52
-        },
-        {
-          "w": "aren't",
-          "s": 87.56,
-          "e": 87.68
-        },
-        {
-          "w": "usually",
-          "s": 87.74,
-          "e": 88.0
-        },
-        {
-          "w": "that",
-          "s": 88.06,
-          "e": 88.16
-        },
-        {
-          "w": "bad",
-          "s": 88.22,
-          "e": 88.34
-        },
-        {
-          "w": "at",
-          "s": 88.36,
-          "e": 88.44
-        },
-        {
-          "w": "reading",
-          "s": 88.52,
-          "e": 88.84
-        },
-        {
-          "w": "people.",
-          "s": 88.84,
-          "e": 88.94
-        },
-        {
-          "w": "Hold",
-          "s": 89.56,
-          "e": 89.72
-        },
-        {
-          "w": "on.",
-          "s": 89.78,
-          "e": 89.92
-        },
-        {
-          "w": "Yeah,",
-          "s": 92.78,
-          "e": 92.92
-        },
-        {
-          "w": "so",
-          "s": 93.0,
-          "e": 93.08
-        },
-        {
-          "w": "what",
-          "s": 93.12,
-          "e": 93.24
-        },
-        {
-          "w": "were",
-          "s": 93.26,
-          "e": 93.34
-        },
-        {
-          "w": "you",
-          "s": 93.38,
-          "e": 93.44
-        },
-        {
-          "w": "saying?",
-          "s": 93.5,
-          "e": 93.8
-        },
-        {
-          "w": "I",
-          "s": 95.0,
-          "e": 95.04
-        },
-        {
-          "w": "guess",
-          "s": 95.08,
-          "e": 95.28
-        },
-        {
-          "w": "so.",
-          "s": 95.32,
-          "e": 95.58
-        },
-        {
-          "w": "I",
-          "s": 96.04,
-          "e": 96.08
-        },
-        {
-          "w": "thought",
-          "s": 96.24,
-          "e": 96.36
-        },
-        {
-          "w": "he,",
-          "s": 96.38,
-          "e": 96.44
-        },
-        {
-          "w": "like,",
-          "s": 96.48,
-          "e": 96.62
-        },
-        {
-          "w": "liked",
-          "s": 97.32,
-          "e": 97.52
-        },
-        {
-          "w": "me",
-          "s": 97.56,
-          "e": 97.64
-        },
-        {
-          "w": "or",
-          "s": 97.68,
-          "e": 97.76
-        },
-        {
-          "w": "something.",
-          "s": 97.82,
-          "e": 98.06
-        },
-        {
-          "w": "Hey,",
-          "s": 98.54,
-          "e": 98.78
-        },
-        {
-          "w": "both",
-          "s": 99.2,
-          "e": 99.38
-        },
-        {
-          "w": "can",
-          "s": 99.42,
-          "e": 99.54
-        },
-        {
-          "w": "be",
-          "s": 99.58,
-          "e": 99.68
-        },
-        {
-          "w": "true.",
-          "s": 99.74,
-          "e": 100.0
-        },
-        {
-          "w": "Yeah,",
-          "s": 100.68,
-          "e": 100.86
-        },
-        {
-          "w": "well,",
-          "s": 100.96,
-          "e": 101.06
-        },
-        {
-          "w": "he's",
-          "s": 101.78,
-          "e": 101.92
-        },
-        {
-          "w": "gone",
-          "s": 101.98,
-          "e": 102.22
-        },
-        {
-          "w": "anyway.",
-          "s": 102.24,
-          "e": 102.68
-        },
-        {
-          "w": "Crashed",
-          "s": 103.36,
-          "e": 103.68
-        },
-        {
-          "w": "out",
-          "s": 103.72,
-          "e": 103.88
-        },
-        {
-          "w": "and",
-          "s": 103.9,
-          "e": 103.96
-        },
-        {
-          "w": "blew",
-          "s": 103.98,
-          "e": 104.18
-        },
-        {
-          "w": "up.",
-          "s": 104.26,
-          "e": 104.38
-        },
-        {
-          "w": "Damn.",
-          "s": 105.14,
-          "e": 105.62
-        },
-        {
-          "w": "Are",
-          "s": 106.44,
-          "e": 106.56
-        },
-        {
-          "w": "you",
-          "s": 106.62,
-          "e": 106.68
-        },
-        {
-          "w": "okay?",
-          "s": 106.76,
-          "e": 107.08
-        },
-        {
-          "w": "Yeah,",
-          "s": 107.76,
-          "e": 107.88
-        },
-        {
-          "w": "I'm",
-          "s": 107.92,
-          "e": 108.0
-        },
-        {
-          "w": "fine.",
-          "s": 108.06,
-          "e": 108.38
-        },
-        {
-          "w": "It's",
-          "s": 108.5,
-          "e": 108.62
-        },
-        {
-          "w": "just...",
-          "s": 108.68,
-          "e": 108.88
-        },
-        {
-          "w": "Did",
-          "s": 109.66,
-          "e": 109.76
-        },
-        {
-          "w": "I",
-          "s": 109.76,
-          "e": 109.76
-        },
-        {
-          "w": "tell",
-          "s": 109.78,
-          "e": 109.9
-        },
-        {
-          "w": "you",
-          "s": 109.94,
-          "e": 110.0
-        },
-        {
-          "w": "he",
-          "s": 110.04,
-          "e": 110.12
-        },
-        {
-          "w": "made",
-          "s": 110.16,
-          "e": 110.28
-        },
-        {
-          "w": "me",
-          "s": 110.34,
-          "e": 110.4
-        },
-        {
-          "w": "a",
-          "s": 110.44,
-          "e": 110.48
-        },
-        {
-          "w": "sandwich?",
-          "s": 110.6,
-          "e": 110.96
-        },
-        {
-          "w": "Can't",
-          "s": 112.6,
-          "e": 112.68
-        },
-        {
-          "w": "remember",
-          "s": 112.72,
-          "e": 113.0
-        },
-        {
-          "w": "the",
-          "s": 113.04,
-          "e": 113.1
-        },
-        {
-          "w": "last",
-          "s": 113.14,
-          "e": 113.36
-        },
-        {
-          "w": "guy",
-          "s": 113.4,
-          "e": 113.56
-        },
-        {
-          "w": "that",
-          "s": 113.58,
-          "e": 113.66
-        },
-        {
-          "w": "made",
-          "s": 113.68,
-          "e": 113.8
-        },
-        {
-          "w": "me",
-          "s": 113.84,
-          "e": 113.9
-        },
-        {
-          "w": "a",
-          "s": 113.94,
-          "e": 114.0
-        },
-        {
-          "w": "sandwich.",
-          "s": 114.06,
-          "e": 114.44
-        },
-        {
-          "w": "My",
-          "s": 114.78,
-          "e": 114.88
-        },
-        {
-          "w": "uncle,",
-          "s": 114.94,
-          "e": 115.14
-        },
-        {
-          "w": "maybe.",
-          "s": 115.2,
-          "e": 115.42
-        },
-        {
-          "w": "Hmm.",
-          "s": 116.02,
-          "e": 116.22
-        },
-        {
-          "w": "Well,",
-          "s": 117.02,
-          "e": 117.18
-        },
-        {
-          "w": "I'm",
-          "s": 118.24,
-          "e": 118.34
-        },
-        {
-          "w": "here",
-          "s": 118.42,
-          "e": 118.52
-        },
-        {
-          "w": "if",
-          "s": 118.58,
-          "e": 118.66
-        },
-        {
-          "w": "you",
-          "s": 118.7,
-          "e": 118.76
-        },
-        {
-          "w": "wanna",
-          "s": 118.8,
-          "e": 119.02
-        },
-        {
-          "w": "talk.",
-          "s": 119.06,
-          "e": 119.42
-        },
-        {
-          "w": "Yeah.",
-          "s": 119.9,
-          "e": 120.08
-        },
-        {
-          "w": "Yeah,",
-          "s": 120.62,
-          "e": 120.74
-        },
-        {
-          "w": "I",
-          "s": 120.82,
-          "e": 120.82
-        },
-        {
-          "w": "know.",
-          "s": 120.86,
-          "e": 121.0
-        },
-        {
-          "w": "Thanks.",
-          "s": 121.24,
-          "e": 121.52
-        },
-        {
-          "w": "Love",
-          "s": 123.9,
-          "e": 124.04
-        },
-        {
-          "w": "you,",
-          "s": 124.08,
-          "e": 124.14
-        },
-        {
-          "w": "Lucia.",
-          "s": 124.16,
-          "e": 124.56
-        },
-        {
-          "w": "Goddamn.",
-          "s": 131.72,
-          "e": 132.52
-        },
-        {
-          "w": "You're",
-          "s": 134.48,
-          "e": 134.56
-        },
-        {
-          "w": "all",
-          "s": 134.62,
-          "e": 134.74
-        },
-        {
-          "w": "going",
-          "s": 134.8,
-          "e": 135.0
-        },
-        {
-          "w": "to",
-          "s": 135.04,
-          "e": 135.14
-        },
-        {
-          "w": "hell.",
-          "s": 135.18,
-          "e": 135.48
-        },
-        {
-          "w": "Because",
-          "s": 137.64,
-          "e": 137.88
-        },
-        {
-          "w": "what?",
-          "s": 137.92,
-          "e": 138.04
-        },
-        {
-          "w": "I'm",
-          "s": 138.46,
-          "e": 138.58
-        },
-        {
-          "w": "not",
-          "s": 138.6,
-          "e": 138.74
-        },
-        {
-          "w": "good",
-          "s": 138.8,
-          "e": 138.9
-        },
-        {
-          "w": "enough.",
-          "s": 138.94,
-          "e": 139.1
-        },
-        {
-          "w": "Hey,",
-          "s": 139.96,
-          "e": 140.08
-        },
-        {
-          "w": "look,",
-          "s": 140.18,
-          "e": 140.34
-        },
-        {
-          "w": "I",
-          "s": 140.74,
-          "e": 140.78
-        },
-        {
-          "w": "was",
-          "s": 140.84,
-          "e": 140.94
-        },
-        {
-          "w": "the",
-          "s": 140.96,
-          "e": 141.0
-        },
-        {
-          "w": "number",
-          "s": 141.04,
-          "e": 141.22
-        },
-        {
-          "w": "one",
-          "s": 141.28,
-          "e": 141.38
-        },
-        {
-          "w": "athlete.",
-          "s": 141.42,
-          "e": 141.66
-        },
-        {
-          "w": "Scholarship",
-          "s": 142.2,
-          "e": 142.78
-        },
-        {
-          "w": "player",
-          "s": 142.84,
-          "e": 143.1
-        },
-        {
-          "w": "my",
-          "s": 143.18,
-          "e": 143.3
-        },
-        {
-          "w": "whole",
-          "s": 143.34,
-          "e": 143.48
-        },
-        {
-          "w": "life,",
-          "s": 143.56,
-          "e": 143.8
-        },
-        {
-          "w": "man.",
-          "s": 143.82,
-          "e": 143.82
-        },
-        {
-          "w": "What",
-          "s": 147.62,
-          "e": 147.72
-        },
-        {
-          "w": "the",
-          "s": 147.76,
-          "e": 147.82
-        },
-        {
-          "w": "hell?",
-          "s": 147.86,
-          "e": 147.98
-        },
-        {
-          "w": "Yo,",
-          "s": 148.04,
-          "e": 148.12
-        },
-        {
-          "w": "chat,",
-          "s": 148.24,
-          "e": 148.36
-        },
-        {
-          "w": "I",
-          "s": 148.42,
-          "e": 148.46
-        },
-        {
-          "w": "think",
-          "s": 148.48,
-          "e": 148.64
-        },
-        {
-          "w": "Jason",
-          "s": 148.66,
-          "e": 148.84
-        },
-        {
-          "w": "should",
-          "s": 148.86,
-          "e": 148.94
-        },
-        {
-          "w": "get",
-          "s": 148.96,
-          "e": 149.04
-        },
-        {
-          "w": "a",
-          "s": 149.06,
-          "e": 149.08
-        },
-        {
-          "w": "new",
-          "s": 149.12,
-          "e": 149.2
-        },
-        {
-          "w": "haircut.",
-          "s": 149.24,
-          "e": 149.6
-        },
-        {
-          "w": "What",
-          "s": 149.72,
-          "e": 149.8
-        },
-        {
-          "w": "y'all",
-          "s": 149.82,
-          "e": 149.94
-        },
-        {
-          "w": "think?",
-          "s": 149.96,
-          "e": 150.1
-        },
-        {
-          "w": "Does",
-          "s": 170.44,
-          "e": 170.54
-        },
-        {
-          "w": "he,",
-          "s": 170.56,
-          "e": 170.62
-        },
-        {
-          "w": "does",
-          "s": 170.78,
-          "e": 170.9
-        },
-        {
-          "w": "he",
-          "s": 170.94,
-          "e": 170.96
-        },
-        {
-          "w": "have",
-          "s": 170.98,
-          "e": 171.06
-        },
-        {
-          "w": "any",
-          "s": 171.08,
-          "e": 171.2
-        },
-        {
-          "w": "good",
-          "s": 171.36,
-          "e": 171.48
-        },
-        {
-          "w": "hairstyles?",
-          "s": 171.52,
-          "e": 172.08
-        },
-        {
-          "w": "Yo,",
-          "s": 172.14,
-          "e": 172.18
-        },
-        {
-          "w": "what's",
-          "s": 172.32,
-          "e": 172.5
-        },
-        {
-          "w": "good?",
-          "s": 172.64,
-          "e": 172.94
-        },
-        {
-          "w": "Bro,",
-          "s": 177.42,
-          "e": 177.54
-        },
-        {
-          "w": "bro,",
-          "s": 177.6,
-          "e": 177.68
-        },
-        {
-          "w": "bro,",
-          "s": 177.72,
-          "e": 177.9
-        },
-        {
-          "w": "bro,",
-          "s": 177.96,
-          "e": 177.96
-        },
-        {
-          "w": "bro.",
-          "s": 177.96,
-          "e": 178.16
-        },
-        {
-          "w": "I",
-          "s": 178.5,
-          "e": 178.6
-        },
-        {
-          "w": "still",
-          "s": 178.66,
-          "e": 178.94
-        },
-        {
-          "w": "don't",
-          "s": 178.96,
-          "e": 179.1
-        },
-        {
-          "w": "think",
-          "s": 179.14,
-          "e": 179.28
-        },
-        {
-          "w": "you",
-          "s": 179.32,
-          "e": 179.4
-        },
-        {
-          "w": "understand.",
-          "s": 179.42,
-          "e": 179.9
-        },
-        {
-          "w": "You",
-          "s": 180.08,
-          "e": 180.14
-        },
-        {
-          "w": "can't",
-          "s": 180.24,
-          "e": 180.4
-        },
-        {
-          "w": "compete",
-          "s": 180.44,
-          "e": 180.82
-        },
-        {
-          "w": "with",
-          "s": 180.88,
-          "e": 180.98
-        },
-        {
-          "w": "me.",
-          "s": 181.04,
-          "e": 181.18
-        },
-        {
-          "w": "You",
-          "s": 181.6,
-          "e": 181.66
-        },
-        {
-          "w": "can't.",
-          "s": 181.74,
-          "e": 182.06
-        },
-        {
-          "w": "I'll",
-          "s": 182.32,
-          "e": 182.4
-        },
-        {
-          "w": "buy",
-          "s": 182.44,
-          "e": 182.54
-        },
-        {
-          "w": "every",
-          "s": 182.78,
-          "e": 182.98
-        },
-        {
-          "w": "fucking",
-          "s": 183.1,
-          "e": 183.32
-        },
-        {
-          "w": "bottle",
-          "s": 183.38,
-          "e": 183.58
-        },
-        {
-          "w": "in",
-          "s": 183.58,
-          "e": 183.6
-        },
-        {
-          "w": "the",
-          "s": 183.62,
-          "e": 183.62
-        },
-        {
-          "w": "place.",
-          "s": 183.62,
-          "e": 183.68
-        },
-        {
-          "w": "Bro,",
-          "s": 183.72,
-          "e": 183.86
-        },
-        {
-          "w": "it",
-          "s": 183.96,
-          "e": 184.04
-        },
-        {
-          "w": "is...",
-          "s": 184.1,
-          "e": 184.3
-        },
-        {
-          "w": "Wait,",
-          "s": 184.48,
-          "e": 184.58
-        },
-        {
-          "w": "creative",
-          "s": 184.66,
-          "e": 184.88
-        },
-        {
-          "w": "styles.",
-          "s": 184.92,
-          "e": 185.3
-        },
-        {
-          "w": "I'll",
-          "s": 185.34,
-          "e": 185.38
-        },
-        {
-          "w": "buy",
-          "s": 185.38,
-          "e": 185.38
-        },
-        {
-          "w": "every",
-          "s": 185.38,
-          "e": 185.42
-        },
-        {
-          "w": "single",
-          "s": 185.42,
-          "e": 185.52
-        },
-        {
-          "w": "bottle",
-          "s": 185.54,
-          "e": 185.8
-        },
-        {
-          "w": "if",
-          "s": 185.8,
-          "e": 185.86
-        },
-        {
-          "w": "that",
-          "s": 186.14,
-          "e": 186.32
-        },
-        {
-          "w": "means",
-          "s": 186.36,
-          "e": 186.48
-        },
-        {
-          "w": "I",
-          "s": 186.5,
-          "e": 186.5
-        },
-        {
-          "w": "have",
-          "s": 186.58,
-          "e": 186.8
-        },
-        {
-          "w": "to.",
-          "s": 186.84,
-          "e": 186.98
-        }
-      ]
+     "w": "Wow,",
+     "s": 77.0,
+     "e": 77.26
     },
     {
-      "id": "m2",
-      "frames": [
-        "candidates/frames/twitch_v2935613960_0/m2/0.jpg",
-        "candidates/frames/twitch_v2935613960_0/m2/1.jpg",
-        "candidates/frames/twitch_v2935613960_0/m2/2.jpg"
-      ],
-      "start": 237.0,
-      "end": 347.0,
-      "peak": 307.0,
-      "score": 1.36,
-      "signals": [
-        "loud"
-      ],
-      "stt": "elevenlabs",
-      "text": "Prehab is bullshit. It's nothing but a scam, bro. You pay thousands of dollars just to end up a big pussy. Fucking talk, talk, talk. Faking love is for bitches and whores Short hair ... and they say, \"What about if you want a fucking discount?\" And then you all laugh and you have another week to pay up. Yeah, she was watching me get my hair cut. Damn. Those jokes and bullshit, it's all the same. Yo. Fucking wanna stop laughing. You crackled up. Son of a bitch. Oh, come on. I just fixed this car, bro. You better not kill me, you fucking pervert. This car is so like... Yo, get off me. Yo. Long time. Come spend some money. Where you been? Oh, my God. So, 81,000. It's all right. W's, bro. It's all right. All yours. It's all right, bro. We got 80, we got 81,000. We lost 20. It's all right. That's a dub. That's a dub. That's a dub. Well, you only pay the Yasmani tax. More work. So I got some time right now. Anything you recommend I do with it? Yeah. Primo mi primo, over at the security van company, he got another delivery schedule to share. Oh, shoot. If it's worth it to you. We doing the chat? Yes. Yes. Here's a number. I figured. I'll give you the route. Yes. They always carry cash, but if you want the big payday, you have to wait till-",
-      "words": [
-        {
-          "w": "Prehab",
-          "s": 237.14,
-          "e": 237.46
-        },
-        {
-          "w": "is",
-          "s": 237.5,
-          "e": 237.56
-        },
-        {
-          "w": "bullshit.",
-          "s": 237.76,
-          "e": 238.28
-        },
-        {
-          "w": "It's",
-          "s": 238.5,
-          "e": 238.6
-        },
-        {
-          "w": "nothing",
-          "s": 238.64,
-          "e": 238.84
-        },
-        {
-          "w": "but",
-          "s": 238.88,
-          "e": 238.98
-        },
-        {
-          "w": "a",
-          "s": 239.02,
-          "e": 239.08
-        },
-        {
-          "w": "scam,",
-          "s": 239.16,
-          "e": 239.5
-        },
-        {
-          "w": "bro.",
-          "s": 239.58,
-          "e": 239.76
-        },
-        {
-          "w": "You",
-          "s": 240.08,
-          "e": 240.14
-        },
-        {
-          "w": "pay",
-          "s": 240.2,
-          "e": 240.32
-        },
-        {
-          "w": "thousands",
-          "s": 240.46,
-          "e": 240.8
-        },
-        {
-          "w": "of",
-          "s": 240.84,
-          "e": 240.92
-        },
-        {
-          "w": "dollars",
-          "s": 240.96,
-          "e": 241.34
-        },
-        {
-          "w": "just",
-          "s": 241.72,
-          "e": 241.82
-        },
-        {
-          "w": "to",
-          "s": 241.86,
-          "e": 241.94
-        },
-        {
-          "w": "end",
-          "s": 241.98,
-          "e": 242.08
-        },
-        {
-          "w": "up",
-          "s": 242.12,
-          "e": 242.2
-        },
-        {
-          "w": "a",
-          "s": 242.24,
-          "e": 242.3
-        },
-        {
-          "w": "big",
-          "s": 242.44,
-          "e": 242.62
-        },
-        {
-          "w": "pussy.",
-          "s": 242.7,
-          "e": 242.96
-        },
-        {
-          "w": "Fucking",
-          "s": 243.3,
-          "e": 243.56
-        },
-        {
-          "w": "talk,",
-          "s": 243.62,
-          "e": 243.8
-        },
-        {
-          "w": "talk,",
-          "s": 243.88,
-          "e": 244.08
-        },
-        {
-          "w": "talk.",
-          "s": 244.16,
-          "e": 244.42
-        },
-        {
-          "w": "Faking",
-          "s": 244.52,
-          "e": 245.16
-        },
-        {
-          "w": "love",
-          "s": 245.22,
-          "e": 245.4
-        },
-        {
-          "w": "is",
-          "s": 245.44,
-          "e": 245.54
-        },
-        {
-          "w": "for",
-          "s": 245.64,
-          "e": 245.72
-        },
-        {
-          "w": "bitches",
-          "s": 245.72,
-          "e": 246.0
-        },
-        {
-          "w": "and",
-          "s": 246.02,
-          "e": 246.12
-        },
-        {
-          "w": "whores",
-          "s": 246.16,
-          "e": 246.44
-        },
-        {
-          "w": "Short",
-          "s": 246.64,
-          "e": 246.82
-        },
-        {
-          "w": "hair",
-          "s": 246.88,
-          "e": 247.02
-        },
-        {
-          "w": "...",
-          "s": 247.02,
-          "e": 247.02
-        },
-        {
-          "w": "and",
-          "s": 247.1,
-          "e": 247.1
-        },
-        {
-          "w": "they",
-          "s": 247.12,
-          "e": 247.2
-        },
-        {
-          "w": "say,",
-          "s": 247.28,
-          "e": 247.28
-        },
-        {
-          "w": "\"What",
-          "s": 247.28,
-          "e": 247.4
-        },
-        {
-          "w": "about",
-          "s": 247.46,
-          "e": 247.72
-        },
-        {
-          "w": "if",
-          "s": 247.8,
-          "e": 247.9
-        },
-        {
-          "w": "you",
-          "s": 247.94,
-          "e": 248.0
-        },
-        {
-          "w": "want",
-          "s": 248.06,
-          "e": 248.16
-        },
-        {
-          "w": "a",
-          "s": 248.18,
-          "e": 248.26
-        },
-        {
-          "w": "fucking",
-          "s": 248.28,
-          "e": 248.52
-        },
-        {
-          "w": "discount?\"",
-          "s": 248.58,
-          "e": 249.0
-        },
-        {
-          "w": "And",
-          "s": 249.48,
-          "e": 249.58
-        },
-        {
-          "w": "then",
-          "s": 249.64,
-          "e": 249.82
-        },
-        {
-          "w": "you",
-          "s": 249.9,
-          "e": 250.0
-        },
-        {
-          "w": "all",
-          "s": 250.08,
-          "e": 250.2
-        },
-        {
-          "w": "laugh",
-          "s": 250.32,
-          "e": 250.52
-        },
-        {
-          "w": "and",
-          "s": 250.58,
-          "e": 250.66
-        },
-        {
-          "w": "you",
-          "s": 250.7,
-          "e": 250.74
-        },
-        {
-          "w": "have",
-          "s": 250.78,
-          "e": 250.88
-        },
-        {
-          "w": "another",
-          "s": 250.94,
-          "e": 251.2
-        },
-        {
-          "w": "week",
-          "s": 251.24,
-          "e": 251.38
-        },
-        {
-          "w": "to",
-          "s": 251.4,
-          "e": 251.5
-        },
-        {
-          "w": "pay",
-          "s": 251.52,
-          "e": 251.62
-        },
-        {
-          "w": "up.",
-          "s": 251.62,
-          "e": 251.66
-        },
-        {
-          "w": "Yeah,",
-          "s": 251.7,
-          "e": 251.8
-        },
-        {
-          "w": "she",
-          "s": 251.88,
-          "e": 251.96
-        },
-        {
-          "w": "was",
-          "s": 251.98,
-          "e": 252.08
-        },
-        {
-          "w": "watching",
-          "s": 252.1,
-          "e": 252.32
-        },
-        {
-          "w": "me",
-          "s": 252.36,
-          "e": 252.42
-        },
-        {
-          "w": "get",
-          "s": 252.44,
-          "e": 252.52
-        },
-        {
-          "w": "my",
-          "s": 252.56,
-          "e": 252.72
-        },
-        {
-          "w": "hair",
-          "s": 252.76,
-          "e": 252.92
-        },
-        {
-          "w": "cut.",
-          "s": 253.02,
-          "e": 253.46
-        },
-        {
-          "w": "Damn.",
-          "s": 254.86,
-          "e": 255.5
-        },
-        {
-          "w": "Those",
-          "s": 258.28,
-          "e": 258.7
-        },
-        {
-          "w": "jokes",
-          "s": 258.7,
-          "e": 258.7
-        },
-        {
-          "w": "and",
-          "s": 258.7,
-          "e": 258.7
-        },
-        {
-          "w": "bullshit,",
-          "s": 258.7,
-          "e": 258.72
-        },
-        {
-          "w": "it's",
-          "s": 258.72,
-          "e": 258.72
-        },
-        {
-          "w": "all",
-          "s": 258.72,
-          "e": 258.72
-        },
-        {
-          "w": "the",
-          "s": 258.72,
-          "e": 258.72
-        },
-        {
-          "w": "same.",
-          "s": 258.72,
-          "e": 258.72
-        },
-        {
-          "w": "Yo.",
-          "s": 258.72,
-          "e": 258.72
-        },
-        {
-          "w": "Fucking",
-          "s": 259.32,
-          "e": 259.56
-        },
-        {
-          "w": "wanna",
-          "s": 259.64,
-          "e": 259.76
-        },
-        {
-          "w": "stop",
-          "s": 260.96,
-          "e": 260.98
-        },
-        {
-          "w": "laughing.",
-          "s": 260.98,
-          "e": 260.98
-        },
-        {
-          "w": "You",
-          "s": 260.98,
-          "e": 261.08
-        },
-        {
-          "w": "crackled",
-          "s": 261.12,
-          "e": 261.12
-        },
-        {
-          "w": "up.",
-          "s": 261.16,
-          "e": 261.26
-        },
-        {
-          "w": "Son",
-          "s": 261.56,
-          "e": 261.72
-        },
-        {
-          "w": "of",
-          "s": 261.74,
-          "e": 261.84
-        },
-        {
-          "w": "a",
-          "s": 261.88,
-          "e": 261.94
-        },
-        {
-          "w": "bitch.",
-          "s": 262.0,
-          "e": 262.2
-        },
-        {
-          "w": "Oh,",
-          "s": 266.02,
-          "e": 266.22
-        },
-        {
-          "w": "come",
-          "s": 266.4,
-          "e": 266.58
-        },
-        {
-          "w": "on.",
-          "s": 266.66,
-          "e": 266.96
-        },
-        {
-          "w": "I",
-          "s": 270.48,
-          "e": 270.54
-        },
-        {
-          "w": "just",
-          "s": 270.7,
-          "e": 270.88
-        },
-        {
-          "w": "fixed",
-          "s": 270.94,
-          "e": 271.12
-        },
-        {
-          "w": "this",
-          "s": 271.14,
-          "e": 271.26
-        },
-        {
-          "w": "car,",
-          "s": 271.3,
-          "e": 271.5
-        },
-        {
-          "w": "bro.",
-          "s": 271.58,
-          "e": 271.76
-        },
-        {
-          "w": "You",
-          "s": 272.26,
-          "e": 272.32
-        },
-        {
-          "w": "better",
-          "s": 272.34,
-          "e": 272.46
-        },
-        {
-          "w": "not",
-          "s": 272.46,
-          "e": 272.46
-        },
-        {
-          "w": "kill",
-          "s": 272.62,
-          "e": 272.84
-        },
-        {
-          "w": "me,",
-          "s": 272.92,
-          "e": 273.12
-        },
-        {
-          "w": "you",
-          "s": 273.12,
-          "e": 273.12
-        },
-        {
-          "w": "fucking",
-          "s": 273.12,
-          "e": 273.12
-        },
-        {
-          "w": "pervert.",
-          "s": 273.22,
-          "e": 273.22
-        },
-        {
-          "w": "This",
-          "s": 274.08,
-          "e": 274.22
-        },
-        {
-          "w": "car",
-          "s": 274.28,
-          "e": 274.46
-        },
-        {
-          "w": "is",
-          "s": 274.5,
-          "e": 274.68
-        },
-        {
-          "w": "so",
-          "s": 274.78,
-          "e": 275.02
-        },
-        {
-          "w": "like...",
-          "s": 275.1,
-          "e": 275.48
-        },
-        {
-          "w": "Yo,",
-          "s": 280.72,
-          "e": 280.88
-        },
-        {
-          "w": "get",
-          "s": 280.96,
-          "e": 281.06
-        },
-        {
-          "w": "off",
-          "s": 281.1,
-          "e": 288.78
-        },
-        {
-          "w": "me.",
-          "s": 288.8,
-          "e": 288.9
-        },
-        {
-          "w": "Yo.",
-          "s": 288.94,
-          "e": 289.06
-        },
-        {
-          "w": "Long",
-          "s": 293.0,
-          "e": 293.22
-        },
-        {
-          "w": "time.",
-          "s": 293.32,
-          "e": 293.72
-        },
-        {
-          "w": "Come",
-          "s": 294.24,
-          "e": 294.38
-        },
-        {
-          "w": "spend",
-          "s": 294.44,
-          "e": 294.64
-        },
-        {
-          "w": "some",
-          "s": 294.7,
-          "e": 294.82
-        },
-        {
-          "w": "money.",
-          "s": 294.9,
-          "e": 295.14
-        },
-        {
-          "w": "Where",
-          "s": 299.24,
-          "e": 299.36
-        },
-        {
-          "w": "you",
-          "s": 299.42,
-          "e": 299.48
-        },
-        {
-          "w": "been?",
-          "s": 299.56,
-          "e": 299.74
-        },
-        {
-          "w": "Oh,",
-          "s": 301.76,
-          "e": 301.82
-        },
-        {
-          "w": "my",
-          "s": 301.88,
-          "e": 302.04
-        },
-        {
-          "w": "God.",
-          "s": 302.1,
-          "e": 302.34
-        },
-        {
-          "w": "So,",
-          "s": 303.42,
-          "e": 303.94
-        },
-        {
-          "w": "81,000.",
-          "s": 306.08,
-          "e": 307.2
-        },
-        {
-          "w": "It's",
-          "s": 307.92,
-          "e": 308.04
-        },
-        {
-          "w": "all",
-          "s": 308.06,
-          "e": 308.16
-        },
-        {
-          "w": "right.",
-          "s": 308.2,
-          "e": 308.4
-        },
-        {
-          "w": "W's,",
-          "s": 308.78,
-          "e": 308.96
-        },
-        {
-          "w": "bro.",
-          "s": 309.0,
-          "e": 309.18
-        },
-        {
-          "w": "It's",
-          "s": 309.7,
-          "e": 309.8
-        },
-        {
-          "w": "all",
-          "s": 309.82,
-          "e": 309.88
-        },
-        {
-          "w": "right.",
-          "s": 309.92,
-          "e": 310.14
-        },
-        {
-          "w": "All",
-          "s": 310.54,
-          "e": 310.66
-        },
-        {
-          "w": "yours.",
-          "s": 310.72,
-          "e": 311.02
-        },
-        {
-          "w": "It's",
-          "s": 311.14,
-          "e": 311.24
-        },
-        {
-          "w": "all",
-          "s": 311.26,
-          "e": 311.3
-        },
-        {
-          "w": "right,",
-          "s": 311.34,
-          "e": 311.46
-        },
-        {
-          "w": "bro.",
-          "s": 311.54,
-          "e": 311.64
-        },
-        {
-          "w": "We",
-          "s": 311.72,
-          "e": 311.76
-        },
-        {
-          "w": "got",
-          "s": 311.8,
-          "e": 311.9
-        },
-        {
-          "w": "80,",
-          "s": 312.06,
-          "e": 312.16
-        },
-        {
-          "w": "we",
-          "s": 312.28,
-          "e": 312.3
-        },
-        {
-          "w": "got",
-          "s": 312.32,
-          "e": 312.42
-        },
-        {
-          "w": "81,000.",
-          "s": 312.52,
-          "e": 313.1
-        },
-        {
-          "w": "We",
-          "s": 313.72,
-          "e": 313.78
-        },
-        {
-          "w": "lost",
-          "s": 313.82,
-          "e": 313.98
-        },
-        {
-          "w": "20.",
-          "s": 314.12,
-          "e": 314.28
-        },
-        {
-          "w": "It's",
-          "s": 314.92,
-          "e": 315.02
-        },
-        {
-          "w": "all",
-          "s": 315.04,
-          "e": 315.1
-        },
-        {
-          "w": "right.",
-          "s": 315.14,
-          "e": 315.32
-        },
-        {
-          "w": "That's",
-          "s": 316.34,
-          "e": 316.42
-        },
-        {
-          "w": "a",
-          "s": 316.44,
-          "e": 316.48
-        },
-        {
-          "w": "dub.",
-          "s": 316.52,
-          "e": 316.68
-        },
-        {
-          "w": "That's",
-          "s": 316.72,
-          "e": 316.84
-        },
-        {
-          "w": "a",
-          "s": 316.88,
-          "e": 316.9
-        },
-        {
-          "w": "dub.",
-          "s": 316.94,
-          "e": 317.08
-        },
-        {
-          "w": "That's",
-          "s": 317.12,
-          "e": 317.24
-        },
-        {
-          "w": "a",
-          "s": 317.28,
-          "e": 317.32
-        },
-        {
-          "w": "dub.",
-          "s": 317.34,
-          "e": 317.52
-        },
-        {
-          "w": "Well,",
-          "s": 317.88,
-          "e": 317.92
-        },
-        {
-          "w": "you",
-          "s": 317.96,
-          "e": 318.02
-        },
-        {
-          "w": "only",
-          "s": 318.12,
-          "e": 318.3
-        },
-        {
-          "w": "pay",
-          "s": 318.4,
-          "e": 318.54
-        },
-        {
-          "w": "the",
-          "s": 318.58,
-          "e": 318.64
-        },
-        {
-          "w": "Yasmani",
-          "s": 318.82,
-          "e": 319.4
-        },
-        {
-          "w": "tax.",
-          "s": 319.52,
-          "e": 319.88
-        },
-        {
-          "w": "More",
-          "s": 323.42,
-          "e": 323.54
-        },
-        {
-          "w": "work.",
-          "s": 323.58,
-          "e": 323.8
-        },
-        {
-          "w": "So",
-          "s": 324.04,
-          "e": 324.12
-        },
-        {
-          "w": "I",
-          "s": 324.24,
-          "e": 324.28
-        },
-        {
-          "w": "got",
-          "s": 324.32,
-          "e": 324.44
-        },
-        {
-          "w": "some",
-          "s": 324.48,
-          "e": 324.6
-        },
-        {
-          "w": "time",
-          "s": 324.66,
-          "e": 324.86
-        },
-        {
-          "w": "right",
-          "s": 324.9,
-          "e": 325.04
-        },
-        {
-          "w": "now.",
-          "s": 325.08,
-          "e": 325.28
-        },
-        {
-          "w": "Anything",
-          "s": 325.78,
-          "e": 326.02
-        },
-        {
-          "w": "you",
-          "s": 326.04,
-          "e": 326.08
-        },
-        {
-          "w": "recommend",
-          "s": 326.12,
-          "e": 326.4
-        },
-        {
-          "w": "I",
-          "s": 326.46,
-          "e": 326.54
-        },
-        {
-          "w": "do",
-          "s": 326.56,
-          "e": 326.64
-        },
-        {
-          "w": "with",
-          "s": 326.68,
-          "e": 326.82
-        },
-        {
-          "w": "it?",
-          "s": 326.86,
-          "e": 326.92
-        },
-        {
-          "w": "Yeah.",
-          "s": 327.8,
-          "e": 328.08
-        },
-        {
-          "w": "Primo",
-          "s": 328.4,
-          "e": 328.72
-        },
-        {
-          "w": "mi",
-          "s": 328.76,
-          "e": 328.98
-        },
-        {
-          "w": "primo,",
-          "s": 329.04,
-          "e": 329.36
-        },
-        {
-          "w": "over",
-          "s": 329.68,
-          "e": 329.82
-        },
-        {
-          "w": "at",
-          "s": 329.84,
-          "e": 329.92
-        },
-        {
-          "w": "the",
-          "s": 329.94,
-          "e": 330.04
-        },
-        {
-          "w": "security",
-          "s": 330.08,
-          "e": 330.5
-        },
-        {
-          "w": "van",
-          "s": 330.54,
-          "e": 330.68
-        },
-        {
-          "w": "company,",
-          "s": 330.78,
-          "e": 331.12
-        },
-        {
-          "w": "he",
-          "s": 331.38,
-          "e": 331.44
-        },
-        {
-          "w": "got",
-          "s": 331.48,
-          "e": 331.62
-        },
-        {
-          "w": "another",
-          "s": 331.66,
-          "e": 331.96
-        },
-        {
-          "w": "delivery",
-          "s": 332.04,
-          "e": 332.42
-        },
-        {
-          "w": "schedule",
-          "s": 332.52,
-          "e": 332.9
-        },
-        {
-          "w": "to",
-          "s": 332.96,
-          "e": 333.08
-        },
-        {
-          "w": "share.",
-          "s": 333.14,
-          "e": 333.4
-        },
-        {
-          "w": "Oh,",
-          "s": 333.62,
-          "e": 333.72
-        },
-        {
-          "w": "shoot.",
-          "s": 333.84,
-          "e": 333.96
-        },
-        {
-          "w": "If",
-          "s": 334.0,
-          "e": 334.0
-        },
-        {
-          "w": "it's",
-          "s": 334.0,
-          "e": 334.16
-        },
-        {
-          "w": "worth",
-          "s": 334.2,
-          "e": 334.38
-        },
-        {
-          "w": "it",
-          "s": 334.42,
-          "e": 334.52
-        },
-        {
-          "w": "to",
-          "s": 334.56,
-          "e": 334.64
-        },
-        {
-          "w": "you.",
-          "s": 334.7,
-          "e": 334.8
-        },
-        {
-          "w": "We",
-          "s": 335.02,
-          "e": 335.08
-        },
-        {
-          "w": "doing",
-          "s": 335.12,
-          "e": 335.24
-        },
-        {
-          "w": "the",
-          "s": 335.26,
-          "e": 335.32
-        },
-        {
-          "w": "chat?",
-          "s": 335.36,
-          "e": 335.56
-        },
-        {
-          "w": "Yes.",
-          "s": 335.66,
-          "e": 336.0
-        },
-        {
-          "w": "Yes.",
-          "s": 339.32,
-          "e": 339.4
-        },
-        {
-          "w": "Here's",
-          "s": 339.4,
-          "e": 339.58
-        },
-        {
-          "w": "a",
-          "s": 339.6,
-          "e": 339.6
-        },
-        {
-          "w": "number.",
-          "s": 339.62,
-          "e": 339.86
-        },
-        {
-          "w": "I",
-          "s": 340.72,
-          "e": 340.84
-        },
-        {
-          "w": "figured.",
-          "s": 341.06,
-          "e": 341.48
-        },
-        {
-          "w": "I'll",
-          "s": 341.8,
-          "e": 341.88
-        },
-        {
-          "w": "give",
-          "s": 341.94,
-          "e": 342.12
-        },
-        {
-          "w": "you",
-          "s": 342.14,
-          "e": 342.22
-        },
-        {
-          "w": "the",
-          "s": 342.28,
-          "e": 342.36
-        },
-        {
-          "w": "route.",
-          "s": 342.44,
-          "e": 342.7
-        },
-        {
-          "w": "Yes.",
-          "s": 343.02,
-          "e": 343.02
-        },
-        {
-          "w": "They",
-          "s": 343.04,
-          "e": 343.16
-        },
-        {
-          "w": "always",
-          "s": 343.22,
-          "e": 343.44
-        },
-        {
-          "w": "carry",
-          "s": 343.54,
-          "e": 343.76
-        },
-        {
-          "w": "cash,",
-          "s": 343.88,
-          "e": 344.1
-        },
-        {
-          "w": "but",
-          "s": 344.2,
-          "e": 344.28
-        },
-        {
-          "w": "if",
-          "s": 344.34,
-          "e": 344.46
-        },
-        {
-          "w": "you",
-          "s": 344.5,
-          "e": 344.54
-        },
-        {
-          "w": "want",
-          "s": 344.64,
-          "e": 344.78
-        },
-        {
-          "w": "the",
-          "s": 344.84,
-          "e": 344.92
-        },
-        {
-          "w": "big",
-          "s": 345.14,
-          "e": 345.34
-        },
-        {
-          "w": "payday,",
-          "s": 345.46,
-          "e": 345.84
-        },
-        {
-          "w": "you",
-          "s": 346.12,
-          "e": 346.22
-        },
-        {
-          "w": "have",
-          "s": 346.26,
-          "e": 346.42
-        },
-        {
-          "w": "to",
-          "s": 346.46,
-          "e": 346.54
-        },
-        {
-          "w": "wait",
-          "s": 346.6,
-          "e": 346.78
-        },
-        {
-          "w": "till-",
-          "s": 346.8,
-          "e": 346.9
-        }
-      ]
+     "w": "right?",
+     "s": 77.64,
+     "e": 77.92
     },
     {
-      "id": "m3",
-      "frames": [
-        "candidates/frames/twitch_v2935613960_0/m3/0.jpg",
-        "candidates/frames/twitch_v2935613960_0/m3/1.jpg",
-        "candidates/frames/twitch_v2935613960_0/m3/2.jpg"
-      ],
-      "start": 571.0,
-      "end": 681.0,
-      "peak": 641.0,
-      "score": 1.61,
-      "signals": [
-        "loud"
-      ],
-      "stt": "elevenlabs",
-      "text": "Do your parents need a ride to your girl's studio? I just wish my goddamn... I wish my car was good. Ready, go. Who's calling that shit? Who's calling that shit? Who's calling that shit? Who's calling that shit? Who? Who? Who? Who? I'm that bitch 'cause I motherfucking said so. It's DJ JP from Vice City. Is it Stacy? Is it Becky? Is it Keisha? Is it Texie? What's the wrong me? Is it Carti? What's the function? What the fuck the function? TGD shot with the ball, get the beach headed. The way I feel right now, I feel like we need to be all alone. TGD, thank you so much. Stop just playing around. You need to tell your girl take her fine ass home. And that's real. Stop teasing me. Stop teasing me. I could change your life so easily. I keep begging you to stay. But you leaving me, leaving me. Got sticks in the club illegally. Got the whole C side, they believe in me. We got members east of the GBP. We got members west on 401. We got a lock on the game, but it's more to come. You gotta pop that ass till the morning come. You want shots for the girls, then order some. Who's calling that shit? Who's calling that shit? Who's calling that shit? All right, send the bank chat",
-      "words": [
-        {
-          "w": "Do",
-          "s": 583.64,
-          "e": 583.66
-        },
-        {
-          "w": "your",
-          "s": 583.7,
-          "e": 583.8
-        },
-        {
-          "w": "parents",
-          "s": 583.88,
-          "e": 584.26
-        },
-        {
-          "w": "need",
-          "s": 584.34,
-          "e": 584.5
-        },
-        {
-          "w": "a",
-          "s": 584.52,
-          "e": 584.52
-        },
-        {
-          "w": "ride",
-          "s": 584.54,
-          "e": 584.68
-        },
-        {
-          "w": "to",
-          "s": 584.72,
-          "e": 584.78
-        },
-        {
-          "w": "your",
-          "s": 584.82,
-          "e": 584.9
-        },
-        {
-          "w": "girl's",
-          "s": 584.96,
-          "e": 585.18
-        },
-        {
-          "w": "studio?",
-          "s": 585.24,
-          "e": 585.48
-        },
-        {
-          "w": "I",
-          "s": 587.82,
-          "e": 587.88
-        },
-        {
-          "w": "just",
-          "s": 587.92,
-          "e": 588.08
-        },
-        {
-          "w": "wish",
-          "s": 588.12,
-          "e": 588.28
-        },
-        {
-          "w": "my",
-          "s": 588.34,
-          "e": 588.48
-        },
-        {
-          "w": "goddamn...",
-          "s": 588.52,
-          "e": 589.22
-        },
-        {
-          "w": "I",
-          "s": 591.04,
-          "e": 591.08
-        },
-        {
-          "w": "wish",
-          "s": 591.16,
-          "e": 591.32
-        },
-        {
-          "w": "my",
-          "s": 591.38,
-          "e": 591.5
-        },
-        {
-          "w": "car",
-          "s": 591.6,
-          "e": 591.84
-        },
-        {
-          "w": "was",
-          "s": 591.9,
-          "e": 592.02
-        },
-        {
-          "w": "good.",
-          "s": 592.08,
-          "e": 592.4
-        },
-        {
-          "w": "Ready,",
-          "s": 607.9,
-          "e": 608.16
-        },
-        {
-          "w": "go.",
-          "s": 608.28,
-          "e": 608.58
-        },
-        {
-          "w": "Who's",
-          "s": 609.54,
-          "e": 609.72
-        },
-        {
-          "w": "calling",
-          "s": 609.76,
-          "e": 610.06
-        },
-        {
-          "w": "that",
-          "s": 610.08,
-          "e": 610.2
-        },
-        {
-          "w": "shit?",
-          "s": 610.26,
-          "e": 610.52
-        },
-        {
-          "w": "Who's",
-          "s": 610.68,
-          "e": 611.6
-        },
-        {
-          "w": "calling",
-          "s": 611.68,
-          "e": 611.94
-        },
-        {
-          "w": "that",
-          "s": 611.96,
-          "e": 612.1
-        },
-        {
-          "w": "shit?",
-          "s": 612.16,
-          "e": 612.34
-        },
-        {
-          "w": "Who's",
-          "s": 613.42,
-          "e": 613.54
-        },
-        {
-          "w": "calling",
-          "s": 613.58,
-          "e": 613.84
-        },
-        {
-          "w": "that",
-          "s": 613.88,
-          "e": 613.96
-        },
-        {
-          "w": "shit?",
-          "s": 614.04,
-          "e": 614.16
-        },
-        {
-          "w": "Who's",
-          "s": 615.3,
-          "e": 615.46
-        },
-        {
-          "w": "calling",
-          "s": 615.5,
-          "e": 615.76
-        },
-        {
-          "w": "that",
-          "s": 615.78,
-          "e": 615.84
-        },
-        {
-          "w": "shit?",
-          "s": 615.9,
-          "e": 615.96
-        },
-        {
-          "w": "Who?",
-          "s": 619.1,
-          "e": 619.24
-        },
-        {
-          "w": "Who?",
-          "s": 619.28,
-          "e": 619.3
-        },
-        {
-          "w": "Who?",
-          "s": 619.6,
-          "e": 619.78
-        },
-        {
-          "w": "Who?",
-          "s": 621.36,
-          "e": 621.4
-        },
-        {
-          "w": "I'm",
-          "s": 621.44,
-          "e": 621.56
-        },
-        {
-          "w": "that",
-          "s": 621.58,
-          "e": 621.74
-        },
-        {
-          "w": "bitch",
-          "s": 621.78,
-          "e": 622.0
-        },
-        {
-          "w": "'cause",
-          "s": 622.02,
-          "e": 622.22
-        },
-        {
-          "w": "I",
-          "s": 622.3,
-          "e": 622.36
-        },
-        {
-          "w": "motherfucking",
-          "s": 622.42,
-          "e": 623.04
-        },
-        {
-          "w": "said",
-          "s": 623.12,
-          "e": 623.42
-        },
-        {
-          "w": "so.",
-          "s": 623.54,
-          "e": 623.82
-        },
-        {
-          "w": "It's",
-          "s": 624.26,
-          "e": 624.38
-        },
-        {
-          "w": "DJ",
-          "s": 624.44,
-          "e": 624.78
-        },
-        {
-          "w": "JP",
-          "s": 624.84,
-          "e": 625.26
-        },
-        {
-          "w": "from",
-          "s": 625.66,
-          "e": 625.82
-        },
-        {
-          "w": "Vice",
-          "s": 625.86,
-          "e": 626.1
-        },
-        {
-          "w": "City.",
-          "s": 626.18,
-          "e": 626.44
-        },
-        {
-          "w": "Is",
-          "s": 627.1,
-          "e": 627.24
-        },
-        {
-          "w": "it",
-          "s": 627.28,
-          "e": 627.36
-        },
-        {
-          "w": "Stacy?",
-          "s": 627.48,
-          "e": 628.44
-        },
-        {
-          "w": "Is",
-          "s": 628.98,
-          "e": 629.16
-        },
-        {
-          "w": "it",
-          "s": 629.2,
-          "e": 629.28
-        },
-        {
-          "w": "Becky?",
-          "s": 629.4,
-          "e": 630.22
-        },
-        {
-          "w": "Is",
-          "s": 630.92,
-          "e": 631.06
-        },
-        {
-          "w": "it",
-          "s": 631.1,
-          "e": 631.2
-        },
-        {
-          "w": "Keisha?",
-          "s": 631.32,
-          "e": 632.14
-        },
-        {
-          "w": "Is",
-          "s": 632.84,
-          "e": 632.96
-        },
-        {
-          "w": "it",
-          "s": 632.98,
-          "e": 633.1
-        },
-        {
-          "w": "Texie?",
-          "s": 633.22,
-          "e": 634.02
-        },
-        {
-          "w": "What's",
-          "s": 634.66,
-          "e": 634.88
-        },
-        {
-          "w": "the",
-          "s": 634.92,
-          "e": 635.02
-        },
-        {
-          "w": "wrong",
-          "s": 635.12,
-          "e": 635.46
-        },
-        {
-          "w": "me?",
-          "s": 635.56,
-          "e": 635.94
-        },
-        {
-          "w": "Is",
-          "s": 636.62,
-          "e": 636.74
-        },
-        {
-          "w": "it",
-          "s": 636.78,
-          "e": 636.9
-        },
-        {
-          "w": "Carti?",
-          "s": 637.0,
-          "e": 637.64
-        },
-        {
-          "w": "What's",
-          "s": 638.44,
-          "e": 638.62
-        },
-        {
-          "w": "the",
-          "s": 638.7,
-          "e": 638.8
-        },
-        {
-          "w": "function?",
-          "s": 638.94,
-          "e": 639.56
-        },
-        {
-          "w": "What",
-          "s": 639.62,
-          "e": 639.7
-        },
-        {
-          "w": "the",
-          "s": 639.74,
-          "e": 639.82
-        },
-        {
-          "w": "fuck",
-          "s": 639.9,
-          "e": 640.1
-        },
-        {
-          "w": "the",
-          "s": 640.14,
-          "e": 640.24
-        },
-        {
-          "w": "function?",
-          "s": 640.28,
-          "e": 640.98
-        },
-        {
-          "w": "TGD",
-          "s": 641.48,
-          "e": 642.02
-        },
-        {
-          "w": "shot",
-          "s": 642.08,
-          "e": 642.28
-        },
-        {
-          "w": "with",
-          "s": 642.32,
-          "e": 642.4
-        },
-        {
-          "w": "the",
-          "s": 642.42,
-          "e": 642.5
-        },
-        {
-          "w": "ball,",
-          "s": 642.56,
-          "e": 642.72
-        },
-        {
-          "w": "get",
-          "s": 642.76,
-          "e": 642.86
-        },
-        {
-          "w": "the",
-          "s": 642.9,
-          "e": 642.96
-        },
-        {
-          "w": "beach",
-          "s": 643.02,
-          "e": 643.18
-        },
-        {
-          "w": "headed.",
-          "s": 643.18,
-          "e": 643.36
-        },
-        {
-          "w": "The",
-          "s": 643.4,
-          "e": 643.46
-        },
-        {
-          "w": "way",
-          "s": 643.48,
-          "e": 643.58
-        },
-        {
-          "w": "I",
-          "s": 643.62,
-          "e": 643.62
-        },
-        {
-          "w": "feel",
-          "s": 643.64,
-          "e": 643.82
-        },
-        {
-          "w": "right",
-          "s": 643.88,
-          "e": 644.06
-        },
-        {
-          "w": "now,",
-          "s": 644.14,
-          "e": 644.42
-        },
-        {
-          "w": "I",
-          "s": 644.54,
-          "e": 644.54
-        },
-        {
-          "w": "feel",
-          "s": 644.58,
-          "e": 644.76
-        },
-        {
-          "w": "like",
-          "s": 644.82,
-          "e": 644.94
-        },
-        {
-          "w": "we",
-          "s": 644.96,
-          "e": 645.02
-        },
-        {
-          "w": "need",
-          "s": 645.06,
-          "e": 645.14
-        },
-        {
-          "w": "to",
-          "s": 645.18,
-          "e": 645.24
-        },
-        {
-          "w": "be",
-          "s": 645.3,
-          "e": 645.5
-        },
-        {
-          "w": "all",
-          "s": 645.6,
-          "e": 645.74
-        },
-        {
-          "w": "alone.",
-          "s": 645.8,
-          "e": 646.18
-        },
-        {
-          "w": "TGD,",
-          "s": 646.3,
-          "e": 646.62
-        },
-        {
-          "w": "thank",
-          "s": 646.68,
-          "e": 646.98
-        },
-        {
-          "w": "you",
-          "s": 647.0,
-          "e": 647.04
-        },
-        {
-          "w": "so",
-          "s": 647.1,
-          "e": 647.18
-        },
-        {
-          "w": "much.",
-          "s": 647.24,
-          "e": 647.38
-        },
-        {
-          "w": "Stop",
-          "s": 647.38,
-          "e": 647.38
-        },
-        {
-          "w": "just",
-          "s": 647.38,
-          "e": 647.42
-        },
-        {
-          "w": "playing",
-          "s": 647.44,
-          "e": 647.68
-        },
-        {
-          "w": "around.",
-          "s": 647.74,
-          "e": 648.02
-        },
-        {
-          "w": "You",
-          "s": 648.06,
-          "e": 648.1
-        },
-        {
-          "w": "need",
-          "s": 648.14,
-          "e": 648.22
-        },
-        {
-          "w": "to",
-          "s": 648.26,
-          "e": 648.32
-        },
-        {
-          "w": "tell",
-          "s": 648.38,
-          "e": 648.58
-        },
-        {
-          "w": "your",
-          "s": 648.62,
-          "e": 648.78
-        },
-        {
-          "w": "girl",
-          "s": 648.84,
-          "e": 649.02
-        },
-        {
-          "w": "take",
-          "s": 649.08,
-          "e": 649.18
-        },
-        {
-          "w": "her",
-          "s": 649.2,
-          "e": 649.28
-        },
-        {
-          "w": "fine",
-          "s": 649.34,
-          "e": 649.52
-        },
-        {
-          "w": "ass",
-          "s": 649.54,
-          "e": 649.68
-        },
-        {
-          "w": "home.",
-          "s": 649.72,
-          "e": 649.96
-        },
-        {
-          "w": "And",
-          "s": 649.98,
-          "e": 650.04
-        },
-        {
-          "w": "that's",
-          "s": 650.08,
-          "e": 650.26
-        },
-        {
-          "w": "real.",
-          "s": 650.32,
-          "e": 650.62
-        },
-        {
-          "w": "Stop",
-          "s": 650.96,
-          "e": 651.2
-        },
-        {
-          "w": "teasing",
-          "s": 651.32,
-          "e": 651.64
-        },
-        {
-          "w": "me.",
-          "s": 651.66,
-          "e": 651.92
-        },
-        {
-          "w": "Stop",
-          "s": 652.88,
-          "e": 653.1
-        },
-        {
-          "w": "teasing",
-          "s": 653.24,
-          "e": 653.5
-        },
-        {
-          "w": "me.",
-          "s": 653.58,
-          "e": 653.82
-        },
-        {
-          "w": "I",
-          "s": 653.9,
-          "e": 653.92
-        },
-        {
-          "w": "could",
-          "s": 653.96,
-          "e": 654.06
-        },
-        {
-          "w": "change",
-          "s": 654.12,
-          "e": 654.34
-        },
-        {
-          "w": "your",
-          "s": 654.36,
-          "e": 654.5
-        },
-        {
-          "w": "life",
-          "s": 654.56,
-          "e": 654.74
-        },
-        {
-          "w": "so",
-          "s": 654.82,
-          "e": 655.02
-        },
-        {
-          "w": "easily.",
-          "s": 655.12,
-          "e": 655.6
-        },
-        {
-          "w": "I",
-          "s": 655.66,
-          "e": 655.72
-        },
-        {
-          "w": "keep",
-          "s": 655.78,
-          "e": 655.94
-        },
-        {
-          "w": "begging",
-          "s": 656.0,
-          "e": 656.28
-        },
-        {
-          "w": "you",
-          "s": 656.3,
-          "e": 656.34
-        },
-        {
-          "w": "to",
-          "s": 656.38,
-          "e": 656.44
-        },
-        {
-          "w": "stay.",
-          "s": 656.5,
-          "e": 656.68
-        },
-        {
-          "w": "But",
-          "s": 656.76,
-          "e": 656.82
-        },
-        {
-          "w": "you",
-          "s": 656.88,
-          "e": 657.0
-        },
-        {
-          "w": "leaving",
-          "s": 657.1,
-          "e": 657.7
-        },
-        {
-          "w": "me,",
-          "s": 657.8,
-          "e": 658.02
-        },
-        {
-          "w": "leaving",
-          "s": 658.92,
-          "e": 659.26
-        },
-        {
-          "w": "me.",
-          "s": 659.32,
-          "e": 659.52
-        },
-        {
-          "w": "Got",
-          "s": 659.56,
-          "e": 659.72
-        },
-        {
-          "w": "sticks",
-          "s": 659.78,
-          "e": 660.02
-        },
-        {
-          "w": "in",
-          "s": 660.06,
-          "e": 660.12
-        },
-        {
-          "w": "the",
-          "s": 660.16,
-          "e": 660.22
-        },
-        {
-          "w": "club",
-          "s": 660.28,
-          "e": 660.54
-        },
-        {
-          "w": "illegally.",
-          "s": 660.6,
-          "e": 661.44
-        },
-        {
-          "w": "Got",
-          "s": 661.48,
-          "e": 661.58
-        },
-        {
-          "w": "the",
-          "s": 661.62,
-          "e": 661.68
-        },
-        {
-          "w": "whole",
-          "s": 661.72,
-          "e": 661.9
-        },
-        {
-          "w": "C",
-          "s": 661.96,
-          "e": 662.12
-        },
-        {
-          "w": "side,",
-          "s": 662.2,
-          "e": 662.4
-        },
-        {
-          "w": "they",
-          "s": 662.42,
-          "e": 662.5
-        },
-        {
-          "w": "believe",
-          "s": 662.54,
-          "e": 662.88
-        },
-        {
-          "w": "in",
-          "s": 662.9,
-          "e": 662.98
-        },
-        {
-          "w": "me.",
-          "s": 663.02,
-          "e": 663.2
-        },
-        {
-          "w": "We",
-          "s": 663.24,
-          "e": 663.32
-        },
-        {
-          "w": "got",
-          "s": 663.36,
-          "e": 663.54
-        },
-        {
-          "w": "members",
-          "s": 663.62,
-          "e": 664.04
-        },
-        {
-          "w": "east",
-          "s": 664.14,
-          "e": 664.32
-        },
-        {
-          "w": "of",
-          "s": 664.38,
-          "e": 664.42
-        },
-        {
-          "w": "the",
-          "s": 664.46,
-          "e": 664.54
-        },
-        {
-          "w": "GBP.",
-          "s": 664.58,
-          "e": 664.82
-        },
-        {
-          "w": "We",
-          "s": 665.12,
-          "e": 665.2
-        },
-        {
-          "w": "got",
-          "s": 665.26,
-          "e": 665.44
-        },
-        {
-          "w": "members",
-          "s": 665.52,
-          "e": 665.92
-        },
-        {
-          "w": "west",
-          "s": 665.98,
-          "e": 666.2
-        },
-        {
-          "w": "on",
-          "s": 666.26,
-          "e": 666.34
-        },
-        {
-          "w": "401.",
-          "s": 666.68,
-          "e": 667.04
-        },
-        {
-          "w": "We",
-          "s": 667.08,
-          "e": 667.16
-        },
-        {
-          "w": "got",
-          "s": 667.2,
-          "e": 667.3
-        },
-        {
-          "w": "a",
-          "s": 667.34,
-          "e": 667.38
-        },
-        {
-          "w": "lock",
-          "s": 667.44,
-          "e": 667.62
-        },
-        {
-          "w": "on",
-          "s": 667.68,
-          "e": 667.74
-        },
-        {
-          "w": "the",
-          "s": 667.78,
-          "e": 667.84
-        },
-        {
-          "w": "game,",
-          "s": 667.9,
-          "e": 668.08
-        },
-        {
-          "w": "but",
-          "s": 668.12,
-          "e": 668.2
-        },
-        {
-          "w": "it's",
-          "s": 668.22,
-          "e": 668.34
-        },
-        {
-          "w": "more",
-          "s": 668.4,
-          "e": 668.52
-        },
-        {
-          "w": "to",
-          "s": 668.56,
-          "e": 668.66
-        },
-        {
-          "w": "come.",
-          "s": 668.72,
-          "e": 668.96
-        },
-        {
-          "w": "You",
-          "s": 669.0,
-          "e": 669.04
-        },
-        {
-          "w": "gotta",
-          "s": 669.08,
-          "e": 669.28
-        },
-        {
-          "w": "pop",
-          "s": 669.34,
-          "e": 669.52
-        },
-        {
-          "w": "that",
-          "s": 669.56,
-          "e": 669.76
-        },
-        {
-          "w": "ass",
-          "s": 669.84,
-          "e": 670.04
-        },
-        {
-          "w": "till",
-          "s": 670.06,
-          "e": 670.12
-        },
-        {
-          "w": "the",
-          "s": 670.16,
-          "e": 670.22
-        },
-        {
-          "w": "morning",
-          "s": 670.3,
-          "e": 670.58
-        },
-        {
-          "w": "come.",
-          "s": 670.62,
-          "e": 670.84
-        },
-        {
-          "w": "You",
-          "s": 670.9,
-          "e": 670.94
-        },
-        {
-          "w": "want",
-          "s": 670.98,
-          "e": 671.14
-        },
-        {
-          "w": "shots",
-          "s": 671.18,
-          "e": 671.42
-        },
-        {
-          "w": "for",
-          "s": 671.44,
-          "e": 671.5
-        },
-        {
-          "w": "the",
-          "s": 671.54,
-          "e": 671.62
-        },
-        {
-          "w": "girls,",
-          "s": 671.66,
-          "e": 671.88
-        },
-        {
-          "w": "then",
-          "s": 671.96,
-          "e": 672.16
-        },
-        {
-          "w": "order",
-          "s": 672.24,
-          "e": 672.46
-        },
-        {
-          "w": "some.",
-          "s": 672.54,
-          "e": 673.06
-        },
-        {
-          "w": "Who's",
-          "s": 674.4,
-          "e": 674.58
-        },
-        {
-          "w": "calling",
-          "s": 674.64,
-          "e": 674.84
-        },
-        {
-          "w": "that",
-          "s": 674.86,
-          "e": 675.0
-        },
-        {
-          "w": "shit?",
-          "s": 675.08,
-          "e": 675.46
-        },
-        {
-          "w": "Who's",
-          "s": 676.3,
-          "e": 676.42
-        },
-        {
-          "w": "calling",
-          "s": 676.5,
-          "e": 676.7
-        },
-        {
-          "w": "that",
-          "s": 676.72,
-          "e": 676.92
-        },
-        {
-          "w": "shit?",
-          "s": 677.04,
-          "e": 677.38
-        },
-        {
-          "w": "Who's",
-          "s": 678.14,
-          "e": 678.3
-        },
-        {
-          "w": "calling",
-          "s": 678.36,
-          "e": 678.62
-        },
-        {
-          "w": "that",
-          "s": 678.64,
-          "e": 678.76
-        },
-        {
-          "w": "shit?",
-          "s": 678.82,
-          "e": 679.06
-        },
-        {
-          "w": "All",
-          "s": 680.12,
-          "e": 680.18
-        },
-        {
-          "w": "right,",
-          "s": 680.22,
-          "e": 680.26
-        },
-        {
-          "w": "send",
-          "s": 680.32,
-          "e": 680.4
-        },
-        {
-          "w": "the",
-          "s": 680.42,
-          "e": 680.48
-        },
-        {
-          "w": "bank",
-          "s": 680.52,
-          "e": 680.64
-        },
-        {
-          "w": "chat",
-          "s": 680.68,
-          "e": 680.84
-        }
-      ]
+     "w": "Oh,",
+     "s": 78.5,
+     "e": 78.74
+    },
+    {
+     "w": "yeah.",
+     "s": 78.8,
+     "e": 79.08
+    },
+    {
+     "w": "He",
+     "s": 79.66,
+     "e": 79.74
+    },
+    {
+     "w": "was",
+     "s": 79.8,
+     "e": 79.86
+    },
+    {
+     "w": "undercover",
+     "s": 79.92,
+     "e": 80.3
+    },
+    {
+     "w": "the",
+     "s": 80.34,
+     "e": 80.4
+    },
+    {
+     "w": "whole",
+     "s": 80.44,
+     "e": 80.58
+    },
+    {
+     "w": "time.",
+     "s": 80.64,
+     "e": 80.94
+    },
+    {
+     "w": "Was",
+     "s": 81.52,
+     "e": 81.58
+    },
+    {
+     "w": "trying",
+     "s": 81.62,
+     "e": 81.76
+    },
+    {
+     "w": "to",
+     "s": 81.78,
+     "e": 81.82
+    },
+    {
+     "w": "get",
+     "s": 81.86,
+     "e": 81.92
+    },
+    {
+     "w": "in",
+     "s": 81.96,
+     "e": 81.98
+    },
+    {
+     "w": "with",
+     "s": 82.0,
+     "e": 82.08
+    },
+    {
+     "w": "the",
+     "s": 82.1,
+     "e": 82.18
+    },
+    {
+     "w": "Polians.",
+     "s": 82.22,
+     "e": 82.68
+    },
+    {
+     "w": "Hmm.",
+     "s": 83.16,
+     "e": 83.46
+    },
+    {
+     "w": "You",
+     "s": 84.24,
+     "e": 84.28
+    },
+    {
+     "w": "know,",
+     "s": 84.32,
+     "e": 84.4
+    },
+    {
+     "w": "I'm",
+     "s": 84.46,
+     "e": 84.54
+    },
+    {
+     "w": "surprised",
+     "s": 84.6,
+     "e": 85.04
+    },
+    {
+     "w": "you",
+     "s": 85.08,
+     "e": 85.12
+    },
+    {
+     "w": "didn't",
+     "s": 85.16,
+     "e": 85.3
+    },
+    {
+     "w": "get",
+     "s": 85.34,
+     "e": 85.44
+    },
+    {
+     "w": "a",
+     "s": 85.5,
+     "e": 85.56
+    },
+    {
+     "w": "read",
+     "s": 85.64,
+     "e": 85.84
+    },
+    {
+     "w": "on",
+     "s": 85.9,
+     "e": 86.02
+    },
+    {
+     "w": "him.",
+     "s": 86.06,
+     "e": 86.12
+    },
+    {
+     "w": "Hey,",
+     "s": 86.88,
+     "e": 87.08
+    },
+    {
+     "w": "cops",
+     "s": 87.36,
+     "e": 87.52
+    },
+    {
+     "w": "aren't",
+     "s": 87.56,
+     "e": 87.68
+    },
+    {
+     "w": "usually",
+     "s": 87.74,
+     "e": 88.0
+    },
+    {
+     "w": "that",
+     "s": 88.06,
+     "e": 88.16
+    },
+    {
+     "w": "bad",
+     "s": 88.22,
+     "e": 88.34
+    },
+    {
+     "w": "at",
+     "s": 88.36,
+     "e": 88.44
+    },
+    {
+     "w": "reading",
+     "s": 88.52,
+     "e": 88.84
+    },
+    {
+     "w": "people.",
+     "s": 88.84,
+     "e": 88.94
+    },
+    {
+     "w": "Hold",
+     "s": 89.56,
+     "e": 89.72
+    },
+    {
+     "w": "on.",
+     "s": 89.78,
+     "e": 89.92
+    },
+    {
+     "w": "Yeah,",
+     "s": 92.78,
+     "e": 92.92
+    },
+    {
+     "w": "so",
+     "s": 93.0,
+     "e": 93.08
+    },
+    {
+     "w": "what",
+     "s": 93.12,
+     "e": 93.24
+    },
+    {
+     "w": "were",
+     "s": 93.26,
+     "e": 93.34
+    },
+    {
+     "w": "you",
+     "s": 93.38,
+     "e": 93.44
+    },
+    {
+     "w": "saying?",
+     "s": 93.5,
+     "e": 93.8
+    },
+    {
+     "w": "I",
+     "s": 95.0,
+     "e": 95.04
+    },
+    {
+     "w": "guess",
+     "s": 95.08,
+     "e": 95.28
+    },
+    {
+     "w": "so.",
+     "s": 95.32,
+     "e": 95.58
+    },
+    {
+     "w": "I",
+     "s": 96.04,
+     "e": 96.08
+    },
+    {
+     "w": "thought",
+     "s": 96.24,
+     "e": 96.36
+    },
+    {
+     "w": "he,",
+     "s": 96.38,
+     "e": 96.44
+    },
+    {
+     "w": "like,",
+     "s": 96.48,
+     "e": 96.62
+    },
+    {
+     "w": "liked",
+     "s": 97.32,
+     "e": 97.52
+    },
+    {
+     "w": "me",
+     "s": 97.56,
+     "e": 97.64
+    },
+    {
+     "w": "or",
+     "s": 97.68,
+     "e": 97.76
+    },
+    {
+     "w": "something.",
+     "s": 97.82,
+     "e": 98.06
+    },
+    {
+     "w": "Hey,",
+     "s": 98.54,
+     "e": 98.78
+    },
+    {
+     "w": "both",
+     "s": 99.2,
+     "e": 99.38
+    },
+    {
+     "w": "can",
+     "s": 99.42,
+     "e": 99.54
+    },
+    {
+     "w": "be",
+     "s": 99.58,
+     "e": 99.68
+    },
+    {
+     "w": "true.",
+     "s": 99.74,
+     "e": 100.0
+    },
+    {
+     "w": "Yeah,",
+     "s": 100.68,
+     "e": 100.86
+    },
+    {
+     "w": "well,",
+     "s": 100.96,
+     "e": 101.06
+    },
+    {
+     "w": "he's",
+     "s": 101.78,
+     "e": 101.92
+    },
+    {
+     "w": "gone",
+     "s": 101.98,
+     "e": 102.22
+    },
+    {
+     "w": "anyway.",
+     "s": 102.24,
+     "e": 102.68
+    },
+    {
+     "w": "Crashed",
+     "s": 103.36,
+     "e": 103.68
+    },
+    {
+     "w": "out",
+     "s": 103.72,
+     "e": 103.88
+    },
+    {
+     "w": "and",
+     "s": 103.9,
+     "e": 103.96
+    },
+    {
+     "w": "blew",
+     "s": 103.98,
+     "e": 104.18
+    },
+    {
+     "w": "up.",
+     "s": 104.26,
+     "e": 104.38
+    },
+    {
+     "w": "Damn.",
+     "s": 105.14,
+     "e": 105.62
+    },
+    {
+     "w": "Are",
+     "s": 106.44,
+     "e": 106.56
+    },
+    {
+     "w": "you",
+     "s": 106.62,
+     "e": 106.68
+    },
+    {
+     "w": "okay?",
+     "s": 106.76,
+     "e": 107.08
+    },
+    {
+     "w": "Yeah,",
+     "s": 107.76,
+     "e": 107.88
+    },
+    {
+     "w": "I'm",
+     "s": 107.92,
+     "e": 108.0
+    },
+    {
+     "w": "fine.",
+     "s": 108.06,
+     "e": 108.38
+    },
+    {
+     "w": "It's",
+     "s": 108.5,
+     "e": 108.62
+    },
+    {
+     "w": "just...",
+     "s": 108.68,
+     "e": 108.88
+    },
+    {
+     "w": "Did",
+     "s": 109.66,
+     "e": 109.76
+    },
+    {
+     "w": "I",
+     "s": 109.76,
+     "e": 109.76
+    },
+    {
+     "w": "tell",
+     "s": 109.78,
+     "e": 109.9
+    },
+    {
+     "w": "you",
+     "s": 109.94,
+     "e": 110.0
+    },
+    {
+     "w": "he",
+     "s": 110.04,
+     "e": 110.12
+    },
+    {
+     "w": "made",
+     "s": 110.16,
+     "e": 110.28
+    },
+    {
+     "w": "me",
+     "s": 110.34,
+     "e": 110.4
+    },
+    {
+     "w": "a",
+     "s": 110.44,
+     "e": 110.48
+    },
+    {
+     "w": "sandwich?",
+     "s": 110.6,
+     "e": 110.96
+    },
+    {
+     "w": "Can't",
+     "s": 112.6,
+     "e": 112.68
+    },
+    {
+     "w": "remember",
+     "s": 112.72,
+     "e": 113.0
+    },
+    {
+     "w": "the",
+     "s": 113.04,
+     "e": 113.1
+    },
+    {
+     "w": "last",
+     "s": 113.14,
+     "e": 113.36
+    },
+    {
+     "w": "guy",
+     "s": 113.4,
+     "e": 113.56
+    },
+    {
+     "w": "that",
+     "s": 113.58,
+     "e": 113.66
+    },
+    {
+     "w": "made",
+     "s": 113.68,
+     "e": 113.8
+    },
+    {
+     "w": "me",
+     "s": 113.84,
+     "e": 113.9
+    },
+    {
+     "w": "a",
+     "s": 113.94,
+     "e": 114.0
+    },
+    {
+     "w": "sandwich.",
+     "s": 114.06,
+     "e": 114.44
+    },
+    {
+     "w": "My",
+     "s": 114.78,
+     "e": 114.88
+    },
+    {
+     "w": "uncle,",
+     "s": 114.94,
+     "e": 115.14
+    },
+    {
+     "w": "maybe.",
+     "s": 115.2,
+     "e": 115.42
+    },
+    {
+     "w": "Hmm.",
+     "s": 116.02,
+     "e": 116.22
+    },
+    {
+     "w": "Well,",
+     "s": 117.02,
+     "e": 117.18
+    },
+    {
+     "w": "I'm",
+     "s": 118.24,
+     "e": 118.34
+    },
+    {
+     "w": "here",
+     "s": 118.42,
+     "e": 118.52
+    },
+    {
+     "w": "if",
+     "s": 118.58,
+     "e": 118.66
+    },
+    {
+     "w": "you",
+     "s": 118.7,
+     "e": 118.76
+    },
+    {
+     "w": "wanna",
+     "s": 118.8,
+     "e": 119.02
+    },
+    {
+     "w": "talk.",
+     "s": 119.06,
+     "e": 119.42
+    },
+    {
+     "w": "Yeah.",
+     "s": 119.9,
+     "e": 120.08
+    },
+    {
+     "w": "Yeah,",
+     "s": 120.62,
+     "e": 120.74
+    },
+    {
+     "w": "I",
+     "s": 120.82,
+     "e": 120.82
+    },
+    {
+     "w": "know.",
+     "s": 120.86,
+     "e": 121.0
+    },
+    {
+     "w": "Thanks.",
+     "s": 121.24,
+     "e": 121.52
+    },
+    {
+     "w": "Love",
+     "s": 123.9,
+     "e": 124.04
+    },
+    {
+     "w": "you,",
+     "s": 124.08,
+     "e": 124.14
+    },
+    {
+     "w": "Lucia.",
+     "s": 124.16,
+     "e": 124.56
+    },
+    {
+     "w": "Goddamn.",
+     "s": 131.72,
+     "e": 132.52
+    },
+    {
+     "w": "You're",
+     "s": 134.48,
+     "e": 134.56
+    },
+    {
+     "w": "all",
+     "s": 134.62,
+     "e": 134.74
+    },
+    {
+     "w": "going",
+     "s": 134.8,
+     "e": 135.0
+    },
+    {
+     "w": "to",
+     "s": 135.04,
+     "e": 135.14
+    },
+    {
+     "w": "hell.",
+     "s": 135.18,
+     "e": 135.48
+    },
+    {
+     "w": "Because",
+     "s": 137.64,
+     "e": 137.88
+    },
+    {
+     "w": "what?",
+     "s": 137.92,
+     "e": 138.04
+    },
+    {
+     "w": "I'm",
+     "s": 138.46,
+     "e": 138.58
+    },
+    {
+     "w": "not",
+     "s": 138.6,
+     "e": 138.74
+    },
+    {
+     "w": "good",
+     "s": 138.8,
+     "e": 138.9
+    },
+    {
+     "w": "enough.",
+     "s": 138.94,
+     "e": 139.1
+    },
+    {
+     "w": "Hey,",
+     "s": 139.96,
+     "e": 140.08
+    },
+    {
+     "w": "look,",
+     "s": 140.18,
+     "e": 140.34
+    },
+    {
+     "w": "I",
+     "s": 140.74,
+     "e": 140.78
+    },
+    {
+     "w": "was",
+     "s": 140.84,
+     "e": 140.94
+    },
+    {
+     "w": "the",
+     "s": 140.96,
+     "e": 141.0
+    },
+    {
+     "w": "number",
+     "s": 141.04,
+     "e": 141.22
+    },
+    {
+     "w": "one",
+     "s": 141.28,
+     "e": 141.38
+    },
+    {
+     "w": "athlete.",
+     "s": 141.42,
+     "e": 141.66
+    },
+    {
+     "w": "Scholarship",
+     "s": 142.2,
+     "e": 142.78
+    },
+    {
+     "w": "player",
+     "s": 142.84,
+     "e": 143.1
+    },
+    {
+     "w": "my",
+     "s": 143.18,
+     "e": 143.3
+    },
+    {
+     "w": "whole",
+     "s": 143.34,
+     "e": 143.48
+    },
+    {
+     "w": "life,",
+     "s": 143.56,
+     "e": 143.8
+    },
+    {
+     "w": "man.",
+     "s": 143.82,
+     "e": 143.82
+    },
+    {
+     "w": "What",
+     "s": 147.62,
+     "e": 147.72
+    },
+    {
+     "w": "the",
+     "s": 147.76,
+     "e": 147.82
+    },
+    {
+     "w": "hell?",
+     "s": 147.86,
+     "e": 147.98
+    },
+    {
+     "w": "Yo,",
+     "s": 148.04,
+     "e": 148.12
+    },
+    {
+     "w": "chat,",
+     "s": 148.24,
+     "e": 148.36
+    },
+    {
+     "w": "I",
+     "s": 148.42,
+     "e": 148.46
+    },
+    {
+     "w": "think",
+     "s": 148.48,
+     "e": 148.64
+    },
+    {
+     "w": "Jason",
+     "s": 148.66,
+     "e": 148.84
+    },
+    {
+     "w": "should",
+     "s": 148.86,
+     "e": 148.94
+    },
+    {
+     "w": "get",
+     "s": 148.96,
+     "e": 149.04
+    },
+    {
+     "w": "a",
+     "s": 149.06,
+     "e": 149.08
+    },
+    {
+     "w": "new",
+     "s": 149.12,
+     "e": 149.2
+    },
+    {
+     "w": "haircut.",
+     "s": 149.24,
+     "e": 149.6
+    },
+    {
+     "w": "What",
+     "s": 149.72,
+     "e": 149.8
+    },
+    {
+     "w": "y'all",
+     "s": 149.82,
+     "e": 149.94
+    },
+    {
+     "w": "think?",
+     "s": 149.96,
+     "e": 150.1
+    },
+    {
+     "w": "Does",
+     "s": 170.44,
+     "e": 170.54
+    },
+    {
+     "w": "he,",
+     "s": 170.56,
+     "e": 170.62
+    },
+    {
+     "w": "does",
+     "s": 170.78,
+     "e": 170.9
+    },
+    {
+     "w": "he",
+     "s": 170.94,
+     "e": 170.96
+    },
+    {
+     "w": "have",
+     "s": 170.98,
+     "e": 171.06
+    },
+    {
+     "w": "any",
+     "s": 171.08,
+     "e": 171.2
+    },
+    {
+     "w": "good",
+     "s": 171.36,
+     "e": 171.48
+    },
+    {
+     "w": "hairstyles?",
+     "s": 171.52,
+     "e": 172.08
+    },
+    {
+     "w": "Yo,",
+     "s": 172.14,
+     "e": 172.18
+    },
+    {
+     "w": "what's",
+     "s": 172.32,
+     "e": 172.5
+    },
+    {
+     "w": "good?",
+     "s": 172.64,
+     "e": 172.94
+    },
+    {
+     "w": "Bro,",
+     "s": 177.42,
+     "e": 177.54
+    },
+    {
+     "w": "bro,",
+     "s": 177.6,
+     "e": 177.68
+    },
+    {
+     "w": "bro,",
+     "s": 177.72,
+     "e": 177.9
+    },
+    {
+     "w": "bro,",
+     "s": 177.96,
+     "e": 177.96
+    },
+    {
+     "w": "bro.",
+     "s": 177.96,
+     "e": 178.16
+    },
+    {
+     "w": "I",
+     "s": 178.5,
+     "e": 178.6
+    },
+    {
+     "w": "still",
+     "s": 178.66,
+     "e": 178.94
+    },
+    {
+     "w": "don't",
+     "s": 178.96,
+     "e": 179.1
+    },
+    {
+     "w": "think",
+     "s": 179.14,
+     "e": 179.28
+    },
+    {
+     "w": "you",
+     "s": 179.32,
+     "e": 179.4
+    },
+    {
+     "w": "understand.",
+     "s": 179.42,
+     "e": 179.9
+    },
+    {
+     "w": "You",
+     "s": 180.08,
+     "e": 180.14
+    },
+    {
+     "w": "can't",
+     "s": 180.24,
+     "e": 180.4
+    },
+    {
+     "w": "compete",
+     "s": 180.44,
+     "e": 180.82
+    },
+    {
+     "w": "with",
+     "s": 180.88,
+     "e": 180.98
+    },
+    {
+     "w": "me.",
+     "s": 181.04,
+     "e": 181.18
+    },
+    {
+     "w": "You",
+     "s": 181.6,
+     "e": 181.66
+    },
+    {
+     "w": "can't.",
+     "s": 181.74,
+     "e": 182.06
+    },
+    {
+     "w": "I'll",
+     "s": 182.32,
+     "e": 182.4
+    },
+    {
+     "w": "buy",
+     "s": 182.44,
+     "e": 182.54
+    },
+    {
+     "w": "every",
+     "s": 182.78,
+     "e": 182.98
+    },
+    {
+     "w": "fucking",
+     "s": 183.1,
+     "e": 183.32
+    },
+    {
+     "w": "bottle",
+     "s": 183.38,
+     "e": 183.58
+    },
+    {
+     "w": "in",
+     "s": 183.58,
+     "e": 183.6
+    },
+    {
+     "w": "the",
+     "s": 183.62,
+     "e": 183.62
+    },
+    {
+     "w": "place.",
+     "s": 183.62,
+     "e": 183.68
+    },
+    {
+     "w": "Bro,",
+     "s": 183.72,
+     "e": 183.86
+    },
+    {
+     "w": "it",
+     "s": 183.96,
+     "e": 184.04
+    },
+    {
+     "w": "is...",
+     "s": 184.1,
+     "e": 184.3
+    },
+    {
+     "w": "Wait,",
+     "s": 184.48,
+     "e": 184.58
+    },
+    {
+     "w": "creative",
+     "s": 184.66,
+     "e": 184.88
+    },
+    {
+     "w": "styles.",
+     "s": 184.92,
+     "e": 185.3
+    },
+    {
+     "w": "I'll",
+     "s": 185.34,
+     "e": 185.38
+    },
+    {
+     "w": "buy",
+     "s": 185.38,
+     "e": 185.38
+    },
+    {
+     "w": "every",
+     "s": 185.38,
+     "e": 185.42
+    },
+    {
+     "w": "single",
+     "s": 185.42,
+     "e": 185.52
+    },
+    {
+     "w": "bottle",
+     "s": 185.54,
+     "e": 185.8
+    },
+    {
+     "w": "if",
+     "s": 185.8,
+     "e": 185.86
+    },
+    {
+     "w": "that",
+     "s": 186.14,
+     "e": 186.32
+    },
+    {
+     "w": "means",
+     "s": 186.36,
+     "e": 186.48
+    },
+    {
+     "w": "I",
+     "s": 186.5,
+     "e": 186.5
+    },
+    {
+     "w": "have",
+     "s": 186.58,
+     "e": 186.8
+    },
+    {
+     "w": "to.",
+     "s": 186.84,
+     "e": 186.98
     }
-  ]
+   ]
+  },
+  {
+   "id": "m2",
+   "frames": [
+    "candidates/frames/twitch_v2935613960_0/m2/0.jpg",
+    "candidates/frames/twitch_v2935613960_0/m2/1.jpg",
+    "candidates/frames/twitch_v2935613960_0/m2/2.jpg"
+   ],
+   "start": 237.0,
+   "end": 347.0,
+   "peak": 307.0,
+   "score": 1.36,
+   "signals": [
+    "loud"
+   ],
+   "stt": "elevenlabs",
+   "text": "Prehab is bullshit. It's nothing but a scam, bro. You pay thousands of dollars just to end up a big pussy. Fucking talk, talk, talk. Faking love is for bitches and whores Short hair ... and they say, \"What about if you want a fucking discount?\" And then you all laugh and you have another week to pay up. Yeah, she was watching me get my hair cut. Damn. Those jokes and bullshit, it's all the same. Yo. Fucking wanna stop laughing. You crackled up. Son of a bitch. Oh, come on. I just fixed this car, bro. You better not kill me, you fucking pervert. This car is so like... Yo, get off me. Yo. Long time. Come spend some money. Where you been? Oh, my God. So, 81,000. It's all right. W's, bro. It's all right. All yours. It's all right, bro. We got 80, we got 81,000. We lost 20. It's all right. That's a dub. That's a dub. That's a dub. Well, you only pay the Yasmani tax. More work. So I got some time right now. Anything you recommend I do with it? Yeah. Primo mi primo, over at the security van company, he got another delivery schedule to share. Oh, shoot. If it's worth it to you. We doing the chat? Yes. Yes. Here's a number. I figured. I'll give you the route. Yes. They always carry cash, but if you want the big payday, you have to wait till-",
+   "words": [
+    {
+     "w": "Prehab",
+     "s": 237.14,
+     "e": 237.46
+    },
+    {
+     "w": "is",
+     "s": 237.5,
+     "e": 237.56
+    },
+    {
+     "w": "bullshit.",
+     "s": 237.76,
+     "e": 238.28
+    },
+    {
+     "w": "It's",
+     "s": 238.5,
+     "e": 238.6
+    },
+    {
+     "w": "nothing",
+     "s": 238.64,
+     "e": 238.84
+    },
+    {
+     "w": "but",
+     "s": 238.88,
+     "e": 238.98
+    },
+    {
+     "w": "a",
+     "s": 239.02,
+     "e": 239.08
+    },
+    {
+     "w": "scam,",
+     "s": 239.16,
+     "e": 239.5
+    },
+    {
+     "w": "bro.",
+     "s": 239.58,
+     "e": 239.76
+    },
+    {
+     "w": "You",
+     "s": 240.08,
+     "e": 240.14
+    },
+    {
+     "w": "pay",
+     "s": 240.2,
+     "e": 240.32
+    },
+    {
+     "w": "thousands",
+     "s": 240.46,
+     "e": 240.8
+    },
+    {
+     "w": "of",
+     "s": 240.84,
+     "e": 240.92
+    },
+    {
+     "w": "dollars",
+     "s": 240.96,
+     "e": 241.34
+    },
+    {
+     "w": "just",
+     "s": 241.72,
+     "e": 241.82
+    },
+    {
+     "w": "to",
+     "s": 241.86,
+     "e": 241.94
+    },
+    {
+     "w": "end",
+     "s": 241.98,
+     "e": 242.08
+    },
+    {
+     "w": "up",
+     "s": 242.12,
+     "e": 242.2
+    },
+    {
+     "w": "a",
+     "s": 242.24,
+     "e": 242.3
+    },
+    {
+     "w": "big",
+     "s": 242.44,
+     "e": 242.62
+    },
+    {
+     "w": "pussy.",
+     "s": 242.7,
+     "e": 242.96
+    },
+    {
+     "w": "Fucking",
+     "s": 243.3,
+     "e": 243.56
+    },
+    {
+     "w": "talk,",
+     "s": 243.62,
+     "e": 243.8
+    },
+    {
+     "w": "talk,",
+     "s": 243.88,
+     "e": 244.08
+    },
+    {
+     "w": "talk.",
+     "s": 244.16,
+     "e": 244.42
+    },
+    {
+     "w": "Faking",
+     "s": 244.52,
+     "e": 245.16
+    },
+    {
+     "w": "love",
+     "s": 245.22,
+     "e": 245.4
+    },
+    {
+     "w": "is",
+     "s": 245.44,
+     "e": 245.54
+    },
+    {
+     "w": "for",
+     "s": 245.64,
+     "e": 245.72
+    },
+    {
+     "w": "bitches",
+     "s": 245.72,
+     "e": 246.0
+    },
+    {
+     "w": "and",
+     "s": 246.02,
+     "e": 246.12
+    },
+    {
+     "w": "whores",
+     "s": 246.16,
+     "e": 246.44
+    },
+    {
+     "w": "Short",
+     "s": 246.64,
+     "e": 246.82
+    },
+    {
+     "w": "hair",
+     "s": 246.88,
+     "e": 247.02
+    },
+    {
+     "w": "...",
+     "s": 247.02,
+     "e": 247.02
+    },
+    {
+     "w": "and",
+     "s": 247.1,
+     "e": 247.1
+    },
+    {
+     "w": "they",
+     "s": 247.12,
+     "e": 247.2
+    },
+    {
+     "w": "say,",
+     "s": 247.28,
+     "e": 247.28
+    },
+    {
+     "w": "\"What",
+     "s": 247.28,
+     "e": 247.4
+    },
+    {
+     "w": "about",
+     "s": 247.46,
+     "e": 247.72
+    },
+    {
+     "w": "if",
+     "s": 247.8,
+     "e": 247.9
+    },
+    {
+     "w": "you",
+     "s": 247.94,
+     "e": 248.0
+    },
+    {
+     "w": "want",
+     "s": 248.06,
+     "e": 248.16
+    },
+    {
+     "w": "a",
+     "s": 248.18,
+     "e": 248.26
+    },
+    {
+     "w": "fucking",
+     "s": 248.28,
+     "e": 248.52
+    },
+    {
+     "w": "discount?\"",
+     "s": 248.58,
+     "e": 249.0
+    },
+    {
+     "w": "And",
+     "s": 249.48,
+     "e": 249.58
+    },
+    {
+     "w": "then",
+     "s": 249.64,
+     "e": 249.82
+    },
+    {
+     "w": "you",
+     "s": 249.9,
+     "e": 250.0
+    },
+    {
+     "w": "all",
+     "s": 250.08,
+     "e": 250.2
+    },
+    {
+     "w": "laugh",
+     "s": 250.32,
+     "e": 250.52
+    },
+    {
+     "w": "and",
+     "s": 250.58,
+     "e": 250.66
+    },
+    {
+     "w": "you",
+     "s": 250.7,
+     "e": 250.74
+    },
+    {
+     "w": "have",
+     "s": 250.78,
+     "e": 250.88
+    },
+    {
+     "w": "another",
+     "s": 250.94,
+     "e": 251.2
+    },
+    {
+     "w": "week",
+     "s": 251.24,
+     "e": 251.38
+    },
+    {
+     "w": "to",
+     "s": 251.4,
+     "e": 251.5
+    },
+    {
+     "w": "pay",
+     "s": 251.52,
+     "e": 251.62
+    },
+    {
+     "w": "up.",
+     "s": 251.62,
+     "e": 251.66
+    },
+    {
+     "w": "Yeah,",
+     "s": 251.7,
+     "e": 251.8
+    },
+    {
+     "w": "she",
+     "s": 251.88,
+     "e": 251.96
+    },
+    {
+     "w": "was",
+     "s": 251.98,
+     "e": 252.08
+    },
+    {
+     "w": "watching",
+     "s": 252.1,
+     "e": 252.32
+    },
+    {
+     "w": "me",
+     "s": 252.36,
+     "e": 252.42
+    },
+    {
+     "w": "get",
+     "s": 252.44,
+     "e": 252.52
+    },
+    {
+     "w": "my",
+     "s": 252.56,
+     "e": 252.72
+    },
+    {
+     "w": "hair",
+     "s": 252.76,
+     "e": 252.92
+    },
+    {
+     "w": "cut.",
+     "s": 253.02,
+     "e": 253.46
+    },
+    {
+     "w": "Damn.",
+     "s": 254.86,
+     "e": 255.5
+    },
+    {
+     "w": "Those",
+     "s": 258.28,
+     "e": 258.7
+    },
+    {
+     "w": "jokes",
+     "s": 258.7,
+     "e": 258.7
+    },
+    {
+     "w": "and",
+     "s": 258.7,
+     "e": 258.7
+    },
+    {
+     "w": "bullshit,",
+     "s": 258.7,
+     "e": 258.72
+    },
+    {
+     "w": "it's",
+     "s": 258.72,
+     "e": 258.72
+    },
+    {
+     "w": "all",
+     "s": 258.72,
+     "e": 258.72
+    },
+    {
+     "w": "the",
+     "s": 258.72,
+     "e": 258.72
+    },
+    {
+     "w": "same.",
+     "s": 258.72,
+     "e": 258.72
+    },
+    {
+     "w": "Yo.",
+     "s": 258.72,
+     "e": 258.72
+    },
+    {
+     "w": "Fucking",
+     "s": 259.32,
+     "e": 259.56
+    },
+    {
+     "w": "wanna",
+     "s": 259.64,
+     "e": 259.76
+    },
+    {
+     "w": "stop",
+     "s": 260.96,
+     "e": 260.98
+    },
+    {
+     "w": "laughing.",
+     "s": 260.98,
+     "e": 260.98
+    },
+    {
+     "w": "You",
+     "s": 260.98,
+     "e": 261.08
+    },
+    {
+     "w": "crackled",
+     "s": 261.12,
+     "e": 261.12
+    },
+    {
+     "w": "up.",
+     "s": 261.16,
+     "e": 261.26
+    },
+    {
+     "w": "Son",
+     "s": 261.56,
+     "e": 261.72
+    },
+    {
+     "w": "of",
+     "s": 261.74,
+     "e": 261.84
+    },
+    {
+     "w": "a",
+     "s": 261.88,
+     "e": 261.94
+    },
+    {
+     "w": "bitch.",
+     "s": 262.0,
+     "e": 262.2
+    },
+    {
+     "w": "Oh,",
+     "s": 266.02,
+     "e": 266.22
+    },
+    {
+     "w": "come",
+     "s": 266.4,
+     "e": 266.58
+    },
+    {
+     "w": "on.",
+     "s": 266.66,
+     "e": 266.96
+    },
+    {
+     "w": "I",
+     "s": 270.48,
+     "e": 270.54
+    },
+    {
+     "w": "just",
+     "s": 270.7,
+     "e": 270.88
+    },
+    {
+     "w": "fixed",
+     "s": 270.94,
+     "e": 271.12
+    },
+    {
+     "w": "this",
+     "s": 271.14,
+     "e": 271.26
+    },
+    {
+     "w": "car,",
+     "s": 271.3,
+     "e": 271.5
+    },
+    {
+     "w": "bro.",
+     "s": 271.58,
+     "e": 271.76
+    },
+    {
+     "w": "You",
+     "s": 272.26,
+     "e": 272.32
+    },
+    {
+     "w": "better",
+     "s": 272.34,
+     "e": 272.46
+    },
+    {
+     "w": "not",
+     "s": 272.46,
+     "e": 272.46
+    },
+    {
+     "w": "kill",
+     "s": 272.62,
+     "e": 272.84
+    },
+    {
+     "w": "me,",
+     "s": 272.92,
+     "e": 273.12
+    },
+    {
+     "w": "you",
+     "s": 273.12,
+     "e": 273.12
+    },
+    {
+     "w": "fucking",
+     "s": 273.12,
+     "e": 273.12
+    },
+    {
+     "w": "pervert.",
+     "s": 273.22,
+     "e": 273.22
+    },
+    {
+     "w": "This",
+     "s": 274.08,
+     "e": 274.22
+    },
+    {
+     "w": "car",
+     "s": 274.28,
+     "e": 274.46
+    },
+    {
+     "w": "is",
+     "s": 274.5,
+     "e": 274.68
+    },
+    {
+     "w": "so",
+     "s": 274.78,
+     "e": 275.02
+    },
+    {
+     "w": "like...",
+     "s": 275.1,
+     "e": 275.48
+    },
+    {
+     "w": "Yo,",
+     "s": 280.72,
+     "e": 280.88
+    },
+    {
+     "w": "get",
+     "s": 280.96,
+     "e": 281.06
+    },
+    {
+     "w": "off",
+     "s": 281.1,
+     "e": 288.78
+    },
+    {
+     "w": "me.",
+     "s": 288.8,
+     "e": 288.9
+    },
+    {
+     "w": "Yo.",
+     "s": 288.94,
+     "e": 289.06
+    },
+    {
+     "w": "Long",
+     "s": 293.0,
+     "e": 293.22
+    },
+    {
+     "w": "time.",
+     "s": 293.32,
+     "e": 293.72
+    },
+    {
+     "w": "Come",
+     "s": 294.24,
+     "e": 294.38
+    },
+    {
+     "w": "spend",
+     "s": 294.44,
+     "e": 294.64
+    },
+    {
+     "w": "some",
+     "s": 294.7,
+     "e": 294.82
+    },
+    {
+     "w": "money.",
+     "s": 294.9,
+     "e": 295.14
+    },
+    {
+     "w": "Where",
+     "s": 299.24,
+     "e": 299.36
+    },
+    {
+     "w": "you",
+     "s": 299.42,
+     "e": 299.48
+    },
+    {
+     "w": "been?",
+     "s": 299.56,
+     "e": 299.74
+    },
+    {
+     "w": "Oh,",
+     "s": 301.76,
+     "e": 301.82
+    },
+    {
+     "w": "my",
+     "s": 301.88,
+     "e": 302.04
+    },
+    {
+     "w": "God.",
+     "s": 302.1,
+     "e": 302.34
+    },
+    {
+     "w": "So,",
+     "s": 303.42,
+     "e": 303.94
+    },
+    {
+     "w": "81,000.",
+     "s": 306.08,
+     "e": 307.2
+    },
+    {
+     "w": "It's",
+     "s": 307.92,
+     "e": 308.04
+    },
+    {
+     "w": "all",
+     "s": 308.06,
+     "e": 308.16
+    },
+    {
+     "w": "right.",
+     "s": 308.2,
+     "e": 308.4
+    },
+    {
+     "w": "W's,",
+     "s": 308.78,
+     "e": 308.96
+    },
+    {
+     "w": "bro.",
+     "s": 309.0,
+     "e": 309.18
+    },
+    {
+     "w": "It's",
+     "s": 309.7,
+     "e": 309.8
+    },
+    {
+     "w": "all",
+     "s": 309.82,
+     "e": 309.88
+    },
+    {
+     "w": "right.",
+     "s": 309.92,
+     "e": 310.14
+    },
+    {
+     "w": "All",
+     "s": 310.54,
+     "e": 310.66
+    },
+    {
+     "w": "yours.",
+     "s": 310.72,
+     "e": 311.02
+    },
+    {
+     "w": "It's",
+     "s": 311.14,
+     "e": 311.24
+    },
+    {
+     "w": "all",
+     "s": 311.26,
+     "e": 311.3
+    },
+    {
+     "w": "right,",
+     "s": 311.34,
+     "e": 311.46
+    },
+    {
+     "w": "bro.",
+     "s": 311.54,
+     "e": 311.64
+    },
+    {
+     "w": "We",
+     "s": 311.72,
+     "e": 311.76
+    },
+    {
+     "w": "got",
+     "s": 311.8,
+     "e": 311.9
+    },
+    {
+     "w": "80,",
+     "s": 312.06,
+     "e": 312.16
+    },
+    {
+     "w": "we",
+     "s": 312.28,
+     "e": 312.3
+    },
+    {
+     "w": "got",
+     "s": 312.32,
+     "e": 312.42
+    },
+    {
+     "w": "81,000.",
+     "s": 312.52,
+     "e": 313.1
+    },
+    {
+     "w": "We",
+     "s": 313.72,
+     "e": 313.78
+    },
+    {
+     "w": "lost",
+     "s": 313.82,
+     "e": 313.98
+    },
+    {
+     "w": "20.",
+     "s": 314.12,
+     "e": 314.28
+    },
+    {
+     "w": "It's",
+     "s": 314.92,
+     "e": 315.02
+    },
+    {
+     "w": "all",
+     "s": 315.04,
+     "e": 315.1
+    },
+    {
+     "w": "right.",
+     "s": 315.14,
+     "e": 315.32
+    },
+    {
+     "w": "That's",
+     "s": 316.34,
+     "e": 316.42
+    },
+    {
+     "w": "a",
+     "s": 316.44,
+     "e": 316.48
+    },
+    {
+     "w": "dub.",
+     "s": 316.52,
+     "e": 316.68
+    },
+    {
+     "w": "That's",
+     "s": 316.72,
+     "e": 316.84
+    },
+    {
+     "w": "a",
+     "s": 316.88,
+     "e": 316.9
+    },
+    {
+     "w": "dub.",
+     "s": 316.94,
+     "e": 317.08
+    },
+    {
+     "w": "That's",
+     "s": 317.12,
+     "e": 317.24
+    },
+    {
+     "w": "a",
+     "s": 317.28,
+     "e": 317.32
+    },
+    {
+     "w": "dub.",
+     "s": 317.34,
+     "e": 317.52
+    },
+    {
+     "w": "Well,",
+     "s": 317.88,
+     "e": 317.92
+    },
+    {
+     "w": "you",
+     "s": 317.96,
+     "e": 318.02
+    },
+    {
+     "w": "only",
+     "s": 318.12,
+     "e": 318.3
+    },
+    {
+     "w": "pay",
+     "s": 318.4,
+     "e": 318.54
+    },
+    {
+     "w": "the",
+     "s": 318.58,
+     "e": 318.64
+    },
+    {
+     "w": "Yasmani",
+     "s": 318.82,
+     "e": 319.4
+    },
+    {
+     "w": "tax.",
+     "s": 319.52,
+     "e": 319.88
+    },
+    {
+     "w": "More",
+     "s": 323.42,
+     "e": 323.54
+    },
+    {
+     "w": "work.",
+     "s": 323.58,
+     "e": 323.8
+    },
+    {
+     "w": "So",
+     "s": 324.04,
+     "e": 324.12
+    },
+    {
+     "w": "I",
+     "s": 324.24,
+     "e": 324.28
+    },
+    {
+     "w": "got",
+     "s": 324.32,
+     "e": 324.44
+    },
+    {
+     "w": "some",
+     "s": 324.48,
+     "e": 324.6
+    },
+    {
+     "w": "time",
+     "s": 324.66,
+     "e": 324.86
+    },
+    {
+     "w": "right",
+     "s": 324.9,
+     "e": 325.04
+    },
+    {
+     "w": "now.",
+     "s": 325.08,
+     "e": 325.28
+    },
+    {
+     "w": "Anything",
+     "s": 325.78,
+     "e": 326.02
+    },
+    {
+     "w": "you",
+     "s": 326.04,
+     "e": 326.08
+    },
+    {
+     "w": "recommend",
+     "s": 326.12,
+     "e": 326.4
+    },
+    {
+     "w": "I",
+     "s": 326.46,
+     "e": 326.54
+    },
+    {
+     "w": "do",
+     "s": 326.56,
+     "e": 326.64
+    },
+    {
+     "w": "with",
+     "s": 326.68,
+     "e": 326.82
+    },
+    {
+     "w": "it?",
+     "s": 326.86,
+     "e": 326.92
+    },
+    {
+     "w": "Yeah.",
+     "s": 327.8,
+     "e": 328.08
+    },
+    {
+     "w": "Primo",
+     "s": 328.4,
+     "e": 328.72
+    },
+    {
+     "w": "mi",
+     "s": 328.76,
+     "e": 328.98
+    },
+    {
+     "w": "primo,",
+     "s": 329.04,
+     "e": 329.36
+    },
+    {
+     "w": "over",
+     "s": 329.68,
+     "e": 329.82
+    },
+    {
+     "w": "at",
+     "s": 329.84,
+     "e": 329.92
+    },
+    {
+     "w": "the",
+     "s": 329.94,
+     "e": 330.04
+    },
+    {
+     "w": "security",
+     "s": 330.08,
+     "e": 330.5
+    },
+    {
+     "w": "van",
+     "s": 330.54,
+     "e": 330.68
+    },
+    {
+     "w": "company,",
+     "s": 330.78,
+     "e": 331.12
+    },
+    {
+     "w": "he",
+     "s": 331.38,
+     "e": 331.44
+    },
+    {
+     "w": "got",
+     "s": 331.48,
+     "e": 331.62
+    },
+    {
+     "w": "another",
+     "s": 331.66,
+     "e": 331.96
+    },
+    {
+     "w": "delivery",
+     "s": 332.04,
+     "e": 332.42
+    },
+    {
+     "w": "schedule",
+     "s": 332.52,
+     "e": 332.9
+    },
+    {
+     "w": "to",
+     "s": 332.96,
+     "e": 333.08
+    },
+    {
+     "w": "share.",
+     "s": 333.14,
+     "e": 333.4
+    },
+    {
+     "w": "Oh,",
+     "s": 333.62,
+     "e": 333.72
+    },
+    {
+     "w": "shoot.",
+     "s": 333.84,
+     "e": 333.96
+    },
+    {
+     "w": "If",
+     "s": 334.0,
+     "e": 334.0
+    },
+    {
+     "w": "it's",
+     "s": 334.0,
+     "e": 334.16
+    },
+    {
+     "w": "worth",
+     "s": 334.2,
+     "e": 334.38
+    },
+    {
+     "w": "it",
+     "s": 334.42,
+     "e": 334.52
+    },
+    {
+     "w": "to",
+     "s": 334.56,
+     "e": 334.64
+    },
+    {
+     "w": "you.",
+     "s": 334.7,
+     "e": 334.8
+    },
+    {
+     "w": "We",
+     "s": 335.02,
+     "e": 335.08
+    },
+    {
+     "w": "doing",
+     "s": 335.12,
+     "e": 335.24
+    },
+    {
+     "w": "the",
+     "s": 335.26,
+     "e": 335.32
+    },
+    {
+     "w": "chat?",
+     "s": 335.36,
+     "e": 335.56
+    },
+    {
+     "w": "Yes.",
+     "s": 335.66,
+     "e": 336.0
+    },
+    {
+     "w": "Yes.",
+     "s": 339.32,
+     "e": 339.4
+    },
+    {
+     "w": "Here's",
+     "s": 339.4,
+     "e": 339.58
+    },
+    {
+     "w": "a",
+     "s": 339.6,
+     "e": 339.6
+    },
+    {
+     "w": "number.",
+     "s": 339.62,
+     "e": 339.86
+    },
+    {
+     "w": "I",
+     "s": 340.72,
+     "e": 340.84
+    },
+    {
+     "w": "figured.",
+     "s": 341.06,
+     "e": 341.48
+    },
+    {
+     "w": "I'll",
+     "s": 341.8,
+     "e": 341.88
+    },
+    {
+     "w": "give",
+     "s": 341.94,
+     "e": 342.12
+    },
+    {
+     "w": "you",
+     "s": 342.14,
+     "e": 342.22
+    },
+    {
+     "w": "the",
+     "s": 342.28,
+     "e": 342.36
+    },
+    {
+     "w": "route.",
+     "s": 342.44,
+     "e": 342.7
+    },
+    {
+     "w": "Yes.",
+     "s": 343.02,
+     "e": 343.02
+    },
+    {
+     "w": "They",
+     "s": 343.04,
+     "e": 343.16
+    },
+    {
+     "w": "always",
+     "s": 343.22,
+     "e": 343.44
+    },
+    {
+     "w": "carry",
+     "s": 343.54,
+     "e": 343.76
+    },
+    {
+     "w": "cash,",
+     "s": 343.88,
+     "e": 344.1
+    },
+    {
+     "w": "but",
+     "s": 344.2,
+     "e": 344.28
+    },
+    {
+     "w": "if",
+     "s": 344.34,
+     "e": 344.46
+    },
+    {
+     "w": "you",
+     "s": 344.5,
+     "e": 344.54
+    },
+    {
+     "w": "want",
+     "s": 344.64,
+     "e": 344.78
+    },
+    {
+     "w": "the",
+     "s": 344.84,
+     "e": 344.92
+    },
+    {
+     "w": "big",
+     "s": 345.14,
+     "e": 345.34
+    },
+    {
+     "w": "payday,",
+     "s": 345.46,
+     "e": 345.84
+    },
+    {
+     "w": "you",
+     "s": 346.12,
+     "e": 346.22
+    },
+    {
+     "w": "have",
+     "s": 346.26,
+     "e": 346.42
+    },
+    {
+     "w": "to",
+     "s": 346.46,
+     "e": 346.54
+    },
+    {
+     "w": "wait",
+     "s": 346.6,
+     "e": 346.78
+    },
+    {
+     "w": "till-",
+     "s": 346.8,
+     "e": 346.9
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "frames": [
+    "candidates/frames/twitch_v2935613960_0/m3/0.jpg",
+    "candidates/frames/twitch_v2935613960_0/m3/1.jpg",
+    "candidates/frames/twitch_v2935613960_0/m3/2.jpg"
+   ],
+   "start": 571.0,
+   "end": 681.0,
+   "peak": 641.0,
+   "score": 1.61,
+   "signals": [
+    "loud"
+   ],
+   "stt": "elevenlabs",
+   "text": "Do your parents need a ride to your girl's studio? I just wish my goddamn... I wish my car was good. Ready, go. Who's calling that shit? Who's calling that shit? Who's calling that shit? Who's calling that shit? Who? Who? Who? Who? I'm that bitch 'cause I motherfucking said so. It's DJ JP from Vice City. Is it Stacy? Is it Becky? Is it Keisha? Is it Texie? What's the wrong me? Is it Carti? What's the function? What the fuck the function? TGD shot with the ball, get the beach headed. The way I feel right now, I feel like we need to be all alone. TGD, thank you so much. Stop just playing around. You need to tell your girl take her fine ass home. And that's real. Stop teasing me. Stop teasing me. I could change your life so easily. I keep begging you to stay. But you leaving me, leaving me. Got sticks in the club illegally. Got the whole C side, they believe in me. We got members east of the GBP. We got members west on 401. We got a lock on the game, but it's more to come. You gotta pop that ass till the morning come. You want shots for the girls, then order some. Who's calling that shit? Who's calling that shit? Who's calling that shit? All right, send the bank chat",
+   "words": [
+    {
+     "w": "Do",
+     "s": 583.64,
+     "e": 583.66
+    },
+    {
+     "w": "your",
+     "s": 583.7,
+     "e": 583.8
+    },
+    {
+     "w": "parents",
+     "s": 583.88,
+     "e": 584.26
+    },
+    {
+     "w": "need",
+     "s": 584.34,
+     "e": 584.5
+    },
+    {
+     "w": "a",
+     "s": 584.52,
+     "e": 584.52
+    },
+    {
+     "w": "ride",
+     "s": 584.54,
+     "e": 584.68
+    },
+    {
+     "w": "to",
+     "s": 584.72,
+     "e": 584.78
+    },
+    {
+     "w": "your",
+     "s": 584.82,
+     "e": 584.9
+    },
+    {
+     "w": "girl's",
+     "s": 584.96,
+     "e": 585.18
+    },
+    {
+     "w": "studio?",
+     "s": 585.24,
+     "e": 585.48
+    },
+    {
+     "w": "I",
+     "s": 587.82,
+     "e": 587.88
+    },
+    {
+     "w": "just",
+     "s": 587.92,
+     "e": 588.08
+    },
+    {
+     "w": "wish",
+     "s": 588.12,
+     "e": 588.28
+    },
+    {
+     "w": "my",
+     "s": 588.34,
+     "e": 588.48
+    },
+    {
+     "w": "goddamn...",
+     "s": 588.52,
+     "e": 589.22
+    },
+    {
+     "w": "I",
+     "s": 591.04,
+     "e": 591.08
+    },
+    {
+     "w": "wish",
+     "s": 591.16,
+     "e": 591.32
+    },
+    {
+     "w": "my",
+     "s": 591.38,
+     "e": 591.5
+    },
+    {
+     "w": "car",
+     "s": 591.6,
+     "e": 591.84
+    },
+    {
+     "w": "was",
+     "s": 591.9,
+     "e": 592.02
+    },
+    {
+     "w": "good.",
+     "s": 592.08,
+     "e": 592.4
+    },
+    {
+     "w": "Ready,",
+     "s": 607.9,
+     "e": 608.16
+    },
+    {
+     "w": "go.",
+     "s": 608.28,
+     "e": 608.58
+    },
+    {
+     "w": "Who's",
+     "s": 609.54,
+     "e": 609.72
+    },
+    {
+     "w": "calling",
+     "s": 609.76,
+     "e": 610.06
+    },
+    {
+     "w": "that",
+     "s": 610.08,
+     "e": 610.2
+    },
+    {
+     "w": "shit?",
+     "s": 610.26,
+     "e": 610.52
+    },
+    {
+     "w": "Who's",
+     "s": 610.68,
+     "e": 611.6
+    },
+    {
+     "w": "calling",
+     "s": 611.68,
+     "e": 611.94
+    },
+    {
+     "w": "that",
+     "s": 611.96,
+     "e": 612.1
+    },
+    {
+     "w": "shit?",
+     "s": 612.16,
+     "e": 612.34
+    },
+    {
+     "w": "Who's",
+     "s": 613.42,
+     "e": 613.54
+    },
+    {
+     "w": "calling",
+     "s": 613.58,
+     "e": 613.84
+    },
+    {
+     "w": "that",
+     "s": 613.88,
+     "e": 613.96
+    },
+    {
+     "w": "shit?",
+     "s": 614.04,
+     "e": 614.16
+    },
+    {
+     "w": "Who's",
+     "s": 615.3,
+     "e": 615.46
+    },
+    {
+     "w": "calling",
+     "s": 615.5,
+     "e": 615.76
+    },
+    {
+     "w": "that",
+     "s": 615.78,
+     "e": 615.84
+    },
+    {
+     "w": "shit?",
+     "s": 615.9,
+     "e": 615.96
+    },
+    {
+     "w": "Who?",
+     "s": 619.1,
+     "e": 619.24
+    },
+    {
+     "w": "Who?",
+     "s": 619.28,
+     "e": 619.3
+    },
+    {
+     "w": "Who?",
+     "s": 619.6,
+     "e": 619.78
+    },
+    {
+     "w": "Who?",
+     "s": 621.36,
+     "e": 621.4
+    },
+    {
+     "w": "I'm",
+     "s": 621.44,
+     "e": 621.56
+    },
+    {
+     "w": "that",
+     "s": 621.58,
+     "e": 621.74
+    },
+    {
+     "w": "bitch",
+     "s": 621.78,
+     "e": 622.0
+    },
+    {
+     "w": "'cause",
+     "s": 622.02,
+     "e": 622.22
+    },
+    {
+     "w": "I",
+     "s": 622.3,
+     "e": 622.36
+    },
+    {
+     "w": "motherfucking",
+     "s": 622.42,
+     "e": 623.04
+    },
+    {
+     "w": "said",
+     "s": 623.12,
+     "e": 623.42
+    },
+    {
+     "w": "so.",
+     "s": 623.54,
+     "e": 623.82
+    },
+    {
+     "w": "It's",
+     "s": 624.26,
+     "e": 624.38
+    },
+    {
+     "w": "DJ",
+     "s": 624.44,
+     "e": 624.78
+    },
+    {
+     "w": "JP",
+     "s": 624.84,
+     "e": 625.26
+    },
+    {
+     "w": "from",
+     "s": 625.66,
+     "e": 625.82
+    },
+    {
+     "w": "Vice",
+     "s": 625.86,
+     "e": 626.1
+    },
+    {
+     "w": "City.",
+     "s": 626.18,
+     "e": 626.44
+    },
+    {
+     "w": "Is",
+     "s": 627.1,
+     "e": 627.24
+    },
+    {
+     "w": "it",
+     "s": 627.28,
+     "e": 627.36
+    },
+    {
+     "w": "Stacy?",
+     "s": 627.48,
+     "e": 628.44
+    },
+    {
+     "w": "Is",
+     "s": 628.98,
+     "e": 629.16
+    },
+    {
+     "w": "it",
+     "s": 629.2,
+     "e": 629.28
+    },
+    {
+     "w": "Becky?",
+     "s": 629.4,
+     "e": 630.22
+    },
+    {
+     "w": "Is",
+     "s": 630.92,
+     "e": 631.06
+    },
+    {
+     "w": "it",
+     "s": 631.1,
+     "e": 631.2
+    },
+    {
+     "w": "Keisha?",
+     "s": 631.32,
+     "e": 632.14
+    },
+    {
+     "w": "Is",
+     "s": 632.84,
+     "e": 632.96
+    },
+    {
+     "w": "it",
+     "s": 632.98,
+     "e": 633.1
+    },
+    {
+     "w": "Texie?",
+     "s": 633.22,
+     "e": 634.02
+    },
+    {
+     "w": "What's",
+     "s": 634.66,
+     "e": 634.88
+    },
+    {
+     "w": "the",
+     "s": 634.92,
+     "e": 635.02
+    },
+    {
+     "w": "wrong",
+     "s": 635.12,
+     "e": 635.46
+    },
+    {
+     "w": "me?",
+     "s": 635.56,
+     "e": 635.94
+    },
+    {
+     "w": "Is",
+     "s": 636.62,
+     "e": 636.74
+    },
+    {
+     "w": "it",
+     "s": 636.78,
+     "e": 636.9
+    },
+    {
+     "w": "Carti?",
+     "s": 637.0,
+     "e": 637.64
+    },
+    {
+     "w": "What's",
+     "s": 638.44,
+     "e": 638.62
+    },
+    {
+     "w": "the",
+     "s": 638.7,
+     "e": 638.8
+    },
+    {
+     "w": "function?",
+     "s": 638.94,
+     "e": 639.56
+    },
+    {
+     "w": "What",
+     "s": 639.62,
+     "e": 639.7
+    },
+    {
+     "w": "the",
+     "s": 639.74,
+     "e": 639.82
+    },
+    {
+     "w": "fuck",
+     "s": 639.9,
+     "e": 640.1
+    },
+    {
+     "w": "the",
+     "s": 640.14,
+     "e": 640.24
+    },
+    {
+     "w": "function?",
+     "s": 640.28,
+     "e": 640.98
+    },
+    {
+     "w": "TGD",
+     "s": 641.48,
+     "e": 642.02
+    },
+    {
+     "w": "shot",
+     "s": 642.08,
+     "e": 642.28
+    },
+    {
+     "w": "with",
+     "s": 642.32,
+     "e": 642.4
+    },
+    {
+     "w": "the",
+     "s": 642.42,
+     "e": 642.5
+    },
+    {
+     "w": "ball,",
+     "s": 642.56,
+     "e": 642.72
+    },
+    {
+     "w": "get",
+     "s": 642.76,
+     "e": 642.86
+    },
+    {
+     "w": "the",
+     "s": 642.9,
+     "e": 642.96
+    },
+    {
+     "w": "beach",
+     "s": 643.02,
+     "e": 643.18
+    },
+    {
+     "w": "headed.",
+     "s": 643.18,
+     "e": 643.36
+    },
+    {
+     "w": "The",
+     "s": 643.4,
+     "e": 643.46
+    },
+    {
+     "w": "way",
+     "s": 643.48,
+     "e": 643.58
+    },
+    {
+     "w": "I",
+     "s": 643.62,
+     "e": 643.62
+    },
+    {
+     "w": "feel",
+     "s": 643.64,
+     "e": 643.82
+    },
+    {
+     "w": "right",
+     "s": 643.88,
+     "e": 644.06
+    },
+    {
+     "w": "now,",
+     "s": 644.14,
+     "e": 644.42
+    },
+    {
+     "w": "I",
+     "s": 644.54,
+     "e": 644.54
+    },
+    {
+     "w": "feel",
+     "s": 644.58,
+     "e": 644.76
+    },
+    {
+     "w": "like",
+     "s": 644.82,
+     "e": 644.94
+    },
+    {
+     "w": "we",
+     "s": 644.96,
+     "e": 645.02
+    },
+    {
+     "w": "need",
+     "s": 645.06,
+     "e": 645.14
+    },
+    {
+     "w": "to",
+     "s": 645.18,
+     "e": 645.24
+    },
+    {
+     "w": "be",
+     "s": 645.3,
+     "e": 645.5
+    },
+    {
+     "w": "all",
+     "s": 645.6,
+     "e": 645.74
+    },
+    {
+     "w": "alone.",
+     "s": 645.8,
+     "e": 646.18
+    },
+    {
+     "w": "TGD,",
+     "s": 646.3,
+     "e": 646.62
+    },
+    {
+     "w": "thank",
+     "s": 646.68,
+     "e": 646.98
+    },
+    {
+     "w": "you",
+     "s": 647.0,
+     "e": 647.04
+    },
+    {
+     "w": "so",
+     "s": 647.1,
+     "e": 647.18
+    },
+    {
+     "w": "much.",
+     "s": 647.24,
+     "e": 647.38
+    },
+    {
+     "w": "Stop",
+     "s": 647.38,
+     "e": 647.38
+    },
+    {
+     "w": "just",
+     "s": 647.38,
+     "e": 647.42
+    },
+    {
+     "w": "playing",
+     "s": 647.44,
+     "e": 647.68
+    },
+    {
+     "w": "around.",
+     "s": 647.74,
+     "e": 648.02
+    },
+    {
+     "w": "You",
+     "s": 648.06,
+     "e": 648.1
+    },
+    {
+     "w": "need",
+     "s": 648.14,
+     "e": 648.22
+    },
+    {
+     "w": "to",
+     "s": 648.26,
+     "e": 648.32
+    },
+    {
+     "w": "tell",
+     "s": 648.38,
+     "e": 648.58
+    },
+    {
+     "w": "your",
+     "s": 648.62,
+     "e": 648.78
+    },
+    {
+     "w": "girl",
+     "s": 648.84,
+     "e": 649.02
+    },
+    {
+     "w": "take",
+     "s": 649.08,
+     "e": 649.18
+    },
+    {
+     "w": "her",
+     "s": 649.2,
+     "e": 649.28
+    },
+    {
+     "w": "fine",
+     "s": 649.34,
+     "e": 649.52
+    },
+    {
+     "w": "ass",
+     "s": 649.54,
+     "e": 649.68
+    },
+    {
+     "w": "home.",
+     "s": 649.72,
+     "e": 649.96
+    },
+    {
+     "w": "And",
+     "s": 649.98,
+     "e": 650.04
+    },
+    {
+     "w": "that's",
+     "s": 650.08,
+     "e": 650.26
+    },
+    {
+     "w": "real.",
+     "s": 650.32,
+     "e": 650.62
+    },
+    {
+     "w": "Stop",
+     "s": 650.96,
+     "e": 651.2
+    },
+    {
+     "w": "teasing",
+     "s": 651.32,
+     "e": 651.64
+    },
+    {
+     "w": "me.",
+     "s": 651.66,
+     "e": 651.92
+    },
+    {
+     "w": "Stop",
+     "s": 652.88,
+     "e": 653.1
+    },
+    {
+     "w": "teasing",
+     "s": 653.24,
+     "e": 653.5
+    },
+    {
+     "w": "me.",
+     "s": 653.58,
+     "e": 653.82
+    },
+    {
+     "w": "I",
+     "s": 653.9,
+     "e": 653.92
+    },
+    {
+     "w": "could",
+     "s": 653.96,
+     "e": 654.06
+    },
+    {
+     "w": "change",
+     "s": 654.12,
+     "e": 654.34
+    },
+    {
+     "w": "your",
+     "s": 654.36,
+     "e": 654.5
+    },
+    {
+     "w": "life",
+     "s": 654.56,
+     "e": 654.74
+    },
+    {
+     "w": "so",
+     "s": 654.82,
+     "e": 655.02
+    },
+    {
+     "w": "easily.",
+     "s": 655.12,
+     "e": 655.6
+    },
+    {
+     "w": "I",
+     "s": 655.66,
+     "e": 655.72
+    },
+    {
+     "w": "keep",
+     "s": 655.78,
+     "e": 655.94
+    },
+    {
+     "w": "begging",
+     "s": 656.0,
+     "e": 656.28
+    },
+    {
+     "w": "you",
+     "s": 656.3,
+     "e": 656.34
+    },
+    {
+     "w": "to",
+     "s": 656.38,
+     "e": 656.44
+    },
+    {
+     "w": "stay.",
+     "s": 656.5,
+     "e": 656.68
+    },
+    {
+     "w": "But",
+     "s": 656.76,
+     "e": 656.82
+    },
+    {
+     "w": "you",
+     "s": 656.88,
+     "e": 657.0
+    },
+    {
+     "w": "leaving",
+     "s": 657.1,
+     "e": 657.7
+    },
+    {
+     "w": "me,",
+     "s": 657.8,
+     "e": 658.02
+    },
+    {
+     "w": "leaving",
+     "s": 658.92,
+     "e": 659.26
+    },
+    {
+     "w": "me.",
+     "s": 659.32,
+     "e": 659.52
+    },
+    {
+     "w": "Got",
+     "s": 659.56,
+     "e": 659.72
+    },
+    {
+     "w": "sticks",
+     "s": 659.78,
+     "e": 660.02
+    },
+    {
+     "w": "in",
+     "s": 660.06,
+     "e": 660.12
+    },
+    {
+     "w": "the",
+     "s": 660.16,
+     "e": 660.22
+    },
+    {
+     "w": "club",
+     "s": 660.28,
+     "e": 660.54
+    },
+    {
+     "w": "illegally.",
+     "s": 660.6,
+     "e": 661.44
+    },
+    {
+     "w": "Got",
+     "s": 661.48,
+     "e": 661.58
+    },
+    {
+     "w": "the",
+     "s": 661.62,
+     "e": 661.68
+    },
+    {
+     "w": "whole",
+     "s": 661.72,
+     "e": 661.9
+    },
+    {
+     "w": "C",
+     "s": 661.96,
+     "e": 662.12
+    },
+    {
+     "w": "side,",
+     "s": 662.2,
+     "e": 662.4
+    },
+    {
+     "w": "they",
+     "s": 662.42,
+     "e": 662.5
+    },
+    {
+     "w": "believe",
+     "s": 662.54,
+     "e": 662.88
+    },
+    {
+     "w": "in",
+     "s": 662.9,
+     "e": 662.98
+    },
+    {
+     "w": "me.",
+     "s": 663.02,
+     "e": 663.2
+    },
+    {
+     "w": "We",
+     "s": 663.24,
+     "e": 663.32
+    },
+    {
+     "w": "got",
+     "s": 663.36,
+     "e": 663.54
+    },
+    {
+     "w": "members",
+     "s": 663.62,
+     "e": 664.04
+    },
+    {
+     "w": "east",
+     "s": 664.14,
+     "e": 664.32
+    },
+    {
+     "w": "of",
+     "s": 664.38,
+     "e": 664.42
+    },
+    {
+     "w": "the",
+     "s": 664.46,
+     "e": 664.54
+    },
+    {
+     "w": "GBP.",
+     "s": 664.58,
+     "e": 664.82
+    },
+    {
+     "w": "We",
+     "s": 665.12,
+     "e": 665.2
+    },
+    {
+     "w": "got",
+     "s": 665.26,
+     "e": 665.44
+    },
+    {
+     "w": "members",
+     "s": 665.52,
+     "e": 665.92
+    },
+    {
+     "w": "west",
+     "s": 665.98,
+     "e": 666.2
+    },
+    {
+     "w": "on",
+     "s": 666.26,
+     "e": 666.34
+    },
+    {
+     "w": "401.",
+     "s": 666.68,
+     "e": 667.04
+    },
+    {
+     "w": "We",
+     "s": 667.08,
+     "e": 667.16
+    },
+    {
+     "w": "got",
+     "s": 667.2,
+     "e": 667.3
+    },
+    {
+     "w": "a",
+     "s": 667.34,
+     "e": 667.38
+    },
+    {
+     "w": "lock",
+     "s": 667.44,
+     "e": 667.62
+    },
+    {
+     "w": "on",
+     "s": 667.68,
+     "e": 667.74
+    },
+    {
+     "w": "the",
+     "s": 667.78,
+     "e": 667.84
+    },
+    {
+     "w": "game,",
+     "s": 667.9,
+     "e": 668.08
+    },
+    {
+     "w": "but",
+     "s": 668.12,
+     "e": 668.2
+    },
+    {
+     "w": "it's",
+     "s": 668.22,
+     "e": 668.34
+    },
+    {
+     "w": "more",
+     "s": 668.4,
+     "e": 668.52
+    },
+    {
+     "w": "to",
+     "s": 668.56,
+     "e": 668.66
+    },
+    {
+     "w": "come.",
+     "s": 668.72,
+     "e": 668.96
+    },
+    {
+     "w": "You",
+     "s": 669.0,
+     "e": 669.04
+    },
+    {
+     "w": "gotta",
+     "s": 669.08,
+     "e": 669.28
+    },
+    {
+     "w": "pop",
+     "s": 669.34,
+     "e": 669.52
+    },
+    {
+     "w": "that",
+     "s": 669.56,
+     "e": 669.76
+    },
+    {
+     "w": "ass",
+     "s": 669.84,
+     "e": 670.04
+    },
+    {
+     "w": "till",
+     "s": 670.06,
+     "e": 670.12
+    },
+    {
+     "w": "the",
+     "s": 670.16,
+     "e": 670.22
+    },
+    {
+     "w": "morning",
+     "s": 670.3,
+     "e": 670.58
+    },
+    {
+     "w": "come.",
+     "s": 670.62,
+     "e": 670.84
+    },
+    {
+     "w": "You",
+     "s": 670.9,
+     "e": 670.94
+    },
+    {
+     "w": "want",
+     "s": 670.98,
+     "e": 671.14
+    },
+    {
+     "w": "shots",
+     "s": 671.18,
+     "e": 671.42
+    },
+    {
+     "w": "for",
+     "s": 671.44,
+     "e": 671.5
+    },
+    {
+     "w": "the",
+     "s": 671.54,
+     "e": 671.62
+    },
+    {
+     "w": "girls,",
+     "s": 671.66,
+     "e": 671.88
+    },
+    {
+     "w": "then",
+     "s": 671.96,
+     "e": 672.16
+    },
+    {
+     "w": "order",
+     "s": 672.24,
+     "e": 672.46
+    },
+    {
+     "w": "some.",
+     "s": 672.54,
+     "e": 673.06
+    },
+    {
+     "w": "Who's",
+     "s": 674.4,
+     "e": 674.58
+    },
+    {
+     "w": "calling",
+     "s": 674.64,
+     "e": 674.84
+    },
+    {
+     "w": "that",
+     "s": 674.86,
+     "e": 675.0
+    },
+    {
+     "w": "shit?",
+     "s": 675.08,
+     "e": 675.46
+    },
+    {
+     "w": "Who's",
+     "s": 676.3,
+     "e": 676.42
+    },
+    {
+     "w": "calling",
+     "s": 676.5,
+     "e": 676.7
+    },
+    {
+     "w": "that",
+     "s": 676.72,
+     "e": 676.92
+    },
+    {
+     "w": "shit?",
+     "s": 677.04,
+     "e": 677.38
+    },
+    {
+     "w": "Who's",
+     "s": 678.14,
+     "e": 678.3
+    },
+    {
+     "w": "calling",
+     "s": 678.36,
+     "e": 678.62
+    },
+    {
+     "w": "that",
+     "s": 678.64,
+     "e": 678.76
+    },
+    {
+     "w": "shit?",
+     "s": 678.82,
+     "e": 679.06
+    },
+    {
+     "w": "All",
+     "s": 680.12,
+     "e": 680.18
+    },
+    {
+     "w": "right,",
+     "s": 680.22,
+     "e": 680.26
+    },
+    {
+     "w": "send",
+     "s": 680.32,
+     "e": 680.4
+    },
+    {
+     "w": "the",
+     "s": 680.42,
+     "e": 680.48
+    },
+    {
+     "w": "bank",
+     "s": 680.52,
+     "e": 680.64
+    },
+    {
+     "w": "chat",
+     "s": 680.68,
+     "e": 680.84
+    }
+   ]
+  }
+ ]
 }
